@@ -212,7 +212,7 @@ def test_macro_separa_eventos_y_series(temp_db):
 def test_exportar_escribe_cuatro_archivos_validos(temp_db):
     carpeta = os.path.join(temp_db.temp_dir, "data")
     rutas = exportar(temp_db, CFG, carpeta, ahora=datetime(2026, 10, 1, 17, 30, tzinfo=timezone.utc))
-    assert set(rutas) == {"senales.json", "macro.json", "salud.json", "meta.json"}
+    assert set(rutas) == {"senales.json", "macro.json", "salud.json", "meta.json", "noticias_por_empresa.json"}
     for ruta in rutas.values():
         with open(ruta, encoding="utf-8") as f:
             assert json.load(f)["exportado_el"] == "2026-10-01T17:30:00Z"
