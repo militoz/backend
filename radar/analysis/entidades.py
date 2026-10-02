@@ -1,210 +1,247 @@
-"""
-Extracción y vinculación de entidades (Empresas e Insumos).
-Soporta 'empresa_hint' desde fuentes oficiales para vinculación directa.
+# Colombia Radar - Diccionario de Empresas e Instrumentos (v2)
+#
+# Campos originales (no cambian): nombre, ticker, nit, sector, alias
+# Campos NUEVOS (opcionales; si el código los ignora no pasa nada):
+#   ticker_preferencial : especie preferencial, si existe
+#   subsector           : detalle para agrupar impactos (fase 3 del plan)
+#   grupo               : conglomerado al que pertenece (ver relaciones)
+#   alias_ambiguos      : nombres que NO deben contar como mención por sí solos
+#                         (palabras comunes, siglas cortas). El código actual no los
+#                         usa todavía: quedan aquí para activarlos en la fase 2.
+#   listado             : "si" | "verificar"  (confirmar que la acción sigue cotizando)
+#
+# Regla: lo que no está confirmado se marca VERIFICAR; nada se inventa.
  
-Cambios frente a la versión anterior:
-- Regex precompiladas una sola vez en recargar() (antes se compilaban por cada texto).
-- Siglas y tickers (GEB, ISA, ETB...) se buscan respetando mayúsculas sobre el texto original,
-  para que "isa" o "geb" como palabra común no generen falsos positivos.
-- Campo opcional `alias_ambiguos` en empresas.yaml: alias que son palabra común
-  (p. ej. "Éxito"); solo cuentan si aparecen con mayúscula inicial y no al inicio del texto.
-- Comparación de NIT solo por dígitos (ignora puntos, guiones y espacios).
-- El fallback del hint usa límites de palabra (antes era una subcadena suelta).
-- Resultado en orden estable (antes salía de un set, el orden cambiaba entre corridas).
-- Advertencia en el log si no se encuentra empresas.yaml o viene vacío.
-"""
-from typing import List, Dict, Any, Tuple, Optional
-import logging
-import os
-import re
-import unicodedata
+empresas:
+  # ---------------------------------------------------------------- Petróleo y gas
+  - nombre: "Ecopetrol S.A."
+    ticker: "ECOPETROL"
+    nit: "899999068-1"
+    sector: "Petróleo y Gas"
+    subsector: "Integrado (producción, transporte, refinación)"
+    grupo: "Grupo Ecopetrol"
+    listado: "si"
+    alias:
+      - "Ecopetrol"
+      - "Refinería de Cartagena"
+      - "Reficar"
+      - "Cenit"
  
-import yaml
+  - nombre: "Canacol Energy Ltd."
+    ticker: "CNE"
+    sector: "Gas Natural y Energía"
+    subsector: "Producción de gas natural"
+    listado: "verificar"   # VERIFICAR: estado actual de cotización y de su proceso financiero
+    alias:
+      - "Canacol"
+      - "Canacol Energy"
  
-log = logging.getLogger(__name__)
+  - nombre: "Organización Terpel S.A."
+    ticker: "TERPEL"
+    nit: "860000450-8"
+    sector: "Distribución de Combustibles"
+    subsector: "Estaciones de servicio y distribución"
+    listado: "verificar"   # VERIFICAR: estado actual de cotización
+    alias:
+      - "Terpel"
+      - "Organización Terpel"
  
+  # ---------------------------------------------------------------- Banca y finanzas
+  - nombre: "Grupo Cibest S.A."
+    ticker: "CIBEST"
+    ticker_preferencial: "PFCIBEST"
+    # nit: VERIFICAR (el NIT 890903938-8 del catálogo anterior es el del banco Bancolombia, no de la matriz)
+    sector: "Banca y Finanzas"
+    subsector: "Banca universal / holding"
+    grupo: "Grupo Cibest"
+    listado: "si"
+    alias:
+      - "Grupo Cibest"
+      - "Cibest"
+      - "Bancolombia"
+      - "Nequi"
+      - "Valores Bancolombia"
  
-def _sin_tildes(texto: str) -> str:
-    """Quita tildes y diéresis (ñ -> n) conservando mayúsculas/minúsculas."""
-    if not texto:
-        return ""
-    d = unicodedata.normalize("NFD", texto)
-    return "".join(c for c in d if unicodedata.category(c) != "Mn")
+  - nombre: "Banco Davivienda S.A."
+    ticker: "DAVIVIENDA"
+    nit: "860034313-7"
+    sector: "Banca y Finanzas"
+    subsector: "Banca universal"
+    listado: "si"
+    alias:
+      - "Davivienda"
+      - "Davivienda Group"
+      - "Daviplata"
  
+  - nombre: "Grupo Aval Acciones y Valores S.A."
+    ticker: "GRUPOAVAL"
+    ticker_preferencial: "PFAVAL"
+    sector: "Banca y Finanzas"
+    subsector: "Holding bancario"
+    grupo: "Grupo Aval"
+    listado: "si"
+    alias:
+      - "Grupo Aval"
+      - "Banco de Occidente"
+      - "AV Villas"
+    alias_ambiguos:
+      - "Banco Popular"   # nombre usado por otros bancos fuera de Colombia
  
-def normalizar_texto(texto: str) -> str:
-    """Minúsculas, sin tildes ni ñ, para coincidencia flexible."""
-    return _sin_tildes(texto).lower()
+  - nombre: "Banco de Bogotá S.A."
+    ticker: "BOGOTA"      # VERIFICAR: nemotécnico exacto en la BVC
+    sector: "Banca y Finanzas"
+    subsector: "Banca universal"
+    grupo: "Grupo Aval"
+    listado: "si"
+    alias:
+      - "Banco de Bogotá"
  
+  - nombre: "Corporación Financiera Colombiana S.A."
+    ticker: "CORFICOLCF"
+    nit: "890300653-6"
+    sector: "Banca y Finanzas"
+    subsector: "Banca de inversión / infraestructura"
+    grupo: "Grupo Aval"   # VERIFICAR
+    listado: "si"
+    alias:
+      - "Corficolombiana"
  
-def _solo_digitos(valor: Any) -> str:
-    return re.sub(r"\D", "", str(valor or ""))
+  - nombre: "Grupo de Inversiones Suramericana S.A."
+    ticker: "GRUPOSURA"
+    ticker_preferencial: "PFGRUPSURA"
+    nit: "890904996-1"
+    sector: "Servicios Financieros"
+    subsector: "Holding (seguros y servicios financieros)"
+    grupo: "Grupo Sura"
+    listado: "si"
+    alias:
+      - "Grupo Sura"
+      - "Seguros Sura"
+      - "Suramericana"
+    alias_ambiguos:
+      - "Sura"
  
+  # ---------------------------------------------------------------- Energía y servicios públicos
+  - nombre: "Interconexión Eléctrica S.A. E.S.P."
+    ticker: "ISA"
+    nit: "860015903-4"
+    sector: "Energía y Servicios"
+    subsector: "Transmisión eléctrica y concesiones viales"
+    grupo: "Grupo Ecopetrol"   # VERIFICAR relación accionaria vigente
+    listado: "si"
+    alias:
+      - "Interconexión Eléctrica"
+      - "ISA Intercolombia"
+    alias_ambiguos:
+      - "ISA"   # sigla corta; riesgo de coincidir con otras palabras
  
-def _es_sigla(cand: str) -> bool:
-    """GEB, ISA, ETB, PFBCOLOM... (todo en mayúsculas, sin espacios, 2-10 caracteres)."""
-    c = cand.strip()
-    return 2 <= len(c) <= 10 and c.isupper() and re.fullmatch(r"[A-Z0-9&.]+", _sin_tildes(c)) is not None
+  - nombre: "Grupo Energía Bogotá S.A. E.S.P."
+    ticker: "GEB"
+    sector: "Energía y Servicios"
+    subsector: "Transmisión y distribución de energía y gas"
+    listado: "si"
+    alias:
+      - "Grupo Energía Bogotá"
+      - "Grupo Energía de Bogotá"
+    alias_ambiguos:
+      - "GEB"
  
+  - nombre: "Celsia S.A. E.S.P."
+    ticker: "CELSIA"
+    nit: "890300622-6"
+    sector: "Energía y Renovables"
+    subsector: "Generación y comercialización de energía"
+    grupo: "Grupo Argos"
+    listado: "si"
+    alias:
+      - "Celsia"
  
-def _patron_palabra(norm: str, flags: int = 0) -> "re.Pattern":
-    return re.compile(rf"(?<![a-z0-9]){re.escape(norm)}(?![a-z0-9])", flags)
+  - nombre: "Empresa de Telecomunicaciones de Bogotá S.A. E.S.P."
+    ticker: "ETB"
+    sector: "Telecomunicaciones"
+    subsector: "Telecomunicaciones"
+    listado: "si"
+    alias:
+      - "Empresa de Telecomunicaciones de Bogotá"
+    alias_ambiguos:
+      - "ETB"
  
+  # ---------------------------------------------------------------- Cemento, construcción y holdings
+  - nombre: "Grupo Argos S.A."
+    ticker: "GRUPOARGOS"
+    ticker_preferencial: "PFGRUPOARGOS"   # VERIFICAR nemotécnico
+    nit: "890900266-3"
+    sector: "Infraestructura e Inversión"
+    subsector: "Holding (cemento, energía, concesiones, inmobiliario)"
+    grupo: "Grupo Argos"
+    listado: "si"
+    alias:
+      - "Grupo Argos"
+      - "Inversiones Argos"
  
-class EntidadesDetector:
-    def __init__(self, config_dir: Optional[str] = None):
-        if config_dir is None or config_dir == "config":
-            base_cand1 = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "config"))
-            base_cand2 = os.path.abspath("config")
-            base_cand3 = os.path.abspath("colombia_radar/config")
-            if os.path.exists(base_cand1):
-                self.config_dir = base_cand1
-            elif os.path.exists(base_cand3):
-                self.config_dir = base_cand3
-            else:
-                self.config_dir = base_cand2
-        else:
-            self.config_dir = config_dir
-        self.empresas: List[Dict[str, Any]] = []
-        self.insumos: List[Dict[str, Any]] = []
-        self._pat_empresas: List[Tuple[Dict[str, Any], List[Tuple[str, "re.Pattern"]]]] = []
-        self._pat_insumos: List[Tuple[str, List["re.Pattern"]]] = []
-        self.recargar()
+  - nombre: "Cementos Argos S.A."
+    ticker: "CEMARGOS"
+    ticker_preferencial: "PFCEMARGOS"   # VERIFICAR nemotécnico
+    nit: "890900266-4"   # VERIFICAR: es casi idéntico al de Grupo Argos; probablemente errado
+    sector: "Materiales y Construcción"
+    subsector: "Cemento y concreto"
+    grupo: "Grupo Argos"
+    listado: "si"
+    alias:
+      - "Cementos Argos"
+    alias_ambiguos:
+      - "Argos"   # los medios lo usan para cemento y para el grupo; decidir por contexto
  
-    # ------------------------------------------------------------------ carga
-    def recargar(self):
-        self.empresas, self.insumos = [], []
-        emp_path = os.path.join(self.config_dir, "empresas.yaml")
-        if os.path.exists(emp_path):
-            with open(emp_path, "r", encoding="utf-8") as f:
-                self.empresas = (yaml.safe_load(f) or {}).get("empresas", []) or []
-        if not self.empresas:
-            log.warning("empresas.yaml no encontrado o vacío en %s: no se detectarán empresas", self.config_dir)
+  # ---------------------------------------------------------------- Consumo
+  - nombre: "Grupo Nutresa S.A."
+    ticker: "NUTRESA"
+    nit: "890900050-1"
+    sector: "Alimentos y Bebidas"
+    subsector: "Alimentos procesados (galletas, cárnicos, café, chocolates)"
+    listado: "si"
+    alias:
+      - "Nutresa"
+      - "Grupo Nutresa"
+      - "Chocolates Nacional"
+      - "Colcafé"
+    alias_ambiguos:
+      - "Noel"
+      - "Zenú"
  
-        ins_path = os.path.join(self.config_dir, "insumos.yaml")
-        if os.path.exists(ins_path):
-            with open(ins_path, "r", encoding="utf-8") as f:
-                self.insumos = (yaml.safe_load(f) or {}).get("insumos", []) or []
+  - nombre: "Almacenes Éxito S.A."
+    ticker: "EXITO"
+    nit: "890900608-9"
+    sector: "Comercio Minorista / Retail"
+    subsector: "Supermercados y retail"
+    listado: "si"
+    alias:
+      - "Almacenes Éxito"
+      - "Grupo Éxito"
+      - "Carulla"
+      - "Surtimax"
+    alias_ambiguos:
+      - "Éxito"   # palabra común ("éxito" = success)
  
-        self._compilar()
+  - nombre: "Avianca Group International"
+    ticker: "AVIANCA"
+    nit: "890100577-6"
+    sector: "Transporte Aéreo"
+    subsector: "Aerolíneas"
+    listado: "verificar"   # VERIFICAR: si la acción cotiza hoy en la BVC; en los titulares aparece como marca de consumo
+    alias:
+      - "Avianca"
+      - "Avianca Holdings"
+      - "LifeMiles"
  
-    def _compilar(self):
-        """Precompila una regex por candidato. Tipo: 'norm' (minúsculas), 'sigla' o 'ambiguo'."""
-        self._pat_empresas = []
-        for emp in self.empresas:
-            nombre = emp.get("nombre", "")
-            ticker = emp.get("ticker") or ""
-            ambiguos = {normalizar_texto(a) for a in (emp.get("alias_ambiguos") or [])}
-            pats: List[Tuple[str, "re.Pattern"]] = []
-            vistos = set()
- 
-            candidatos = [nombre] + list(emp.get("alias") or []) + list(emp.get("alias_ambiguos") or [])
-            if ticker:
-                candidatos.append(ticker)
- 
-            for cand in candidatos:
-                cand = (cand or "").strip()
-                norm = normalizar_texto(cand)
-                if len(norm) < 3 or cand in vistos:
-                    continue
-                vistos.add(cand)
-                if cand == ticker or _es_sigla(cand):
-                    pats.append(("sigla", re.compile(rf"(?<![A-Za-z0-9]){re.escape(_sin_tildes(cand))}(?![A-Za-z0-9])")))
-                elif norm in ambiguos:
-                    pats.append(("ambiguo", _patron_palabra(norm)))
-                else:
-                    pats.append(("norm", _patron_palabra(norm)))
-            self._pat_empresas.append((emp, pats))
- 
-        self._pat_insumos = []
-        for ins in self.insumos:
-            nombre = ins.get("nombre", "")
-            pats = []
-            for al in [nombre] + list(ins.get("alias") or []):
-                norm = normalizar_texto(al)
-                if len(norm) >= 3:
-                    pats.append(_patron_palabra(norm))
-            self._pat_insumos.append((nombre, pats))
- 
-    # ------------------------------------------------------------------- hint
-    def resolver_empresa_hint(self, hint: Optional[str]) -> Optional[Dict[str, Any]]:
-        """Vincula la señal a una empresa de empresas.yaml por nombre, ticker, NIT o alias."""
-        if not hint or not hint.strip():
-            return None
- 
-        hint_norm = normalizar_texto(hint.strip())
-        hint_dig = _solo_digitos(hint)
- 
-        for emp in self.empresas:
-            if normalizar_texto(emp.get("nombre", "")) == hint_norm:
-                return emp
-            ticker = emp.get("ticker")
-            if ticker and normalizar_texto(ticker) == hint_norm:
-                return emp
-            nit = _solo_digitos(emp.get("nit"))
-            # NIT: con o sin dígito de verificación
-            if nit and hint_dig and (hint_dig == nit or hint_dig == nit[:-1] or hint_dig[:-1] == nit):
-                return emp
-            for al in (emp.get("alias") or []) + (emp.get("alias_ambiguos") or []):
-                if normalizar_texto(al) == hint_norm:
-                    return emp
- 
-        # Sin coincidencia exacta: el hint contiene el nombre o un alias (con límites de palabra)
-        for emp in self.empresas:
-            for al in [emp.get("nombre", "")] + list(emp.get("alias") or []):
-                al_norm = normalizar_texto(al)
-                if len(al_norm) >= 4 and _patron_palabra(al_norm).search(hint_norm):
-                    return emp
-        return None
- 
-    # ---------------------------------------------------------------- empresas
-    def detectar_empresas(self, texto: str, empresa_hint: Optional[str] = None) -> Tuple[List[str], List[str]]:
-        """Retorna (nombres_empresas, sectores) en orden estable. empresa_hint tiene prioridad."""
-        encontradas: Dict[str, None] = {}
-        sectores: Dict[str, None] = {}
- 
-        if empresa_hint:
-            match_hint = self.resolver_empresa_hint(empresa_hint)
-            if match_hint:
-                encontradas[match_hint["nombre"]] = None
-                if match_hint.get("sector"):
-                    sectores[match_hint["sector"]] = None
-            else:
-                encontradas[empresa_hint.strip()] = None  # entidad fuera del catálogo, sin clasificar
- 
-        if texto:
-            orig = _sin_tildes(texto)
-            norm = orig.lower()
-            for emp, pats in self._pat_empresas:
-                for tipo, pat in pats:
-                    if tipo == "sigla":
-                        ok = bool(pat.search(orig))
-                    elif tipo == "ambiguo":
-                        # Con mayúscula inicial y no al principio del texto (evita "Éxito de ventas...")
-                        ok = False
-                        for m in pat.finditer(norm):
-                            if m.start() > 0 and orig[m.start()].isupper():
-                                ok = True
-                                break
-                    else:
-                        ok = bool(pat.search(norm))
-                    if ok:
-                        encontradas[emp["nombre"]] = None
-                        if emp.get("sector"):
-                            sectores[emp["sector"]] = None
-                        break
- 
-        return list(encontradas), list(sectores)
- 
-    # ----------------------------------------------------------------- insumos
-    def detectar_insumos(self, texto: str) -> List[str]:
-        """Detecta insumos o materias primas mencionadas en el texto."""
-        if not texto:
-            return []
-        norm = normalizar_texto(texto)
-        encontrados: Dict[str, None] = {}
-        for nombre, pats in self._pat_insumos:
-            if any(p.search(norm) for p in pats):
-                encontrados[nombre] = None
-        return list(encontrados)
+  # ---------------------------------------------------------------- Minería
+  - nombre: "Mineros S.A."
+    ticker: "MINEROS"
+    nit: "890900130-1"
+    sector: "Minería"
+    subsector: "Minería de oro"
+    listado: "verificar"   # VERIFICAR: estado de cotización tras la OPA de 2025
+    alias:
+      - "Mineros S.A."
+    alias_ambiguos:
+      - "Mineros"   # "mineros" es también un sustantivo común
  
