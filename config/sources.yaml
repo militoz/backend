@@ -177,7 +177,7 @@ fuentes:
   - id: "medio_dinero"
     nombre: "Semana Dinero - Empresas"
     tipo: "rss"
-    activo: true # TANDA 2: confirmar en el log
+    activo: false # APAGADA: HTTP 404, buscar la URL real
     peso: 0.85
     certeza: "probable"
     min_delay: 2.0
@@ -188,7 +188,7 @@ fuentes:
   - id: "medio_bloomberg_linea"
     nombre: "Bloomberg Línea - Colombia"
     tipo: "rss"
-    activo: true # TANDA 2: confirmar en el log
+    activo: false # APAGADA: HTTP 404, buscar la URL real
     peso: 0.9
     certeza: "probable"
     min_delay: 2.0
@@ -199,7 +199,7 @@ fuentes:
   - id: "medio_elespectador_economia"
     nombre: "El Espectador - Economía"
     tipo: "rss"
-    activo: true # TANDA 2: confirmar en el log
+    activo: false # APAGADA: HTTP 404, buscar la URL real
     peso: 0.85
     certeza: "probable"
     min_delay: 2.0
@@ -231,16 +231,37 @@ fuentes:
  
   # --- Portafolio (apagada: la URL anterior dio 404) ---
   - id: "medio_portafolio"
-    nombre: "Portafolio - Negocios"
+    nombre: "Portafolio - Economía"
     tipo: "rss"
-    activo: false # APAGADA: HTTP 404. Recuperar el feed real desde
-    # https://www.eltiempo.com/archivo/documento/cms-3940427 (canal Negocios o Economía)
+    activo: true # TANDA 3: URL tomada de la página RSS de Portafolio; confirmar en el log
     peso: 0.9
     certeza: "probable"
     min_delay: 2.0
     medio: "Portafolio"
-    # VERIFICAR: reemplazar por el enlace real y luego poner activo: true
-    url: "https://www.portafolio.co/rss/negocios"
+    # VERIFICAR: patrón tomado de portafolio.co/rss (la página puede estar desactualizada)
+    url: "https://www.portafolio.co/rss/economia.xml"
+ 
+  - id: "medio_portafolio_finanzas"
+    nombre: "Portafolio - Finanzas"
+    tipo: "rss"
+    activo: true # TANDA 3: confirmar en el log
+    peso: 0.85
+    certeza: "probable"
+    min_delay: 2.0
+    medio: "Portafolio"
+    # VERIFICAR: patrón tomado de portafolio.co/rss
+    url: "https://www.portafolio.co/rss/economia/finanzas.xml"
+ 
+  - id: "medio_eltiempo_sector_financiero"
+    nombre: "El Tiempo - Sector Financiero"
+    tipo: "rss"
+    activo: true # TANDA 3: mismo dominio que El Tiempo Economía, que ya funciona
+    peso: 0.85
+    certeza: "probable"
+    min_delay: 2.0
+    medio: "El Tiempo"
+    # VERIFICAR: listada en eltiempo.com/rss
+    url: "https://www.eltiempo.com/rss/economia_sector-financiero.xml"
  
   # ============================================================================
   # 4. SERIES MACRO E INSUMOS DESDE DATOS ABIERTOS (Punto 4)
@@ -425,4 +446,3 @@ fuentes:
     medio: "El Heraldo"
     # VERIFICAR: Feed RSS sección economía de El Heraldo
     url: "https://www.elheraldo.co/rss/economia.xml"
- 
