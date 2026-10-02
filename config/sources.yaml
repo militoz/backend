@@ -33,7 +33,7 @@ fuentes:
     nombre: "Superfinanciera - Información Relevante"
     tipo: "superfinanciera"
     medio: "Superfinanciera (Oficial)"
-    activo: true
+    activo: false # APAGADA: HTTP 500 repetido; es un formulario SIMEV/RNVE, requiere colector distinto
     peso: 1.0
     certeza: "confirmado"
     min_delay: 2.0
@@ -94,7 +94,7 @@ fuentes:
     sociedad_selector: ".sociedad-concursada, td:nth-child(1)"
 
   # ============================================================================
-  # 2. GOOGLE NEWS COMPLEMENTARIO (Activo por defecto)
+  # 2. GOOGLE NEWS COMPLEMENTARIO
   # ============================================================================
   - id: "gnews_empresas_colombia"
     nombre: "Google News - Empresas y Negocios Colombia"
@@ -115,12 +115,24 @@ fuentes:
     query: "inflación OR Banco de la República OR tasa de interés Colombia"
 
   # ============================================================================
-  # 3. FUENTES DIRECTAS DE MEDIOS (Punto 3 - Desactivadas por defecto, VERIFICAR)
+  # 3. FUENTES DIRECTAS DE MEDIOS (Punto 3)
   # ============================================================================
+  # --- Ya funciona ---
+  - id: "medio_eltiempo_economia"
+    nombre: "El Tiempo - Economía"
+    tipo: "rss"
+    activo: true # FUNCIONA: respondió en el último ciclo
+    peso: 0.85
+    certeza: "probable"
+    min_delay: 2.0
+    medio: "El Tiempo"
+    url: "https://www.eltiempo.com/rss/economia.xml"
+
+  # --- TANDA 1 (ENCENDIDAS para probar) ---
   - id: "medio_larepublica"
     nombre: "La República - Empresas"
     tipo: "rss"
-    activo: false # Desactivado por defecto hasta confirmación con 'python run.py descubrir'
+    activo: true # TANDA 1: confirmar en el log
     peso: 0.9
     certeza: "probable"
     min_delay: 2.0
@@ -131,7 +143,7 @@ fuentes:
   - id: "medio_valora_analitik"
     nombre: "Valora Analitik - Empresas"
     tipo: "rss"
-    activo: false # Desactivado por defecto hasta confirmación con 'python run.py descubrir'
+    activo: true # TANDA 1: confirmar en el log
     peso: 0.9
     certeza: "probable"
     min_delay: 2.0
@@ -139,10 +151,33 @@ fuentes:
     # VERIFICAR: Ruta del feed RSS de Valora Analitik
     url: "https://www.valoraanalitik.com/feed/"
 
+  - id: "medio_rankia_colombia"
+    nombre: "Rankia Colombia - Titulares"
+    tipo: "rss"
+    activo: true # TANDA 1: confirmar en el log
+    peso: 0.8
+    certeza: "probable"
+    min_delay: 2.0
+    medio: "Rankia Colombia"
+    # VERIFICAR: encontrada vía Feedspot
+    url: "https://www.rankia.co/titulares/feed.rss"
+
+  - id: "medio_finance_colombia"
+    nombre: "Finance Colombia"
+    tipo: "rss"
+    activo: true # TANDA 1: confirmar en el log
+    peso: 0.8
+    certeza: "probable"
+    min_delay: 2.0
+    medio: "Finance Colombia"
+    # VERIFICAR: WordPress, normalmente termina en /feed/
+    url: "https://www.financecolombia.com/feed/"
+
+  # --- TANDA 2 (apagadas, encender tras revisar la tanda 1) ---
   - id: "medio_dinero"
     nombre: "Semana Dinero - Empresas"
     tipo: "rss"
-    activo: false # Desactivado por defecto hasta confirmación con 'python run.py descubrir'
+    activo: false
     peso: 0.85
     certeza: "probable"
     min_delay: 2.0
@@ -150,21 +185,10 @@ fuentes:
     # VERIFICAR: Feed RSS sección economía/empresas de Semana Dinero
     url: "https://www.semana.com/rss/economia/empresas/"
 
-  - id: "medio_portafolio"
-    nombre: "Portafolio - Negocios (HTTPS)"
-    tipo: "rss"
-    activo: true # ENCENDIDA: confirmar en el log del primer ciclo que responde
-    peso: 0.9
-    certeza: "probable"
-    min_delay: 2.0
-    medio: "Portafolio"
-    # VERIFICAR: Feed RSS oficial de Portafolio bajo protocolo HTTPS
-    url: "https://www.portafolio.co/rss/negocios"
-
   - id: "medio_bloomberg_linea"
     nombre: "Bloomberg Línea - Colombia"
     tipo: "rss"
-    activo: false # Desactivado por defecto hasta confirmación con 'python run.py descubrir'
+    activo: false
     peso: 0.9
     certeza: "probable"
     min_delay: 2.0
@@ -172,16 +196,51 @@ fuentes:
     # VERIFICAR: Ruta del feed RSS de Bloomberg Línea Colombia
     url: "https://www.bloomberglinea.com/arc/outboundfeeds/rss/category/colombia/"
 
-  - id: "medio_eltiempo_economia"
-    nombre: "El Tiempo - Economía"
+  - id: "medio_elespectador_economia"
+    nombre: "El Espectador - Economía"
     tipo: "rss"
-    activo: true # ENCENDIDA: confirmar en el log del primer ciclo que responde
+    activo: false
     peso: 0.85
     certeza: "probable"
     min_delay: 2.0
-    medio: "El Tiempo"
-    # VERIFICAR: Feed RSS sección economía de El Tiempo
-    url: "https://www.eltiempo.com/rss/economia.xml"
+    medio: "El Espectador"
+    # VERIFICAR: feed nativo no confirmado; revisar la página de RSS del medio
+    url: "https://www.elespectador.com/arc/outboundfeeds/discover/economia/?outputType=xml"
+
+  - id: "medio_infobae_colombia"
+    nombre: "Infobae - Colombia"
+    tipo: "rss"
+    activo: false
+    peso: 0.7
+    certeza: "probable"
+    min_delay: 2.0
+    medio: "Infobae"
+    # VERIFICAR: patrón Arc de Infobae; es noticia general, habría que filtrar por economía
+    url: "https://www.infobae.com/arc/outboundfeeds/rss/category/colombia/"
+
+  - id: "medio_trii_blog"
+    nombre: "trii - Blog de inversión"
+    tipo: "rss"
+    activo: false
+    peso: 0.6
+    certeza: "probable"
+    min_delay: 2.0
+    medio: "trii"
+    # VERIFICAR: listada en Feedspot, URL del feed sin confirmar
+    url: "https://trii.co/blog/feed/"
+
+  # --- Portafolio (apagada: la URL anterior dio 404) ---
+  - id: "medio_portafolio"
+    nombre: "Portafolio - Negocios"
+    tipo: "rss"
+    activo: false # APAGADA: HTTP 404. Recuperar el feed real desde
+    # https://www.eltiempo.com/archivo/documento/cms-3940427 (canal Negocios o Economía)
+    peso: 0.9
+    certeza: "probable"
+    min_delay: 2.0
+    medio: "Portafolio"
+    # VERIFICAR: reemplazar por el enlace real y luego poner activo: true
+    url: "https://www.portafolio.co/rss/negocios"
 
   # ============================================================================
   # 4. SERIES MACRO E INSUMOS DESDE DATOS ABIERTOS (Punto 4)
@@ -189,7 +248,7 @@ fuentes:
   - id: "serie_trm"
     nombre: "Tasa Representativa del Mercado (TRM)"
     tipo: "serie"
-    activo: true
+    activo: true # FUNCIONA
     serie_id: "trm"
     formato: "json"
     tipo_senal: "macro"
@@ -198,13 +257,13 @@ fuentes:
     campo_fecha: "vigenciadesde"
     campo_valor: "valor"
     umbral_variacion_pct: 1.5  # 1.5% de cambio semanal o interdiario genera evento macro
-    # VERIFICAR: Endpoint API Socrata de datos.gov.co para TRM histórica y vigente (dataset 32sa-8pi3)
+    # Endpoint API Socrata de datos.gov.co para TRM (dataset 32sa-8pi3)
     url: "https://www.datos.gov.co/resource/32sa-8pi3.json?$limit=30&$order=vigenciadesde%20DESC"
 
   - id: "serie_tasa_politica"
     nombre: "Tasa de Interés de Política Monetaria BanRep"
     tipo: "serie"
-    activo: false # APAGADA: URL inventada (404), falta el ID real del dataset
+    activo: false # APAGADA: URL inventada (404). Fuente real: SUAMECA (serie 59), sin API JSON confirmada
     serie_id: "tasa_politica"
     formato: "json"
     tipo_senal: "macro"
@@ -219,7 +278,7 @@ fuentes:
   - id: "serie_ipc"
     nombre: "Índice de Precios al Consumidor (IPC - DANE)"
     tipo: "serie"
-    activo: false # APAGADA: URL inventada (404), falta el ID real del dataset
+    activo: false # APAGADA: URL inventada (404). El DANE publica Excel mensual; requiere colector nuevo
     serie_id: "ipc"
     formato: "json"
     tipo_senal: "macro"
@@ -248,7 +307,7 @@ fuentes:
     url: "https://www.datos.gov.co/resource/sipsa-insumos-agro.json?$limit=20&$order=fecha_registro%20DESC"
 
   # ============================================================================
-  # 5. FUENTES ESTRATÉGICAS ADICIONALES (Recomendadas - Desactivadas, VERIFICAR)
+  # 5. FUENTES ESTRATÉGICAS ADICIONALES (Desactivadas, VERIFICAR)
   # ============================================================================
   - id: "secop_ii_grandes_contratos"
     nombre: "SECOP II - Adjudicaciones y Grandes Licitaciones"
@@ -262,6 +321,21 @@ fuentes:
     campo_valor: "valor_del_contrato"
     # VERIFICAR: API Socrata de Procesos de Contratación SECOP II en datos.gov.co (dataset jbjy-vk9h)
     url: "https://www.datos.gov.co/resource/jbjy-vk9h.json?$limit=50&$order=fecha_de_firma%20DESC&$where=valor_del_contrato>5000000000"
+
+  - id: "banrep_comunicados_junta"
+    nombre: "Banco de la República - Comunicados de la Junta"
+    tipo: "html"
+    activo: false
+    peso: 1.0
+    certeza: "confirmado"
+    min_delay: 2.0
+    medio: "Banco de la República (Oficial)"
+    # VERIFICAR: sin API JSON confirmada; selectores por definir al abrir la página
+    url: "https://www.banrep.gov.co/es/noticias"
+    item_selector: "article, .views-row"
+    title_selector: "h2 a, h3 a, a"
+    link_selector: "a"
+    date_selector: "time, .date"
 
   - id: "creg_normatividad"
     nombre: "CREG - Resoluciones de Energía y Gas"
@@ -351,4 +425,3 @@ fuentes:
     medio: "El Heraldo"
     # VERIFICAR: Feed RSS sección economía de El Heraldo
     url: "https://www.elheraldo.co/rss/economia.xml"
-
