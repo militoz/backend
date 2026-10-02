@@ -382,6 +382,14 @@ def analizar(db, cfg: Dict[str, Any], fetcher=None, ahora: Optional[datetime] = 
         db.guardar_senal(senal_dict)
         senales_generadas.append(senal_dict)
  
+    # Limpieza: señales de reglas o detectores anteriores que ya no se reproducen con los mismos artículos.
+    obsoletas = db.eliminar_senales_obsoletas(
+        {a.get("id") for a in articulos if a.get("id") is not None},
+        {s["senal_key"] for s in senales_generadas},
+    )
+    if obsoletas:
+        logger.info(f"Señales obsoletas eliminadas: {obsoletas}")
+ 
     return senales_generadas
  
  
@@ -458,4 +466,3 @@ def vencida(senal: Dict[str, Any], dias: int = 30) -> bool:
         return (datetime.utcnow() - dt).days > dias
     except Exception:
         return False
- 
