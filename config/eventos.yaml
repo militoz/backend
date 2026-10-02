@@ -1,64 +1,160 @@
-# Colombia Radar - Reglas de Detección de Eventos Corporativos y Macroeconómicos
+# Colombia Radar - Reglas de Detección de Eventos (v2)
+# Cada regla: patron (regex, sin distinguir mayúsculas), tipo, etiqueta, peso, solo_titulo, ambigua, razonamiento.
+# Los 'tipo' son los 7 que el sistema ya conoce (integracion, insolvencia, regulatorio, inversion,
+# nombramiento, suministro, macro) más 'corporativo' (tipo por defecto del código).
+# La etiqueta distingue el subtipo (OPA, resultados, dividendos...). Los patrones van entre comillas simples:
+# en YAML las barras invertidas se escriben tal cual, sin duplicarlas.
 eventos:
+  - id: "opa"
+    tipo: "integracion"
+    etiqueta: "OPA – Oferta Pública de Adquisición"
+    patron: '\b(?:opa|opas|ofertas?\s+p[uú]blicas?\s+de\s+adquisici[oó]n)\b'
+    peso: 1.5
+    solo_titulo: true
+    ambigua: false
+    razonamiento: "Una OPA fija un precio de referencia para la acción y puede cambiar el control y la liquidez del emisor. Seguir la cadena: solicitud, autorización, aviso, aceptación, adjudicación."
+ 
   - id: "integracion_empresarial"
     tipo: "integracion"
     etiqueta: "Integración Empresarial / Adquisición"
-    patron: "(?:adquisici[oó]n|compra\\s+de|fusi[oó]n|absorci[oó]n|opa\\b|toma\\s+de\\s+control|integraci[oó]n\\s+empresarial)"
+    patron: '(?:\badquisici[oó]n(?:es)?\b|\badquiri(?:ó|eron|r[aá]n?|[eé])\s+(?:el\s+)?(?:\d|100|la\s+totalidad|participaci|acciones|control|una?\s+(?:empresa|compa[nñ]|firma))|\bcompra(?:r[aá]n?|ron|ó)?\s+(?:de\s+)?(?:el\s+)?(?:\d+[\d,.]*\s*%|acciones|participaci[oó]n|la\s+empresa|la\s+compa[nñ][ií]a)|\babsorb(?:e|i[oó]|ieron|er[aá]|ci[oó]n)\b|\bfusi[oó]n(?:es)?\b|\bfusiona(?:r[aá]n?|rse|ron)?\b|toma\s+de\s+control|se\s+queda\s+con\s+(?:el\s+)?\d|venta\s+de\s+(?:su\s+|la\s+)?participaci[oó]n|\bescisi[oó]n\b|integraci[oó]n\s+empresarial)'
     peso: 1.45
-    solo_titulo: false
+    solo_titulo: true
     ambigua: false
     razonamiento: "Posible cambio de control o concentración de mercado con impacto en competencia y valoración bursátil."
-
+ 
+  - id: "reorganizacion_societaria"
+    tipo: "integracion"
+    etiqueta: "Reorganización Societaria / Activos"
+    patron: '(?:reorganiza\w*\s+(?:sus\s+)?(?:activos|operaci|estructura)|reorganizaci[oó]n\s+societaria|reestructuraci[oó]n\s+(?:societaria|corporativa|accionaria))'
+    peso: 1.2
+    solo_titulo: true
+    ambigua: true
+    razonamiento: "Cambios en la estructura de propiedad o de activos de un grupo: pueden alterar el valor de las partes y el descuento de holding."
+ 
+  - id: "alianza_contrato"
+    tipo: "corporativo"
+    etiqueta: "Alianza / Contrato Estratégico"
+    patron: '(?:\balianza\b|\bjoint\s+venture\b|\bsocio\s+(?:de|estrat)|busca\s+ser\s+socio|suscribi[oó]\s+(?:un\s+)?contrato|firm[oó]\s+(?:un\s+)?(?:contrato|acuerdo)|\bjoins\b)'
+    peso: 1.1
+    solo_titulo: true
+    ambigua: true
+    razonamiento: "Acuerdos comerciales o societarios que pueden abrir ingresos o compromisos de capital; la materialidad depende del tamaño."
+ 
+  - id: "cambio_control_listado"
+    tipo: "corporativo"
+    etiqueta: "Cambio de Control / Listado en Bolsa"
+    patron: '(?:cambio\s+de\s+control|nueva\s+matriz|\bse\s+list(?:a|ar[aá]|[oó])\s+en|\blistar(?:se|á)?\s+en\s+(?:ee\.?\s*uu|bolsa|nyse|nasdaq)|\bdeslist\w+|\bipo\b|oferta\s+inicial\s+de\s+acciones)'
+    peso: 1.3
+    solo_titulo: true
+    ambigua: false
+    razonamiento: "Listados, deslistados o cambios de matriz alteran el flotante, la liquidez y el perfil de inversionistas."
+ 
+  - id: "resultados_guias"
+    tipo: "corporativo"
+    etiqueta: "Resultados Financieros / Guías"
+    patron: '(?:\butilidad(?:es)?\s+(?:neta|trimestral|del?\s+(?:primer|segundo|tercer|cuarto|semestre|\d)|de\s+(?:cop\s*)?\$|cae|creci|aument|sub|baj)|\bresultados\s+(?:financieros|trimestral|del?\s+(?:primer|segundo|tercer|cuarto|1t|2t|3t|4t|semestre)|operativos)|\bebitda\b|\bganancias?\s+de\s+\$|reporta\w*\s+(?:utilidad|p[eé]rdida|ganancia)|\bp[eé]rdidas?\s+(?:netas?|de\s+\$)|\bguidance\b)'
+    peso: 1.2
+    solo_titulo: true
+    ambigua: false
+    razonamiento: "Sorpresas frente a lo esperado y cambios en las metas de la compañía suelen mover el precio."
+ 
+  - id: "emision_deuda_acciones"
+    tipo: "corporativo"
+    etiqueta: "Emisión / Recompra / Titularización"
+    patron: '(?:emisi[oó]n\s+de\s+(?:bonos|acciones|deuda|papeles)|\bcoloca(?:ci[oó]n|r|n|ron|rá)\s+(?:de\s+)?(?:bonos|acciones|deuda|t[ií]tulos)|titularizaci[oó]n|readquisici[oó]n|recompra\w*\s+de\s+acciones|programa\s+de\s+(?:readquisici|recompra)|\bcapitalizaci[oó]n\b|emite\s+bonos|oferta\s+de\s+acciones)'
+    peso: 1.15
+    solo_titulo: true
+    ambigua: true
+    razonamiento: "Emitir acciones diluye; recomprarlas apoya el precio; emitir deuda cambia el costo financiero y el apalancamiento."
+ 
+  - id: "dividendos"
+    tipo: "corporativo"
+    etiqueta: "Dividendos"
+    patron: '\bdividendos?\b'
+    peso: 1.0
+    solo_titulo: true
+    ambigua: true
+    razonamiento: "Flujo para el accionista y fechas clave (ex-dividendo)."
+ 
+  - id: "calificacion_crediticia"
+    tipo: "corporativo"
+    etiqueta: "Calificación Crediticia"
+    patron: '(?:calificaci[oó]n\s+(?:crediticia|de\s+riesgo|soberana)|\b(?:s&p|moody.?s|fitch)\b|grado\s+de\s+inversi[oó]n|rebaja\w*\s+(?:la\s+)?calificaci|perspectiva\s+(?:negativa|positiva))'
+    peso: 1.3
+    solo_titulo: true
+    ambigua: false
+    razonamiento: "Cambios de calificación alteran el costo de la deuda, el acceso a fondeo y la demanda de inversionistas institucionales."
+ 
+  - id: "licencia_adjudicacion"
+    tipo: "regulatorio"
+    etiqueta: "Licencia / Adjudicación / Concesión"
+    patron: '(?:\botorga(?:n|r|ron)?\s+(?:la\s+)?licencia|licencia\s+ambiental|\badjudic(?:a|ó|ar|aci[oó]n|an|aron)\b|subasta\s+de\s+(?:energ[ií]a|cargo|gas)|ronda\s+de\s+(?:exploraci|asignaci)|contrato\s+de\s+concesi[oó]n|nueva\s+concesi[oó]n)'
+    peso: 1.3
+    solo_titulo: true
+    ambigua: false
+    razonamiento: "Licencias y adjudicaciones habilitan proyectos y flujos futuros, o retrasan proyectos cuando se niegan."
+ 
+  - id: "regulacion_sector"
+    tipo: "regulatorio"
+    etiqueta: "Regulación Sectorial / Política"
+    patron: '(?:\bcreg\b|\bupme\b|\banla\b|\banh\b|resoluci[oó]n\s+(?:de\s+la\s+)?(?:creg|superfinanciera|sic)|tarifas?\s+de\s+energ[ií]a|precio\s+de\s+(?:la\s+)?energ[ií]a\s+en\s+bolsa|inversiones\s+forzosas|reforma\s+(?:a\s+la\s+)?(?:ley|tributaria|pensional|laboral)|\bley\s+de\s+app\b|impuesto\s+(?:a\s+los\s+bancos|al\s+patrimonio))'
+    peso: 1.25
+    solo_titulo: true
+    ambigua: true
+    razonamiento: "Cambios de reglas, tarifas o impuestos afectan márgenes y riesgos de todo un sector, no de una sola empresa."
+ 
+  - id: "investigacion_sancion"
+    tipo: "regulatorio"
+    etiqueta: "Investigación / Sanción Regulatoria"
+    patron: '(?:pliego\s+de\s+cargos|\bsanci[oó]n(?:es)?\b|\bsanciona(?:r|n|ron|rá)?\b|multa\s+(?:de\s+la|por|a\s+la)\s+(?:sic|superintendencia|superfinanciera|supersociedades)|\bsic\s+(?:abre|investiga|multa|sanciona)|formular\s+cargos|abrir\s+investigaci[oó]n)'
+    peso: 1.35
+    solo_titulo: true
+    ambigua: false
+    razonamiento: "Exposición a contingencias legales, multas regulatorias o restricciones operativas por parte de autoridades de supervisión."
+ 
   - id: "insolvencia_reorganizacion"
     tipo: "insolvencia"
     etiqueta: "Reorganización / Insolvencia Empresarial"
-    patron: "(?:ley\\s+1116|reorganizaci[oó]n\\s+empresarial|insolvencia|liquidaci[oó]n\\s+judicial|cesaci[oó]n\\s+de\\s+pagos|quiebra)"
+    patron: '(?:ley\s+1116|reorganizaci[oó]n\s+empresarial|\binsolvencia|liquidaci[oó]n\s+judicial|cesaci[oó]n\s+de\s+pagos|\bquiebra|toma\s+de\s+posesi[oó]n|intervenci[oó]n\s+de\s+la\s+superintendencia)'
     peso: 1.5
     solo_titulo: false
     ambigua: false
     razonamiento: "Alerta de estrés financiero severo o renegociación de pasivos con acreedores financieros y comerciales."
-
-  - id: "investigacion_sancion"
-    tipo: "regulatorio"
-    etiqueta: "Investigación / Sanción Regulatoria"
-    patron: "(?:pliego\\s+de\\s+cargos|sanci[oó]n|multa\\s+de\\s+la|investigaci[oó]n\\s+de\\s+la\\s+sic|formular\\s+cargos|abrir\\s+investigaci[oó]n)"
-    peso: 1.35
-    solo_titulo: false
-    ambigua: false
-    razonamiento: "Exposición a contingencias legales, multas regulatorias o restricciones operativas por parte de autoridades de supervisión."
-
+ 
   - id: "inversion_expansion"
     tipo: "inversion"
     etiqueta: "Inversión de Capital / Expansión"
-    patron: "(?:inversi[oó]n\\s+de\\s+(?:us\\$|\\$|millones)|inaugura\\s+planta|ampliaci[oó]n\\s+de\\s+capacidad|capex|construcci[oó]n\\s+de\\s+proyecto)"
+    patron: '(?:inversi[oó]n\s+(?:de|por)\s+(?:us\$|\$|cop|millones|\d)|inaugura\w*\s+(?:planta|proyecto|parque|central)|ampliaci[oó]n\s+de\s+capacidad|\bcapex\b|construcci[oó]n\s+de\s+proyecto)'
     peso: 1.2
-    solo_titulo: false
+    solo_titulo: true
     ambigua: true
     razonamiento: "Despliegue de capital productivo que incrementará capacidad operativa o flujos futuros de caja."
-
+ 
   - id: "gobierno_corporativo"
     tipo: "nombramiento"
     etiqueta: "Cambio en Alta Dirección / Junta"
-    patron: "(?:nuevo\\s+presidente|nombra\\s+a\\s+nuevo\\s+ceo|renuncia\\s+presidente|cambio\\s+en\\s+junta\\s+directiva|designa\\s+gerente)"
+    patron: '(?:nuevo\s+(?:presidente|ceo|gerente|director)|nombra\w*\s+(?:a\s+)?(?:nuevo\s+)?(?:presidente|ceo|gerente)|renuncia\w*\s+(?:del?\s+)?(?:presidente|ceo|gerente)|cambio\s+en\s+(?:la\s+)?junta|designa\w*\s+(?:gerente|presidente))'
     peso: 1.15
     solo_titulo: true
     ambigua: false
     razonamiento: "Reestructuración del liderazgo estratégico de la compañía."
-
+ 
   - id: "disrupcion_suministro"
     tipo: "suministro"
     etiqueta: "Disrupción de Suministro / Logística"
-    patron: "(?:bloqueo\\s+vial|paro\\s+camionero|desabastecimiento|falla\\s+en\\s+suministro|congesti[oó]n\\s+portuaria|corte\\s+de\\s+gas)"
+    patron: '(?:bloqueo\s+vial|paro\s+camionero|desabastecimiento|falla\s+en\s+suministro|congesti[oó]n\s+portuaria|corte\s+de\s+gas|racionamiento)'
     peso: 1.3
     solo_titulo: false
     ambigua: false
     razonamiento: "Riesgo de interrupción operativa, alza de fletes o incumplimiento de despachos a clientes."
-
+ 
   - id: "evento_macro_oficial"
     tipo: "macro"
     etiqueta: "Movimiento Macroeconómico Significativo"
-    patron: "(?:se[nñ]al\\s+macro|banco\\s+de\\s+la\\s+rep[uú]blica\\s+(?:sube|baja|recorta|mantiene)|inflaci[oó]n\\s+anual|tasa\\s+representativa|d[oó]lar\\s+supera|d[oó]lar\\s+cae)"
+    patron: '(?:banco\s+de\s+la\s+rep[uú]blica\s+(?:sube|aument|baja|recort|mantiene|mantendr|eleva|increment)|\btasas?\s+de\s+inter[eé]s\s+(?:llegan|suben|bajan|se\s+mantien|quedan)|aument\w+\s+(?:de\s+)?(?:la\s+)?tasa\s+de\s+inter[eé]s|\bd[oó]lar\s+en\s+colombia\b|\bpeso\s+colombiano\b|inflaci[oó]n\s+(?:anual|de\s+(?:agosto|septiembre|octubre)|sube|baja|repunta)|tasa\s+representativa|\bbrent\b|se[nñ]al\s+macro)'
     peso: 1.25
-    solo_titulo: false
+    solo_titulo: true
     ambigua: false
     razonamiento: "Variación en variables macroeconómicas sistémicas que incide sobre costos de fondeo, tipo de cambio e inflación."
+ 
