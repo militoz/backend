@@ -1,0 +1,88 @@
+name: Actualizar datos del Radar
+
+on:
+  schedule:
+    # Hora de Colombia = UTC-5. Se evita el minuto :00, que es el más congestionado en GitHub.
+    - cron: "17 12-23 * * 1-5"   # lunes a viernes, de 7:17 a. m. a 6:17 p. m.
+    - cron: "47 7 * * *"          # una vez en la madrugada (2:47 a. m.), todos los días
+  workflow_dispatch:              # botón "Run workflow" para correrlo a mano
+
+permissions:
+  contents: write                 # necesario para publicar en la rama "datos"
+
+concurrency:
+  group: actualizar-radar         # nunca dos corridas a la vez sobre la misma base
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Descargar el código
+        uses: actions/checkout@v4
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Restaurar la base desde la rama datos
+        run: |
+          if git ls-remote --exit-code --heads origin datos >/dev/null 2>&1; then
+            git fetch --depth=1 origin datos
+            git show FETCH_HEAD:radar_publico.db > radar.db
+            echo "Base restaurada desde la rama datos."
+          else
+            echo "Primera corrida: la rama datos todavía no existe; se parte de una base vacía."
+          fi
+
+      - name: Recolectar y analizar noticias
+        id: ciclo
+        continue-on-error: true   # se guardan datos y estado aunque falle; la corrida se marca roja al final
+        run: python run.py ciclo --estricto
+
+      - name: Exportar los JSON y la base pública
+        run: python run.py exportar --salida publicar/data --base-publica publicar/radar_publico.db
+
+      - name: Publicar en la rama datos
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          cd publicar
+          touch .nojekyll
+          git init -q -b datos
+          git config user.name "radar-bot"
+          git config user.email "radar-bot@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Datos del Radar $(date -u +%Y-%m-%dT%H:%MZ)"
+          # La rama se reemplaza completa en cada corrida para que el historial no crezca
+          git push --force "https://x-access-token:${GH_TOKEN}@github.com/${REPO}.git" datos
+
+      - name: Marca de actividad (GitHub apaga las tareas programadas tras 60 días sin actividad)
+        env:
+          RAMA: ${{ github.event.repository.default_branch }}
+        run: |
+          ultimo=$(git log -1 --format=%ct)
+          ahora=$(date +%s)
+          if [ $(( (ahora - ultimo) / 86400 )) -ge 30 ]; then
+            date -u +"Ultima marca de actividad: %Y-%m-%dT%H:%MZ" > .mantener-activo
+            git config user.name "radar-bot"
+            git config user.email "radar-bot@users.noreply.github.com"
+            git add .mantener-activo
+            git commit -q -m "Marca automatica de actividad"
+            git push origin "HEAD:${RAMA}" || echo "::warning::No se pudo escribir la marca de actividad en ${RAMA}. Revisa los permisos o la protección de la rama."
+          else
+            echo "El último commit de ${RAMA} tiene menos de 30 días; no hace falta marca."
+          fi
+
+      - name: Marcar la corrida como fallida si la recolección fue mala
+        if: steps.ciclo.outcome == 'failure'
+        run: |
+          echo "::error::La recolección falló o casi no trajo datos. Abre el paso 'Recolectar y analizar noticias' para ver qué fuentes fallaron y por qué."
+          exit 1
