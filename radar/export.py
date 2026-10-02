@@ -185,6 +185,16 @@ def construir_salud(db, cfg: Dict[str, Any], ahora: Optional[datetime] = None) -
     }
 
 
+def construir_noticias_por_empresa(db, cfg: Dict[str, Any], ahora: Optional[datetime] = None) -> Dict[str, Any]:
+    """Contenido de noticias_por_empresa.json: noticias por emisor (incluye los que tienen 0) y cobertura."""
+    # Import local para evitar un import circular (pipeline ya importa utilidades de este paquete).
+    from .pipeline import noticias_por_empresa
+
+    datos = noticias_por_empresa(db, cfg)
+    datos["exportado_el"] = _ahora_iso(ahora)
+    return datos
+
+
 def _leer_yaml(nombre: str) -> Dict[str, Any]:
     ruta = os.path.join(DIR_CONFIG, nombre)
     if not os.path.exists(ruta):
@@ -233,7 +243,7 @@ def _escribir_json(ruta: str, datos: Dict[str, Any]):
 
 
 def exportar(db, cfg: Dict[str, Any], salida: str, ahora: Optional[datetime] = None) -> Dict[str, str]:
-    """Escribe senales.json, macro.json, salud.json y meta.json en la carpeta 'salida'."""
+    """Escribe senales.json, macro.json, salud.json, meta.json y noticias_por_empresa.json en la carpeta 'salida'."""
     os.makedirs(salida, exist_ok=True)
     ahora = ahora or datetime.now(timezone.utc)
     paquetes = {
@@ -241,6 +251,7 @@ def exportar(db, cfg: Dict[str, Any], salida: str, ahora: Optional[datetime] = N
         "macro.json": construir_macro(db, cfg, ahora),
         "salud.json": construir_salud(db, cfg, ahora),
         "meta.json": construir_meta(db, cfg, ahora),
+        "noticias_por_empresa.json": construir_noticias_por_empresa(db, cfg, ahora),
     }
     rutas = {}
     for nombre, datos in paquetes.items():
