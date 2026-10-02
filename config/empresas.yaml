@@ -29,6 +29,7 @@ empresas:
  
   - nombre: "Canacol Energy Ltd."
     ticker: "CNE"
+    ticker_ambiguo: true   # CNE también es el Consejo Nacional Electoral
     sector: "Gas Natural y Energía"
     subsector: "Producción de gas natural"
     listado: "verificar"   # VERIFICAR: estado actual de cotización y de su proceso financiero
@@ -89,6 +90,7 @@ empresas:
  
   - nombre: "Banco de Bogotá S.A."
     ticker: "BOGOTA"      # VERIFICAR: nemotécnico exacto en la BVC
+    ticker_ambiguo: true  # BOGOTA también es la ciudad
     sector: "Banca y Finanzas"
     subsector: "Banca universal"
     grupo: "Grupo Aval"
@@ -244,4 +246,5 @@ empresas:
       - "Mineros S.A."
     alias_ambiguos:
       - "Mineros"   # "mineros" es también un sustantivo común
+ 
  
