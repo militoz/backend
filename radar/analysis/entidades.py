@@ -13,7 +13,8 @@ Cambios frente a la versión anterior:
 - Soporta `ticker_preferencial` (PFCIBEST, PFAVAL...).
 - Comparación de NIT solo por dígitos (ignora puntos, guiones y espacios).
 - El fallback del hint usa límites de palabra (antes era una subcadena suelta).
-- Resultado en orden estable (antes salía de un set, el orden cambiaba entre corridas).
+- Resultado en orden estable: la empresa mencionada primero en el texto va primero (antes salía de un set
+  y el orden cambiaba entre corridas).
 - Advertencia en el log si no se encuentra empresas.yaml o viene vacío.
 """
 from typing import List, Dict, Any, Tuple, Optional
@@ -199,20 +200,31 @@ class EntidadesDetector:
         if texto:
             orig = _sin_tildes(texto)
             norm = orig.lower()
-            for emp, pats in self._pat_empresas:
+            hallazgos = []  # (posición de la primera mención, orden en catálogo, empresa)
+            for i, (emp, pats) in enumerate(self._pat_empresas):
+                mejor = None
                 for tipo, pat in pats:
+                    pos = None
                     if tipo == "sigla":
-                        ok = bool(pat.search(orig))
+                        m = pat.search(orig)
+                        pos = m.start() if m else None
                     elif tipo == "ambiguo":
-                        # Con mayúscula inicial; al inicio del texto se descarta si sigue una preposición
-                        ok = any(_ambiguo_valido(orig, norm, m) for m in pat.finditer(norm))
+                        for m in pat.finditer(norm):
+                            if _ambiguo_valido(orig, norm, m):
+                                pos = m.start()
+                                break
                     else:
-                        ok = bool(pat.search(norm))
-                    if ok:
-                        encontradas[emp["nombre"]] = None
-                        if emp.get("sector"):
-                            sectores[emp["sector"]] = None
-                        break
+                        m = pat.search(norm)
+                        pos = m.start() if m else None
+                    if pos is not None and (mejor is None or pos < mejor):
+                        mejor = pos
+                if mejor is not None:
+                    hallazgos.append((mejor, i, emp))
+            # Orden: la empresa mencionada primero en el texto va primero (el sujeto del titular)
+            for _, _, emp in sorted(hallazgos, key=lambda h: (h[0], h[1])):
+                encontradas.setdefault(emp["nombre"], None)
+                if emp.get("sector"):
+                    sectores.setdefault(emp["sector"], None)
  
         return list(encontradas), list(sectores)
  
