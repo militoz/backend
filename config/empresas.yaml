@@ -1,128 +1,247 @@
-# Colombia Radar - Diccionario de Empresas e Instrumentos
-# Punto 7: Incluye campos opcionales ticker y nit, además de alias limpios.
+# Colombia Radar - Diccionario de Empresas e Instrumentos (v2)
+#
+# Campos originales (no cambian): nombre, ticker, nit, sector, alias
+# Campos NUEVOS (opcionales; si el código los ignora no pasa nada):
+#   ticker_preferencial : especie preferencial, si existe
+#   subsector           : detalle para agrupar impactos (fase 3 del plan)
+#   grupo               : conglomerado al que pertenece (ver relaciones)
+#   alias_ambiguos      : nombres que NO deben contar como mención por sí solos
+#                         (palabras comunes, siglas cortas). El código actual no los
+#                         usa todavía: quedan aquí para activarlos en la fase 2.
+#   listado             : "si" | "verificar"  (confirmar que la acción sigue cotizando)
+#
+# Regla: lo que no está confirmado se marca VERIFICAR; nada se inventa.
+ 
 empresas:
+  # ---------------------------------------------------------------- Petróleo y gas
   - nombre: "Ecopetrol S.A."
     ticker: "ECOPETROL"
     nit: "899999068-1"
     sector: "Petróleo y Gas"
+    subsector: "Integrado (producción, transporte, refinación)"
+    grupo: "Grupo Ecopetrol"
+    listado: "si"
     alias:
       - "Ecopetrol"
       - "Refinería de Cartagena"
       - "Reficar"
       - "Cenit"
-
-  - nombre: "Bancolombia S.A."
-    ticker: "BCOLOMBIA"
-    nit: "890903938-8"
-    sector: "Banca y Finanzas"
+ 
+  - nombre: "Canacol Energy Ltd."
+    ticker: "CNE"
+    sector: "Gas Natural y Energía"
+    subsector: "Producción de gas natural"
+    listado: "verificar"   # VERIFICAR: estado actual de cotización y de su proceso financiero
     alias:
-      - "Bancolombia"
-      - "Nequi"
-      - "Valores Bancolombia"
-
-  - nombre: "Grupo Nutresa S.A."
-    ticker: "NUTRESA"
-    nit: "890900050-1"
-    sector: "Alimentos y Bebidas"
-    alias:
-      - "Nutresa"
-      - "Grupo Nutresa"
-      - "Noel"
-      - "Zenú"
-      - "Chocolates Nacional"
-
-  - nombre: "Grupo de Inversiones Suramericana S.A."
-    ticker: "GRUPOSURA"
-    nit: "890904996-1"
-    sector: "Servicios Financieros"
-    alias:
-      - "Grupo Sura"
-      - "Sura"
-      - "Seguros Sura"
-
-  - nombre: "Grupo Argos S.A."
-    ticker: "GRUPOARGOS"
-    nit: "890900266-3"
-    sector: "Infraestructura e Inversión"
-    alias:
-      - "Grupo Argos"
-      - "Inversiones Argos"
-
-  - nombre: "Interconexión Eléctrica S.A. E.S.P."
-    ticker: "ISA"
-    nit: "860015903-4"
-    sector: "Energía y Servicios"
-    alias:
-      - "ISA"
-      - "Interconexión Eléctrica"
-      - "ISA Intercolombia"
-
+      - "Canacol"
+      - "Canacol Energy"
+ 
   - nombre: "Organización Terpel S.A."
     ticker: "TERPEL"
     nit: "860000450-8"
     sector: "Distribución de Combustibles"
+    subsector: "Estaciones de servicio y distribución"
+    listado: "verificar"   # VERIFICAR: estado actual de cotización
     alias:
       - "Terpel"
       - "Organización Terpel"
-
-  - nombre: "Almacenes Éxito S.A."
-    ticker: "EXITO"
-    nit: "890900608-9"
-    sector: "Comercio Minorista / Retail"
+ 
+  # ---------------------------------------------------------------- Banca y finanzas
+  - nombre: "Grupo Cibest S.A."
+    ticker: "CIBEST"
+    ticker_preferencial: "PFCIBEST"
+    # nit: VERIFICAR (el NIT 890903938-8 del catálogo anterior es el del banco Bancolombia, no de la matriz)
+    sector: "Banca y Finanzas"
+    subsector: "Banca universal / holding"
+    grupo: "Grupo Cibest"
+    listado: "si"
     alias:
-      - "Éxito"
-      - "Grupo Éxito"
-      - "Carulla"
-      - "Surtimax"
-
-  - nombre: "Avianca Group International"
-    ticker: "AVIANCA"
-    nit: "890100577-6"
-    sector: "Transporte Aéreo"
-    alias:
-      - "Avianca"
-      - "Avianca Holdings"
-      - "LifeMiles"
-
-  - nombre: "Cementos Argos S.A."
-    ticker: "CEMARGOS"
-    nit: "890900266-4"
-    sector: "Materiales y Construcción"
-    alias:
-      - "Cementos Argos"
-
-  - nombre: "Celsia S.A. E.S.P."
-    ticker: "CELSIA"
-    nit: "890300622-6"
-    sector: "Energía y Renovables"
-    alias:
-      - "Celsia"
-
-  - nombre: "Canacol Energy Ltd."
-    ticker: "CNE"
-    sector: "Gas Natural y Energía"
-    alias:
-      - "Canacol"
-      - "Canacol Energy"
-
-  - nombre: "Mineros S.A."
-    ticker: "MINEROS"
-    nit: "890900130-1"
-    sector: "Minería"
-    alias:
-      - "Mineros"
-
+      - "Grupo Cibest"
+      - "Cibest"
+      - "Bancolombia"
+      - "Nequi"
+      - "Valores Bancolombia"
+ 
   - nombre: "Banco Davivienda S.A."
     ticker: "DAVIVIENDA"
     nit: "860034313-7"
     sector: "Banca y Finanzas"
+    subsector: "Banca universal"
+    listado: "si"
     alias:
       - "Davivienda"
+      - "Davivienda Group"
       - "Daviplata"
-
+ 
+  - nombre: "Grupo Aval Acciones y Valores S.A."
+    ticker: "GRUPOAVAL"
+    ticker_preferencial: "PFAVAL"
+    sector: "Banca y Finanzas"
+    subsector: "Holding bancario"
+    grupo: "Grupo Aval"
+    listado: "si"
+    alias:
+      - "Grupo Aval"
+      - "Banco de Occidente"
+      - "AV Villas"
+    alias_ambiguos:
+      - "Banco Popular"   # nombre usado por otros bancos fuera de Colombia
+ 
+  - nombre: "Banco de Bogotá S.A."
+    ticker: "BOGOTA"      # VERIFICAR: nemotécnico exacto en la BVC
+    sector: "Banca y Finanzas"
+    subsector: "Banca universal"
+    grupo: "Grupo Aval"
+    listado: "si"
+    alias:
+      - "Banco de Bogotá"
+ 
   - nombre: "Corporación Financiera Colombiana S.A."
     ticker: "CORFICOLCF"
     nit: "890300653-6"
     sector: "Banca y Finanzas"
+    subsector: "Banca de inversión / infraestructura"
+    grupo: "Grupo Aval"   # VERIFICAR
+    listado: "si"
     alias:
       - "Corficolombiana"
+ 
+  - nombre: "Grupo de Inversiones Suramericana S.A."
+    ticker: "GRUPOSURA"
+    ticker_preferencial: "PFGRUPSURA"
+    nit: "890904996-1"
+    sector: "Servicios Financieros"
+    subsector: "Holding (seguros y servicios financieros)"
+    grupo: "Grupo Sura"
+    listado: "si"
+    alias:
+      - "Grupo Sura"
+      - "Seguros Sura"
+      - "Suramericana"
+    alias_ambiguos:
+      - "Sura"
+ 
+  # ---------------------------------------------------------------- Energía y servicios públicos
+  - nombre: "Interconexión Eléctrica S.A. E.S.P."
+    ticker: "ISA"
+    nit: "860015903-4"
+    sector: "Energía y Servicios"
+    subsector: "Transmisión eléctrica y concesiones viales"
+    grupo: "Grupo Ecopetrol"   # VERIFICAR relación accionaria vigente
+    listado: "si"
+    alias:
+      - "Interconexión Eléctrica"
+      - "ISA Intercolombia"
+    alias_ambiguos:
+      - "ISA"   # sigla corta; riesgo de coincidir con otras palabras
+ 
+  - nombre: "Grupo Energía Bogotá S.A. E.S.P."
+    ticker: "GEB"
+    sector: "Energía y Servicios"
+    subsector: "Transmisión y distribución de energía y gas"
+    listado: "si"
+    alias:
+      - "Grupo Energía Bogotá"
+      - "Grupo Energía de Bogotá"
+    alias_ambiguos:
+      - "GEB"
+ 
+  - nombre: "Celsia S.A. E.S.P."
+    ticker: "CELSIA"
+    nit: "890300622-6"
+    sector: "Energía y Renovables"
+    subsector: "Generación y comercialización de energía"
+    grupo: "Grupo Argos"
+    listado: "si"
+    alias:
+      - "Celsia"
+ 
+  - nombre: "Empresa de Telecomunicaciones de Bogotá S.A. E.S.P."
+    ticker: "ETB"
+    sector: "Telecomunicaciones"
+    subsector: "Telecomunicaciones"
+    listado: "si"
+    alias:
+      - "Empresa de Telecomunicaciones de Bogotá"
+    alias_ambiguos:
+      - "ETB"
+ 
+  # ---------------------------------------------------------------- Cemento, construcción y holdings
+  - nombre: "Grupo Argos S.A."
+    ticker: "GRUPOARGOS"
+    ticker_preferencial: "PFGRUPOARGOS"   # VERIFICAR nemotécnico
+    nit: "890900266-3"
+    sector: "Infraestructura e Inversión"
+    subsector: "Holding (cemento, energía, concesiones, inmobiliario)"
+    grupo: "Grupo Argos"
+    listado: "si"
+    alias:
+      - "Grupo Argos"
+      - "Inversiones Argos"
+ 
+  - nombre: "Cementos Argos S.A."
+    ticker: "CEMARGOS"
+    ticker_preferencial: "PFCEMARGOS"   # VERIFICAR nemotécnico
+    nit: "890900266-4"   # VERIFICAR: es casi idéntico al de Grupo Argos; probablemente errado
+    sector: "Materiales y Construcción"
+    subsector: "Cemento y concreto"
+    grupo: "Grupo Argos"
+    listado: "si"
+    alias:
+      - "Cementos Argos"
+    alias_ambiguos:
+      - "Argos"   # los medios lo usan para cemento y para el grupo; decidir por contexto
+ 
+  # ---------------------------------------------------------------- Consumo
+  - nombre: "Grupo Nutresa S.A."
+    ticker: "NUTRESA"
+    nit: "890900050-1"
+    sector: "Alimentos y Bebidas"
+    subsector: "Alimentos procesados (galletas, cárnicos, café, chocolates)"
+    listado: "si"
+    alias:
+      - "Nutresa"
+      - "Grupo Nutresa"
+      - "Chocolates Nacional"
+      - "Colcafé"
+    alias_ambiguos:
+      - "Noel"
+      - "Zenú"
+ 
+  - nombre: "Almacenes Éxito S.A."
+    ticker: "EXITO"
+    nit: "890900608-9"
+    sector: "Comercio Minorista / Retail"
+    subsector: "Supermercados y retail"
+    listado: "si"
+    alias:
+      - "Almacenes Éxito"
+      - "Grupo Éxito"
+      - "Carulla"
+      - "Surtimax"
+    alias_ambiguos:
+      - "Éxito"   # palabra común ("éxito" = success)
+ 
+  - nombre: "Avianca Group International"
+    ticker: "AVIANCA"
+    nit: "890100577-6"
+    sector: "Transporte Aéreo"
+    subsector: "Aerolíneas"
+    listado: "verificar"   # VERIFICAR: si la acción cotiza hoy en la BVC; en los titulares aparece como marca de consumo
+    alias:
+      - "Avianca"
+      - "Avianca Holdings"
+      - "LifeMiles"
+ 
+  # ---------------------------------------------------------------- Minería
+  - nombre: "Mineros S.A."
+    ticker: "MINEROS"
+    nit: "890900130-1"
+    sector: "Minería"
+    subsector: "Minería de oro"
+    listado: "verificar"   # VERIFICAR: estado de cotización tras la OPA de 2025
+    alias:
+      - "Mineros S.A."
+    alias_ambiguos:
+      - "Mineros"   # "mineros" es también un sustantivo común
+ 
