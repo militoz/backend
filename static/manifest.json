@@ -1,0 +1,16 @@
+{
+  "name": "Colombia Radar",
+  "short_name": "ColombiaRadar",
+  "description": "Monitoreo de señales corporativas, eventos y series macroeconómicas en Colombia",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/static/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+# Colombia Radar - Diccionario de Insumos y Materias Primas Críticas
+insumos:
+  - nombre: "Café"
+    categoria: "Agrícola"
+    alias:
+      - "café pergamino"
+      - "carga de café"
+      - "arábica"
+      - "grano de café"
+
+  - nombre: "Petróleo y Combustibles"
+    categoria: "Energía"
+    alias:
+      - "petróleo"
+      - "crudo brent"
+      - "barril de crudo"
+      - "gasolina"
+      - "diésel"
+      - "acpm"
+
+  - nombre: "Carbón Térmico"
+    categoria: "Minería"
+    alias:
+      - "carbón"
+      - "carbón térmico"
+      - "coque"
+
+  - nombre: "Gas Natural"
+    categoria: "Energía"
+    alias:
+      - "gas natural"
+      - "gnl"
+      - "glp"
+
+  - nombre: "Fertilizantes y Urea"
+    categoria: "Insumo Agropecuario"
+    alias:
+      - "urea"
+      - "fertilizantes"
+      - "abono químico"
+      - "plaguicidas"
+
+  - nombre: "Cemento y Clinker"
+    categoria: "Construcción"
+    alias:
+      - "cemento"
+      - "clinker"
+      - "concreto"
+
+  - nombre: "Acero y Alambrón"
+    categoria: "Metalmecánica"
+    alias:
+      - "acero"
+      - "alambrón"
+      - "varilla de acero"
+
+  - nombre: "Maíz y Cereales"
+    categoria: "Agrícola"
+    alias:
+      - "maíz amarillo"
+      - "maíz blanco"
+      - "soya"
+      - "cereales forrajeros"

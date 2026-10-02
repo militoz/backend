@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colombia Radar - Tablero de Señales</title>
+  <link rel="manifest" href="/static/manifest.json">
+  <meta name="theme-color" content="#0f172a">
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f8fafc; color: #0f172a; margin: 0; padding: 20px; }
+    .header { border-bottom: 2px solid #e2e8f0; padding-bottom: 12px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; }
+    h1 { margin: 0; font-size: 22px; font-weight: 700; }
+    .mut { color: #64748b; font-size: 13px; }
+    
+    /* Aviso de fuentes degradadas (Punto 6) */
+    .alerta-degradadas { background: #fef2f2; border: 1px solid #fecaca; border-left: 4px solid #ef4444; padding: 12px 16px; border-radius: 6px; margin-bottom: 20px; font-size: 13px; }
+    .alerta-degradadas strong { color: #991b1b; }
+    .lista-degradadas { margin: 6px 0 0 0; padding-left: 20px; color: #7f1d1d; }
+    
+    .grid { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; }
+    .ev { background: #ffffff; border: 1px solid #cbd5e1; border-radius: 8px; padding: 16px; margin-bottom: 14px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+    .temp { display: inline-block; background: #f1f5f9; border: 1px solid #cbd5e1; border-radius: 4px; padding: 2px 6px; font-family: monospace; font-weight: 700; font-size: 12px; margin-right: 8px; }
+    .temp.alta { background: #fef3c7; border-color: #fde68a; color: #92400e; }
+    .temp.critica { background: #fee2e2; border-color: #fca5a5; color: #991b1b; }
+    h3 { margin: 6px 0; font-size: 16px; }
+    .badge { display: inline-block; background: #e2e8f0; color: #334155; padding: 2px 6px; border-radius: 4px; font-size: 11px; margin-right: 4px; }
+    .b-confirmado { background: #dcfce7; color: #166534; font-weight: 600; }
+    .b-probable { background: #fef9c3; color: #854d0e; }
+    .razon { background: #f8fafc; border-left: 3px solid #0f172a; padding: 8px 12px; margin: 8px 0; font-size: 13px; }
+    details { margin-top: 8px; font-size: 13px; }
+    summary { cursor: pointer; font-weight: 500; color: #2563eb; }
+    ul { margin: 6px 0; padding-left: 20px; }
+    li { margin-bottom: 4px; }
+    .fb { background: #f1f5f9; border: 1px solid #cbd5e1; border-radius: 4px; padding: 3px 8px; font-size: 12px; cursor: pointer; margin-right: 4px; }
+    .fb:hover { background: #e2e8f0; }
+    .panel { background: #ffffff; border: 1px solid #cbd5e1; border-radius: 8px; padding: 16px; margin-bottom: 14px; }
+    .vacio { padding: 20px; text-align: center; color: #94a3b8; font-size: 13px; }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div>
+      <h1>Colombia Radar</h1>
+      <span class="mut">Monitoreo de señales corporativas, eventos y series macroeconómicas</span>
+    </div>
+    <div>
+      <span class="mut">Total señales: {{ senales|length }} · Artículos: {{ articulos|length }}</span>
+    </div>
+  </div>
+
+  {# AVISO DE FUENTES DEGRADADAS (Punto 6) #}
+  {% if fuentes_degradadas %}
+  <div class="alerta-degradadas" id="aviso-degradadas">
+    <strong>Aviso de Salud de Fuentes:</strong> Se detectaron {{ fuentes_degradadas|length }} fuente(s) en estado <em>degradada</em>:
+    <ul class="lista-degradadas">
+      {% for f in fuentes_degradadas %}
+      <li><strong>{{ f.fuente_id }}</strong>: {{ f.motivo_degradada or 'Sin items en corridas recientes' }} (última corrida: {{ f.ultima_recoleccion[:16] if f.ultima_recoleccion else 'N/A' }})</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  <div class="grid">
+    <!-- Columna Izquierda: Señales Corporativas -->
+    <div id="senales">
+      <h2>Señales Detectadas</h2>
+      {% if senales %}
+        {% for e in senales %}
+        <div class="ev">
+          <span class="temp {% if e.score >= 3.0 %}critica{% elif e.score >= 2.0 %}alta{% endif %}" title="Temperatura: peso del tipo × certeza × fuente × recencia">{{ "%.2f"|format(e.score) }}</span>
+          <span class="badge b-{{ e.certeza }}">{{ e.certeza|upper }}</span>
+          <span class="badge">{{ e.tipo }}</span>
+          {% if e.insumo %}<span class="badge">{{ e.insumo }}</span>{% endif %}
+          
+          <h3>{{ e.etiqueta }}</h3>
+
+          {% if e.empresas %}
+          <div style="margin: 4px 0;">
+            <span class="mut">Empresas:</span>
+            {% for emp in e.empresas %}
+              <span class="badge">{{ emp }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
+
+          <div class="razon"><strong>Razonamiento:</strong> {{ e.razonamiento }}</div>
+
+          <div style="margin-top: 8px;">
+            <span class="mut">¿Útil para investigar?</span>
+            <button class="fb" data-c="{{ e.cluster_id }}" data-t="{{ e.tipo }}" data-u="1" onclick="votar(this, {{ e.cluster_id }}, '{{ e.tipo }}', 1)">Útil</button>
+            <button class="fb" data-c="{{ e.cluster_id }}" data-t="{{ e.tipo }}" data-u="0" onclick="votar(this, {{ e.cluster_id }}, '{{ e.tipo }}', 0)">No útil</button>
+          </div>
+        </div>
+        {% endfor %}
+      {% else %}
+        <div class="vacio">No hay señales activas en este momento. Ejecuta <code>python run.py ciclo</code>.</div>
+      {% endif %}
+    </div>
+
+    <!-- Columna Derecha: Series Macro e Insumos y Últimas Noticias -->
+    <div>
+      <div class="panel">
+        <h2>Radar Macro & Series</h2>
+        {% if series_resumen %}
+          {% for sid, puntos in series_resumen.items() %}
+          <div style="margin-bottom: 10px; border-bottom: 1px solid #f1f5f9; padding-bottom: 6px;">
+            <strong>{{ sid|upper }}</strong>
+            {% if puntos %}
+            <span class="mut">· Último: {{ puntos[0].valor }} ({{ puntos[0].fecha }})</span>
+            {% endif %}
+          </div>
+          {% endfor %}
+        {% else %}
+          <div class="vacio">Sin series registradas en los últimos días.</div>
+        {% endif %}
+      </div>
+
+      <div class="panel">
+        <h2>Noticias Recientes</h2>
+        {% if articulos %}
+          <ul>
+            {% for art in articulos[:15] %}
+            <li>
+              <a href="{{ art.url }}" target="_blank" rel="noopener noreferrer">{{ art.titulo }}</a>
+              <span class="mut">— {{ art.fuente_id }} · {{ art.fecha }}</span>
+            </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <div class="vacio">Sin artículos recientes en la base de datos.</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <script>
+    async function votar(boton, clusterId, tipo, util) {
+      try {
+        const resp = await fetch('/api/feedback', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ cluster_id: clusterId, tipo: tipo, util: util })
+        });
+        if (resp.ok) {
+          boton.parentElement.innerHTML = '<span class="mut" style="color:#166534">✓ Registrado</span>';
+        }
+      } catch (err) {
+        console.error(err);
+      }
+    }
+  </script>
+</body>
+</html>

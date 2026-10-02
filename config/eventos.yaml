@@ -1,0 +1,64 @@
+# Colombia Radar - Reglas de Detección de Eventos Corporativos y Macroeconómicos
+eventos:
+  - id: "integracion_empresarial"
+    tipo: "integracion"
+    etiqueta: "Integración Empresarial / Adquisición"
+    patron: "(?:adquisici[oó]n|compra\\s+de|fusi[oó]n|absorci[oó]n|opa\\b|toma\\s+de\\s+control|integraci[oó]n\\s+empresarial)"
+    peso: 1.45
+    solo_titulo: false
+    ambigua: false
+    razonamiento: "Posible cambio de control o concentración de mercado con impacto en competencia y valoración bursátil."
+
+  - id: "insolvencia_reorganizacion"
+    tipo: "insolvencia"
+    etiqueta: "Reorganización / Insolvencia Empresarial"
+    patron: "(?:ley\\s+1116|reorganizaci[oó]n\\s+empresarial|insolvencia|liquidaci[oó]n\\s+judicial|cesaci[oó]n\\s+de\\s+pagos|quiebra)"
+    peso: 1.5
+    solo_titulo: false
+    ambigua: false
+    razonamiento: "Alerta de estrés financiero severo o renegociación de pasivos con acreedores financieros y comerciales."
+
+  - id: "investigacion_sancion"
+    tipo: "regulatorio"
+    etiqueta: "Investigación / Sanción Regulatoria"
+    patron: "(?:pliego\\s+de\\s+cargos|sanci[oó]n|multa\\s+de\\s+la|investigaci[oó]n\\s+de\\s+la\\s+sic|formular\\s+cargos|abrir\\s+investigaci[oó]n)"
+    peso: 1.35
+    solo_titulo: false
+    ambigua: false
+    razonamiento: "Exposición a contingencias legales, multas regulatorias o restricciones operativas por parte de autoridades de supervisión."
+
+  - id: "inversion_expansion"
+    tipo: "inversion"
+    etiqueta: "Inversión de Capital / Expansión"
+    patron: "(?:inversi[oó]n\\s+de\\s+(?:us\\$|\\$|millones)|inaugura\\s+planta|ampliaci[oó]n\\s+de\\s+capacidad|capex|construcci[oó]n\\s+de\\s+proyecto)"
+    peso: 1.2
+    solo_titulo: false
+    ambigua: true
+    razonamiento: "Despliegue de capital productivo que incrementará capacidad operativa o flujos futuros de caja."
+
+  - id: "gobierno_corporativo"
+    tipo: "nombramiento"
+    etiqueta: "Cambio en Alta Dirección / Junta"
+    patron: "(?:nuevo\\s+presidente|nombra\\s+a\\s+nuevo\\s+ceo|renuncia\\s+presidente|cambio\\s+en\\s+junta\\s+directiva|designa\\s+gerente)"
+    peso: 1.15
+    solo_titulo: true
+    ambigua: false
+    razonamiento: "Reestructuración del liderazgo estratégico de la compañía."
+
+  - id: "disrupcion_suministro"
+    tipo: "suministro"
+    etiqueta: "Disrupción de Suministro / Logística"
+    patron: "(?:bloqueo\\s+vial|paro\\s+camionero|desabastecimiento|falla\\s+en\\s+suministro|congesti[oó]n\\s+portuaria|corte\\s+de\\s+gas)"
+    peso: 1.3
+    solo_titulo: false
+    ambigua: false
+    razonamiento: "Riesgo de interrupción operativa, alza de fletes o incumplimiento de despachos a clientes."
+
+  - id: "evento_macro_oficial"
+    tipo: "macro"
+    etiqueta: "Movimiento Macroeconómico Significativo"
+    patron: "(?:se[nñ]al\\s+macro|banco\\s+de\\s+la\\s+rep[uú]blica\\s+(?:sube|baja|recorta|mantiene)|inflaci[oó]n\\s+anual|tasa\\s+representativa|d[oó]lar\\s+supera|d[oó]lar\\s+cae)"
+    peso: 1.25
+    solo_titulo: false
+    ambigua: false
+    razonamiento: "Variación en variables macroeconómicas sistémicas que incide sobre costos de fondeo, tipo de cambio e inflación."
