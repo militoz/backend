@@ -1,4 +1,4 @@
-""
+"""
 Extracción y vinculación de entidades (Empresas e Insumos).
 Soporta 'empresa_hint' desde fuentes oficiales para vinculación directa.
  
