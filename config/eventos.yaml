@@ -8,7 +8,7 @@ eventos:
   - id: "opa"
     tipo: "integracion"
     etiqueta: "OPA – Oferta Pública de Adquisición"
-    patron: '\b(?:opa|opas|ofertas?\s+p[uú]blicas?\s+de\s+adquisici[oó]n)\b'
+    patron: '(?:\bofertas?\s+p[uú]blicas?\s+de\s+adquisici[oó]n\b|\b(?:lanz|anunci|present|autoriz|aprueb|aprob|radic|solicit|acept|rechaz|mejor)\w*\s+(?:una\s+|la\s+|su\s+|nueva\s+)?opas?\b|\bopas?\s+(?:por|sobre|de|hostil|amistosa|voluntaria|competidora)\b)'
     peso: 1.5
     solo_titulo: true
     ambigua: false
@@ -98,7 +98,7 @@ eventos:
   - id: "regulacion_sector"
     tipo: "regulatorio"
     etiqueta: "Regulación Sectorial / Política"
-    patron: '(?:\bcreg\b|\bupme\b|\banla\b|\banh\b|resoluci[oó]n\s+(?:de\s+la\s+)?(?:creg|superfinanciera|sic)|tarifas?\s+de\s+energ[ií]a|precio\s+de\s+(?:la\s+)?energ[ií]a\s+en\s+bolsa|inversiones\s+forzosas|reforma\s+(?:a\s+la\s+)?(?:ley|tributaria|pensional|laboral)|\bley\s+de\s+app\b|impuesto\s+(?:a\s+los\s+bancos|al\s+patrimonio))'
+    patron: '(?:\b(?:creg|upme|anla|anh)\s+(?:expide|publica|aprueba|define|fija|abre|modifica|propone|ordena|suspende|archiva|niega)\w*|resoluci[oó]n\s+(?:de\s+la\s+)?(?:creg|superfinanciera|sic)|tarifas?\s+de\s+energ[ií]a|precio\s+de\s+(?:la\s+)?energ[ií]a\s+en\s+bolsa|inversiones\s+forzosas|reforma\s+(?:a\s+la\s+)?(?:ley|tributaria|pensional|laboral)|\bley\s+de\s+app\b|impuesto\s+(?:a\s+los\s+bancos|al\s+patrimonio))'
     peso: 1.25
     solo_titulo: true
     ambigua: true
@@ -107,7 +107,7 @@ eventos:
   - id: "investigacion_sancion"
     tipo: "regulatorio"
     etiqueta: "Investigación / Sanción Regulatoria"
-    patron: '(?:pliego\s+de\s+cargos|\bsanci[oó]n(?:es)?\b|\bsanciona(?:r|n|ron|rá)?\b|multa\s+(?:de\s+la|por|a\s+la)\s+(?:sic|superintendencia|superfinanciera|supersociedades)|\bsic\s+(?:abre|investiga|multa|sanciona)|formular\s+cargos|abrir\s+investigaci[oó]n)'
+    patron: '(?:pliego\s+de\s+cargos|\bsanci[oó]n(?:es)?\b|\bsanciona(?:r|n|ron|rá)?\b(?!\s+(?:la\s+|el\s+|una\s+|un\s+)?(?:ley|decreto|reforma|proyecto))|multa\s+(?:de\s+la|por|a\s+la)\s+(?:sic|superintendencia|superfinanciera|supersociedades)|\bsic\s+(?:abre|investiga|multa|sanciona)|formular\s+cargos|abrir\s+investigaci[oó]n)'
     peso: 1.35
     solo_titulo: true
     ambigua: false
@@ -152,9 +152,10 @@ eventos:
   - id: "evento_macro_oficial"
     tipo: "macro"
     etiqueta: "Movimiento Macroeconómico Significativo"
-    patron: '(?:banco\s+de\s+la\s+rep[uú]blica\s+(?:sube|aument|baja|recort|mantiene|mantendr|eleva|increment)|\btasas?\s+de\s+inter[eé]s\s+(?:llegan|suben|bajan|se\s+mantien|quedan)|aument\w+\s+(?:de\s+)?(?:la\s+)?tasa\s+de\s+inter[eé]s|\bd[oó]lar\s+en\s+colombia\b|\bpeso\s+colombiano\b|inflaci[oó]n\s+(?:anual|de\s+(?:agosto|septiembre|octubre)|sube|baja|repunta)|tasa\s+representativa|\bbrent\b|se[nñ]al\s+macro)'
+    patron: '(?:banco\s+de\s+la\s+rep[uú]blica\s+(?:sube|aument|baja|recort|mantiene|mantendr|eleva|increment)|\btasas?\s+de\s+inter[eé]s\s+(?:llegan|suben|bajan|se\s+mantien|quedan)|aument\w+\s+(?:de\s+)?(?:la\s+)?tasa\s+de\s+inter[eé]s|\b(?:d[oó]lar|peso\s+colombiano)(?:\s+en\s+colombia)?\s+(?:se\s+(?:de|re)val[uú]\w*|cae|caen|sube|suben|baja|bajan|dispara\w*|desploma\w*|(?:alcanza|toca|marca)\w*\s+(?:un\s+)?(?:m[aá]ximo|m[ií]nimo|r[eé]cord))|inflaci[oó]n\s+(?:anual|de\s+(?:agosto|septiembre|octubre)|sube|baja|repunta)|tasa\s+representativa|\bbrent\b|se[nñ]al\s+macro)'
     peso: 1.25
     solo_titulo: true
-    ambigua: false
+    ambigua: true
     razonamiento: "Variación en variables macroeconómicas sistémicas que incide sobre costos de fondeo, tipo de cambio e inflación."
+ 
  
