@@ -10,22 +10,22 @@ import logging
 from datetime import datetime, timedelta
 import re
 import html
-
+ 
 from .collectors import construir, Item
 from .analysis.entidades import EntidadesDetector
 from .analysis.eventos import EventosDetector
 from .analysis.calor import calcular_score_calor, desglosar_score
 from .analysis.fuentes import mapa_fuentes, certeza_de_articulo, certeza_mayor, resolver_medio
 from .util import normalizar_fecha, semana_iso, slug, hash_corto
-
+ 
 try:
     from bs4 import BeautifulSoup
 except ImportError:
     BeautifulSoup = None
-
+ 
 logger = logging.getLogger("radar.pipeline")
-
-
+ 
+ 
 def _motivo_fallo_http(fetcher, colector, f_cfg) -> str:
     """
     Si la fuente devolvió 0 items, mira cómo respondió el sitio. Una respuesta 403/429/5xx o
@@ -48,8 +48,8 @@ def _motivo_fallo_http(fetcher, colector, f_cfg) -> str:
     if status >= 500:
         return f"HTTP {status}: error del servidor de la fuente"
     return ""
-
-
+ 
+ 
 def recolectar(cfg: Dict[str, Any], fetcher, db, estadisticas: Optional[Dict[str, Any]] = None) -> List[Item]:
     """
     Ejecuta la recolección sobre todas las fuentes habilitadas en la configuración.
@@ -62,26 +62,26 @@ def recolectar(cfg: Dict[str, Any], fetcher, db, estadisticas: Optional[Dict[str
     todos_items: List[Item] = []
     stats = estadisticas if estadisticas is not None else {}
     stats.update({"fuentes_activas": 0, "fuentes_ok": 0, "fuentes_error": 0, "items": 0, "detalle": {}})
-
+ 
     for f_cfg in fuentes:
         fuente_id = f_cfg.get("id")
         if not fuente_id:
             continue
-
+ 
         # Verificar si está habilitada (por defecto True salvo que diga activo: false)
         if not f_cfg.get("activo", True):
             continue
-
+ 
         colector = construir(f_cfg)
         if not colector:
             logger.warning(f"No se pudo construir colector para fuente: {fuente_id}")
             continue
-
+ 
         stats["fuentes_activas"] += 1
         items_fuente: List[Item] = []
         exito = False
         motivo_error = ""
-
+ 
         try:
             items_fuente = colector.recolectar(fetcher)
             exito = True
@@ -98,14 +98,14 @@ def recolectar(cfg: Dict[str, Any], fetcher, db, estadisticas: Optional[Dict[str
             exito = False
             motivo_error = str(e)
             logger.error(f"Fallo en recolección de fuente '{fuente_id}': {e}", exc_info=True)
-
+ 
         if exito:
             stats["fuentes_ok"] += 1
             stats["items"] += len(items_fuente)
         else:
             stats["fuentes_error"] += 1
         stats["detalle"][fuente_id] = {"ok": exito, "items": len(items_fuente) if exito else 0, "motivo": motivo_error}
-
+ 
         # Registrar salud de la fuente en la base de datos
         db.registrar_salud(
             fuente_id=fuente_id,
@@ -115,10 +115,10 @@ def recolectar(cfg: Dict[str, Any], fetcher, db, estadisticas: Optional[Dict[str
             max_corridas_vacias=cfg.get("salud", {}).get("max_corridas_vacias", 3),
             umbral_caida_brusca=cfg.get("salud", {}).get("umbral_caida_brusca", 0.5),
         )
-
+ 
     return todos_items
-
-
+ 
+ 
 def evaluar_estricto(stats: Dict[str, Any], minimo: float = 0.5) -> Optional[str]:
     """
     Modo estricto: devuelve el motivo de falla (texto) si la corrida debe considerarse fallida,
@@ -132,8 +132,8 @@ def evaluar_estricto(stats: Dict[str, Any], minimo: float = 0.5) -> Optional[str
     if stats.get("fuentes_ok", 0) / activas < minimo:
         return f"Solo {stats.get('fuentes_ok', 0)} de {activas} fuentes respondieron (mínimo exigido: {minimo:.0%})."
     return None
-
-
+ 
+ 
 def guardar(items: List[Item], db) -> int:
     """
     Guarda los items recolectados en la tabla 'articulos'.
@@ -156,8 +156,8 @@ def guardar(items: List[Item], db) -> int:
         if res:
             guardados += 1
     return guardados
-
-
+ 
+ 
 def enriquecer_articulo(url: str, fetcher, max_caracteres: int = 1500) -> Optional[str]:
     """
     Punto 2: Descarga respetuosa del arranque del artículo (~1500 caracteres),
@@ -165,19 +165,19 @@ def enriquecer_articulo(url: str, fetcher, max_caracteres: int = 1500) -> Option
     """
     if not fetcher:
         return None
-
+ 
     status, body, _ = fetcher.get(url, use_cache=True)
     if status != 200 or not body:
         return None
-
+ 
     texto_html = body.decode("utf-8", errors="replace")
-
+ 
     if BeautifulSoup is not None:
         soup = BeautifulSoup(texto_html, "html.parser")
         # Remover scripts, estilos, nav, footer
         for elemento in soup(["script", "style", "nav", "footer", "header", "aside"]):
             elemento.decompose()
-
+ 
         parrafos = soup.find_all("p")
         textos = []
         acumulado = 0
@@ -188,21 +188,21 @@ def enriquecer_articulo(url: str, fetcher, max_caracteres: int = 1500) -> Option
                 acumulado += len(txt)
                 if acumulado >= max_caracteres:
                     break
-
+ 
         texto_plano = " ".join(textos)
     else:
         # Fallback sin BeautifulSoup
         texto_plano = re.sub(r"<[^>]+>", " ", texto_html)
         texto_plano = html.unescape(texto_plano)
         texto_plano = " ".join(texto_plano.split())
-
+ 
     return texto_plano[:max_caracteres] if texto_plano else None
-
-
+ 
+ 
 def _escapar_like(texto: str) -> str:
     return texto.replace("\\", "\\\\").replace("%", "\\%").replace("_", "\\_")
-
-
+ 
+ 
 def _elegir_senal_existente(existentes: List[Dict[str, Any]], primera_nueva: Optional[str], dias: int = 21):
     """
     Un mismo tema conserva su ID mientras siga activo: se reutiliza la señal existente
@@ -219,8 +219,8 @@ def _elegir_senal_existente(existentes: List[Dict[str, Any]], primera_nueva: Opt
         if not ref or ref >= limite_iso:
             return e
     return None
-
-
+ 
+ 
 def analizar(db, cfg: Dict[str, Any], fetcher=None, ahora: Optional[datetime] = None) -> List[Dict[str, Any]]:
     """
     Analiza artículos no procesados o recientes:
@@ -235,25 +235,25 @@ def analizar(db, cfg: Dict[str, Any], fetcher=None, ahora: Optional[datetime] = 
     articulos = db.obtener_articulos(limit=max_articulos, solo_no_demo=True)
     ent_detector = EntidadesDetector()
     ev_detector = EventosDetector()
-
+ 
     config_enriquecer = cfg.get("enriquecer", {})
     enriquecer_activo = config_enriquecer.get("activo", False)
     max_peticiones_enriquecer = config_enriquecer.get("max_peticiones_por_ciclo", 10)
     peticiones_hechas = 0
-
+ 
     senales_generadas: List[Dict[str, Any]] = []
     clusters: Dict[str, Dict[str, Any]] = {}
-
+ 
     for art in articulos:
         titulo = art.get("titulo") or ""
         url = art.get("url") or ""
         extracto = art.get("extracto")
         resumen = art.get("resumen") or ""
         art_id = art.get("id")
-
+ 
         # Evaluar coincidencia preliminar con título
         coincidencias = ev_detector.evaluar_texto(titulo)
-
+ 
         # Punto 2: Si hay coincidencia ambigua y enriquecer está activo, descargar extracto
         hay_ambigua = any(c.get("es_ambigua") for c in coincidencias)
         if enriquecer_activo and fetcher and (hay_ambigua or not coincidencias) and not extracto:
@@ -265,21 +265,28 @@ def analizar(db, cfg: Dict[str, Any], fetcher=None, ahora: Optional[datetime] = 
                     peticiones_hechas += 1
                     # Reevaluar con extracto disponible
                     coincidencias = ev_detector.evaluar_texto(titulo, texto_ampliado=extracto)
-
+ 
         if not coincidencias:
             continue
-
+ 
+        # Una nota genera UNA señal: la regla de mayor peso (evita duplicados tipo
+        # "Licencia" + "Regulación sectorial" por el mismo titular).
+        coincidencias = sorted(coincidencias, key=lambda m: m["peso_tipo"], reverse=True)[:1]
+ 
         # Detectar empresas e insumos en el texto
         texto_busqueda = f"{titulo} {extracto or resumen}"
         empresas, sectores = ent_detector.detectar_empresas(texto_busqueda)
         insumos = ent_detector.detectar_insumos(texto_busqueda)
-
+ 
         for match_ev in coincidencias:
             tipo = match_ev["tipo"]
             etiqueta = match_ev["etiqueta"]
-            emp_clave = empresas[0] if empresas else "sin_empresa"
+            # Con empresa: se agrupa por la empresa mencionada primero (el sujeto del titular).
+            # Sin empresa: una señal por artículo; antes todas las notas del mismo tipo caían en un
+            # solo grupo "sin_empresa" y se mezclaban noticias no relacionadas entre sí.
+            emp_clave = empresas[0] if empresas else f"sin_empresa-{hash_corto(url or titulo, 6)}"
             cluster_key = f"{tipo}|{emp_clave}|{etiqueta}"
-
+ 
             c = clusters.get(cluster_key)
             if c is None:
                 c = clusters[cluster_key] = {
@@ -300,22 +307,22 @@ def analizar(db, cfg: Dict[str, Any], fetcher=None, ahora: Optional[datetime] = 
                 c["ids"].append(art_id)
             if insumos and not c["insumo"]:
                 c["insumo"] = insumos[0]
-
+ 
     # Convertir clusters en señales con clave estable y guardarlas (upsert)
     for c in clusters.values():
         base = f"{c['tipo']}|{c['emp_clave']}|{c['etiqueta_regla']}"
         h = hash_corto(base)
         prefijo = f"{slug(c['tipo'])}_{slug(c['emp_clave'])}_"
-
+ 
         # ¿Es el mismo tema de una corrida anterior?
         patron = _escapar_like(prefijo) + "%" + _escapar_like(f"_{h}")
         existentes = db.buscar_senales_por_patron(patron)
-
+ 
         arts_nuevas = db.obtener_articulos_por_ids(c["ids"])
         fechas_nuevas = [f for f in (normalizar_fecha(a.get("fecha")) for a in arts_nuevas) if f]
         primera_nueva = min(fechas_nuevas) if fechas_nuevas else None
         previa = _elegir_senal_existente(existentes, primera_nueva)
-
+ 
         ids = set(c["ids"])
         empresas_f = set(c["empresas"])
         sectores_f = set(c["sectores"])
@@ -331,13 +338,13 @@ def analizar(db, cfg: Dict[str, Any], fetcher=None, ahora: Optional[datetime] = 
         else:
             semana = semana_iso(primera_nueva) or "sin-fecha"
             senal_key = f"{prefijo}{semana}_{h}"
-
+ 
         # Métricas calculadas sobre TODAS las notas del tema (no solo las de esta corrida)
         arts = db.obtener_articulos_por_ids(sorted(ids))
         fechas = [f for f in (normalizar_fecha(a.get("fecha")) for a in arts) if f]
         primera = min(fechas) if fechas else None
         ultima = max(fechas) if fechas else None
-
+ 
         medios: List[str] = []
         vistos = set()
         for a in arts:
@@ -346,13 +353,13 @@ def analizar(db, cfg: Dict[str, Any], fetcher=None, ahora: Optional[datetime] = 
                 vistos.add(slug(m))
                 medios.append(m)
         n_fuentes = len(medios) or len({a.get("fuente_id") for a in arts if a.get("fuente_id")}) or 1
-
+ 
         certeza = certeza_mayor(certeza_de_articulo(a, mapa) for a in arts)
         desglose = desglosar_score(c["peso_tipo"], certeza, n_fuentes, ultima, ahora=ahora)
         score = desglose.pop("score")
         desglose["mediosCount"] = len(medios)
         desglose["articulosCount"] = len(arts)
-
+ 
         senal_dict = {
             "senal_key": senal_key,
             "cluster_id": int(hash_corto(senal_key, 8), 16) % 1_000_000_000,
@@ -374,10 +381,62 @@ def analizar(db, cfg: Dict[str, Any], fetcher=None, ahora: Optional[datetime] = 
         }
         db.guardar_senal(senal_dict)
         senales_generadas.append(senal_dict)
-
+ 
     return senales_generadas
-
-
+ 
+ 
+def noticias_por_empresa(db, cfg: Dict[str, Any], max_por_empresa: int = 15) -> Dict[str, Any]:
+    """
+    Índice de TODAS las noticias que mencionan a cada empresa del catálogo, genere o no una señal.
+    Alimenta la ficha por empresa. Solo expone titular, medio, fecha y enlace (sin copiar texto).
+    Incluye también las empresas sin noticias (n_noticias = 0) para poder mostrar "sin noticias".
+    """
+    mapa = mapa_fuentes(cfg)
+    limite = (cfg.get("analisis") or {}).get("max_articulos_indice", 2000)
+    articulos = db.obtener_articulos(limit=limite, solo_no_demo=True)
+    det = EntidadesDetector()
+ 
+    por_empresa: Dict[str, List[Dict[str, Any]]] = {}
+    con_empresa = 0
+    for art in articulos:
+        texto = f"{art.get('titulo') or ''} {art.get('extracto') or art.get('resumen') or ''}"
+        empresas, _ = det.detectar_empresas(texto)
+        if not empresas:
+            continue
+        con_empresa += 1
+        item = {
+            "titulo": art.get("titulo") or "",
+            "url": art.get("url") or "",
+            "medio": resolver_medio(art, mapa),
+            "fecha": normalizar_fecha(art.get("fecha")),
+        }
+        for i, nombre in enumerate(empresas):
+            por_empresa.setdefault(nombre, []).append({**item, "principal": i == 0})
+ 
+    total = len(articulos)
+    salida = []
+    for emp in det.empresas:
+        nombre = emp.get("nombre", "")
+        notas = sorted(por_empresa.get(nombre, []), key=lambda n: n.get("fecha") or "", reverse=True)
+        salida.append({
+            "nombre": nombre,
+            "ticker": emp.get("ticker"),
+            "ticker_preferencial": emp.get("ticker_preferencial"),
+            "sector": emp.get("sector"),
+            "n_noticias": len(notas),
+            "ultima": notas[0]["fecha"] if notas else None,
+            "noticias": notas[:max_por_empresa],
+        })
+    salida.sort(key=lambda e: (-e["n_noticias"], e["nombre"]))
+ 
+    logger.info(f"Índice por empresa: {total} artículos, {con_empresa} mencionan alguna empresa del catálogo.")
+    return {
+        "exportado_el": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "estadisticas": {"articulos_analizados": total, "con_empresa": con_empresa, "sin_empresa": total - con_empresa},
+        "empresas": salida,
+    }
+ 
+ 
 def limpiar(db) -> int:
     """
     Punto 0 (HISTORIA):
@@ -387,8 +446,8 @@ def limpiar(db) -> int:
     borrados = db.limpiar_demo()
     logger.info(f"Limpieza ejecutada: {borrados} artículos demo eliminados. Historia real conservada.")
     return borrados
-
-
+ 
+ 
 def vencida(senal: Dict[str, Any], dias: int = 30) -> bool:
     """Retorna si una señal ha superado la ventana de vigencia para el tablero."""
     creado_en = senal.get("creado_en")
@@ -399,3 +458,4 @@ def vencida(senal: Dict[str, Any], dias: int = 30) -> bool:
         return (datetime.utcnow() - dt).days > dias
     except Exception:
         return False
+ 
