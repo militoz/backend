@@ -1,30 +1,30 @@
 # Colombia Radar - Configuración de Fuentes de Recolección
 # Regla 5: URLs e IDs no confirmados al 100% se marcan como VERIFICAR
-
+ 
 user_agent: "ColombiaRadar/1.0 (+https://github.com/local/colombia-radar; herramienta educativa personal)"
 default_min_delay: 1.0
-
+ 
 # Configuración del enriquecimiento de artículos (Punto 2)
 enriquecer:
   activo: true
   max_peticiones_por_ciclo: 10
   max_caracteres: 1500
-
+ 
 # Cuántos artículos recientes mira cada análisis
 analisis:
   max_articulos: 600
-
+ 
 # Qué se publica en los JSON que lee la interfaz
 publicacion:
   incluir_resumen: false   # false = solo enlace, titular, medio, fecha y certeza (sin texto de los medios)
   max_senales: 200
   max_puntos_serie: 30
-
+ 
 # Configuración de detección de degradación en fuentes (Punto 6)
 salud:
   max_corridas_vacias: 3      # Marcar 'degradada' si acumula N corridas consecutivas con 0 items
   umbral_caida_brusca: 0.5    # Caída al 50% o menos respecto al promedio histórico
-
+ 
 fuentes:
   # ============================================================================
   # 1. FUENTES OFICIALES DIRECTAS (Punto 1 - Peso 1.0, Certeza 'confirmado')
@@ -44,7 +44,7 @@ fuentes:
     link_selector: "a"
     date_selector: ".fecha, td:nth-child(2)"
     emisor_selector: ".emisor, td:nth-child(1)"
-
+ 
   - id: "bvc_hechos_relevantes"
     nombre: "Bolsa de Valores de Colombia - Hechos Relevantes"
     tipo: "bvc"
@@ -60,7 +60,7 @@ fuentes:
     link_selector: "a"
     date_selector: ".fecha-publicacion, time"
     emisor_selector: ".nemotecnico, .emisor"
-
+ 
   - id: "sic_integraciones"
     nombre: "Superintendencia de Industria y Comercio - Integraciones Empresariales"
     tipo: "sic"
@@ -76,7 +76,7 @@ fuentes:
     link_selector: "a"
     date_selector: ".fecha-resolucion, td:nth-child(3), time"
     intervinientes_selector: ".empresas-involucradas, td:nth-child(1)"
-
+ 
   - id: "supersociedades_insolvencia"
     nombre: "Supersociedades - Reorganización e Insolvencia"
     tipo: "supersociedades"
@@ -92,7 +92,7 @@ fuentes:
     link_selector: "a"
     date_selector: ".fecha-auto, td:nth-child(2)"
     sociedad_selector: ".sociedad-concursada, td:nth-child(1)"
-
+ 
   # ============================================================================
   # 2. GOOGLE NEWS COMPLEMENTARIO
   # ============================================================================
@@ -104,7 +104,7 @@ fuentes:
     certeza: "probable"
     min_delay: 1.5
     query: "empresa OR adquisición OR fusión OR inversión Colombia"
-
+ 
   - id: "gnews_macro_colombia"
     nombre: "Google News - Economía y Macro Colombia"
     tipo: "gnews"
@@ -113,7 +113,7 @@ fuentes:
     certeza: "probable"
     min_delay: 1.5
     query: "inflación OR Banco de la República OR tasa de interés Colombia"
-
+ 
   # ============================================================================
   # 3. FUENTES DIRECTAS DE MEDIOS (Punto 3)
   # ============================================================================
@@ -127,7 +127,7 @@ fuentes:
     min_delay: 2.0
     medio: "El Tiempo"
     url: "https://www.eltiempo.com/rss/economia.xml"
-
+ 
   # --- TANDA 1 (ENCENDIDAS para probar) ---
   - id: "medio_larepublica"
     nombre: "La República - Empresas"
@@ -139,7 +139,7 @@ fuentes:
     medio: "La República"
     # VERIFICAR: Ruta exacta del feed RSS de empresas de La República
     url: "https://www.larepublica.co/rss/empresas"
-
+ 
   - id: "medio_valora_analitik"
     nombre: "Valora Analitik - Empresas"
     tipo: "rss"
@@ -150,7 +150,7 @@ fuentes:
     medio: "Valora Analitik"
     # VERIFICAR: Ruta del feed RSS de Valora Analitik
     url: "https://www.valoraanalitik.com/feed/"
-
+ 
   - id: "medio_rankia_colombia"
     nombre: "Rankia Colombia - Titulares"
     tipo: "rss"
@@ -161,7 +161,7 @@ fuentes:
     medio: "Rankia Colombia"
     # VERIFICAR: encontrada vía Feedspot
     url: "https://www.rankia.co/titulares/feed.rss"
-
+ 
   - id: "medio_finance_colombia"
     nombre: "Finance Colombia"
     tipo: "rss"
@@ -172,41 +172,41 @@ fuentes:
     medio: "Finance Colombia"
     # VERIFICAR: WordPress, normalmente termina en /feed/
     url: "https://www.financecolombia.com/feed/"
-
+ 
   # --- TANDA 2 (apagadas, encender tras revisar la tanda 1) ---
   - id: "medio_dinero"
     nombre: "Semana Dinero - Empresas"
     tipo: "rss"
-    activo: false
+    activo: true # TANDA 2: confirmar en el log
     peso: 0.85
     certeza: "probable"
     min_delay: 2.0
     medio: "Dinero"
     # VERIFICAR: Feed RSS sección economía/empresas de Semana Dinero
     url: "https://www.semana.com/rss/economia/empresas/"
-
+ 
   - id: "medio_bloomberg_linea"
     nombre: "Bloomberg Línea - Colombia"
     tipo: "rss"
-    activo: false
+    activo: true # TANDA 2: confirmar en el log
     peso: 0.9
     certeza: "probable"
     min_delay: 2.0
     medio: "Bloomberg Línea"
     # VERIFICAR: Ruta del feed RSS de Bloomberg Línea Colombia
     url: "https://www.bloomberglinea.com/arc/outboundfeeds/rss/category/colombia/"
-
+ 
   - id: "medio_elespectador_economia"
     nombre: "El Espectador - Economía"
     tipo: "rss"
-    activo: false
+    activo: true # TANDA 2: confirmar en el log
     peso: 0.85
     certeza: "probable"
     min_delay: 2.0
     medio: "El Espectador"
     # VERIFICAR: feed nativo no confirmado; revisar la página de RSS del medio
     url: "https://www.elespectador.com/arc/outboundfeeds/discover/economia/?outputType=xml"
-
+ 
   - id: "medio_infobae_colombia"
     nombre: "Infobae - Colombia"
     tipo: "rss"
@@ -217,7 +217,7 @@ fuentes:
     medio: "Infobae"
     # VERIFICAR: patrón Arc de Infobae; es noticia general, habría que filtrar por economía
     url: "https://www.infobae.com/arc/outboundfeeds/rss/category/colombia/"
-
+ 
   - id: "medio_trii_blog"
     nombre: "trii - Blog de inversión"
     tipo: "rss"
@@ -228,7 +228,7 @@ fuentes:
     medio: "trii"
     # VERIFICAR: listada en Feedspot, URL del feed sin confirmar
     url: "https://trii.co/blog/feed/"
-
+ 
   # --- Portafolio (apagada: la URL anterior dio 404) ---
   - id: "medio_portafolio"
     nombre: "Portafolio - Negocios"
@@ -241,7 +241,7 @@ fuentes:
     medio: "Portafolio"
     # VERIFICAR: reemplazar por el enlace real y luego poner activo: true
     url: "https://www.portafolio.co/rss/negocios"
-
+ 
   # ============================================================================
   # 4. SERIES MACRO E INSUMOS DESDE DATOS ABIERTOS (Punto 4)
   # ============================================================================
@@ -259,7 +259,7 @@ fuentes:
     umbral_variacion_pct: 1.5  # 1.5% de cambio semanal o interdiario genera evento macro
     # Endpoint API Socrata de datos.gov.co para TRM (dataset 32sa-8pi3)
     url: "https://www.datos.gov.co/resource/32sa-8pi3.json?$limit=30&$order=vigenciadesde%20DESC"
-
+ 
   - id: "serie_tasa_politica"
     nombre: "Tasa de Interés de Política Monetaria BanRep"
     tipo: "serie"
@@ -274,7 +274,7 @@ fuentes:
     umbral_variacion_pct: 0.25 # Cambio de 25 pb genera señal macro
     # VERIFICAR: Endpoint o ID de recurso Socrata/BanRep para la Tasa de Interés de Política Monetaria
     url: "https://www.datos.gov.co/resource/tasa-interes-banrep.json?$limit=10&$order=fecha%20DESC"
-
+ 
   - id: "serie_ipc"
     nombre: "Índice de Precios al Consumidor (IPC - DANE)"
     tipo: "serie"
@@ -289,7 +289,7 @@ fuentes:
     umbral_variacion_pct: 0.3
     # VERIFICAR: Endpoint de variación anual del IPC reportada por el DANE
     url: "https://www.datos.gov.co/resource/ipc-dane.json?$limit=12&$order=mes%20DESC"
-
+ 
   - id: "serie_insumo_fertilizantes"
     nombre: "Precios de Insumos Agropecuarios (Fertilizantes / Urea)"
     tipo: "serie"
@@ -305,7 +305,7 @@ fuentes:
     umbral_variacion_pct: 3.0 # Movimiento del 3% en fertilizantes genera alerta de insumo
     # VERIFICAR: Dataset SIPSA del DANE / MinAgricultura para precios mayoristas de fertilizantes
     url: "https://www.datos.gov.co/resource/sipsa-insumos-agro.json?$limit=20&$order=fecha_registro%20DESC"
-
+ 
   # ============================================================================
   # 5. FUENTES ESTRATÉGICAS ADICIONALES (Desactivadas, VERIFICAR)
   # ============================================================================
@@ -321,7 +321,7 @@ fuentes:
     campo_valor: "valor_del_contrato"
     # VERIFICAR: API Socrata de Procesos de Contratación SECOP II en datos.gov.co (dataset jbjy-vk9h)
     url: "https://www.datos.gov.co/resource/jbjy-vk9h.json?$limit=50&$order=fecha_de_firma%20DESC&$where=valor_del_contrato>5000000000"
-
+ 
   - id: "banrep_comunicados_junta"
     nombre: "Banco de la República - Comunicados de la Junta"
     tipo: "html"
@@ -336,7 +336,7 @@ fuentes:
     title_selector: "h2 a, h3 a, a"
     link_selector: "a"
     date_selector: "time, .date"
-
+ 
   - id: "creg_normatividad"
     nombre: "CREG - Resoluciones de Energía y Gas"
     tipo: "rss"
@@ -347,7 +347,7 @@ fuentes:
     medio: "CREG (Oficial)"
     # VERIFICAR: Feed o canal RSS de proyectos y resoluciones tarifarias de la CREG
     url: "https://creg.gov.co/rss/resoluciones"
-
+ 
   - id: "anla_licencias_ambientales"
     nombre: "ANLA - Licencias Ambientales Proyectos Estratégicos"
     tipo: "html"
@@ -362,7 +362,7 @@ fuentes:
     title_selector: "a, .titulo-proyecto"
     link_selector: "a"
     date_selector: ".fecha, td:nth-child(2)"
-
+ 
   - id: "superservicios_intervenciones"
     nombre: "Superservicios - Intervenciones y Resoluciones"
     tipo: "html"
@@ -377,7 +377,7 @@ fuentes:
     title_selector: "h3 a, .title a"
     link_selector: "a"
     date_selector: "time, .date"
-
+ 
   - id: "supertransporte_vigilancia"
     nombre: "Supertransporte - Investigaciones y Sanciones"
     tipo: "html"
@@ -392,7 +392,7 @@ fuentes:
     title_selector: "h2.entry-title a"
     link_selector: "a"
     date_selector: ".entry-date"
-
+ 
   - id: "medio_forbes_colombia"
     nombre: "Forbes Colombia - Negocios y Economía"
     tipo: "rss"
@@ -403,7 +403,7 @@ fuentes:
     medio: "Forbes Colombia"
     # VERIFICAR: Feed RSS oficial de Forbes Colombia categoría Negocios
     url: "https://forbes.co/category/negocios/feed"
-
+ 
   - id: "medio_elcolombiano_negocios"
     nombre: "El Colombiano - Negocios (Antioquia / GEA)"
     tipo: "rss"
@@ -414,7 +414,7 @@ fuentes:
     medio: "El Colombiano"
     # VERIFICAR: Feed RSS sección negocios de El Colombiano
     url: "https://www.elcolombiano.com/rss/negocios.xml"
-
+ 
   - id: "medio_elheraldo_economia"
     nombre: "El Heraldo - Economía (Costa Caribe / Puertos / Gas)"
     tipo: "rss"
@@ -425,3 +425,4 @@ fuentes:
     medio: "El Heraldo"
     # VERIFICAR: Feed RSS sección economía de El Heraldo
     url: "https://www.elheraldo.co/rss/economia.xml"
+ 
