@@ -7,7 +7,7 @@ insumos:
       - "carga de café"
       - "arábica"
       - "grano de café"
-
+ 
   - nombre: "Petróleo y Combustibles"
     categoria: "Energía"
     alias:
@@ -17,21 +17,21 @@ insumos:
       - "gasolina"
       - "diésel"
       - "acpm"
-
+ 
   - nombre: "Carbón Térmico"
     categoria: "Minería"
     alias:
       - "carbón"
       - "carbón térmico"
       - "coque"
-
+ 
   - nombre: "Gas Natural"
     categoria: "Energía"
     alias:
       - "gas natural"
       - "gnl"
       - "glp"
-
+ 
   - nombre: "Fertilizantes y Urea"
     categoria: "Insumo Agropecuario"
     alias:
@@ -39,21 +39,22 @@ insumos:
       - "fertilizantes"
       - "abono químico"
       - "plaguicidas"
-
+ 
   - nombre: "Cemento y Clinker"
     categoria: "Construcción"
     alias:
       - "cemento"
       - "clinker"
-      - "concreto"
-
+      - "concreto premezclado"   # "concreto" solo se quitó: coincidía con "concretó" y con el adjetivo
+      - "concreto hidráulico"
+ 
   - nombre: "Acero y Alambrón"
     categoria: "Metalmecánica"
     alias:
       - "acero"
       - "alambrón"
       - "varilla de acero"
-
+ 
   - nombre: "Maíz y Cereales"
     categoria: "Agrícola"
     alias:
@@ -61,3 +62,4 @@ insumos:
       - "maíz blanco"
       - "soya"
       - "cereales forrajeros"
+ 
