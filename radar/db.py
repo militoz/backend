@@ -309,6 +309,35 @@ class Database:
             )
             return [self._fila_a_senal(r) for r in cur.fetchall()]
 
+    def eliminar_senales_obsoletas(self, ids_analizados, keys_vigentes) -> int:
+        """
+        Borra señales que la lógica actual ya no genera: todas sus notas fueron re-analizadas
+        en esta corrida y aun así ninguna corrida las actualizó (p. ej. quedaron de una regla
+        o un detector anterior). Conserva las señales que tienen alguna nota fuera del lote
+        analizado y las que no tienen notas registradas. Solo toca la tabla 'senales'.
+        """
+        ids_analizados = set(ids_analizados)
+        keys_vigentes = set(keys_vigentes)
+        if not ids_analizados:
+            return 0
+        borrar = []
+        with self.get_connection() as conn:
+            cur = conn.cursor()
+            cur.execute("SELECT id, senal_key, articulos_ids FROM senales WHERE senal_key IS NOT NULL")
+            for fila in cur.fetchall():
+                if fila["senal_key"] in keys_vigentes:
+                    continue
+                try:
+                    notas = set(json.loads(fila["articulos_ids"] or "[]"))
+                except ValueError:
+                    continue
+                if notas and notas <= ids_analizados:
+                    borrar.append(fila["id"])
+            for sid in borrar:
+                cur.execute("DELETE FROM senales WHERE id = ?", (sid,))
+            conn.commit()
+        return len(borrar)
+
     def buscar_senales_por_patron(self, patron: str) -> List[Dict[str, Any]]:
         """Busca señales cuya clave encaja con un patrón LIKE (usa \\ como escape)."""
         with self.get_connection() as conn:
