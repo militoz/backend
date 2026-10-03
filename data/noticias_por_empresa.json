@@ -1,0 +1,346 @@
+{
+  "exportado_el": "2026-10-03T12:43:42Z",
+  "estadisticas": {
+    "articulos_analizados": 274,
+    "con_empresa": 20,
+    "sin_empresa": 254
+  },
+  "empresas": [
+    {
+      "nombre": "Ecopetrol S.A.",
+      "ticker": "ECOPETROL",
+      "ticker_preferencial": null,
+      "sector": "Petróleo y Gas",
+      "n_noticias": 6,
+      "ultima": "2026-10-02T23:37:54Z",
+      "noticias": [
+        {
+          "titulo": "Mauricio Gutiérrez Dangond fue nombrado como vicepresidente de Estrategia y Nuevos Negocios de Ecopetrol: este es su perfil",
+          "url": "https://www.eltiempo.com/economia/sectores/mauricio-gutierrez-dangond-fue-nombrado-como-vicepresidente-de-estrategia-y-nuevos-negocios-de-ecopetrol-este-es-su-perfil-3590904",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-02T23:37:54Z",
+          "principal": true
+        },
+        {
+          "titulo": "ANLA otorga licencia a proyecto de petróleo de Ecopetrol en Meta",
+          "url": "https://www.valoraanalitik.com/anla-otorga-licencia-a-proyecto-de-petroleo-de-ecopetrol-en-meta/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-02T20:30:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "GeoPark Joins Ecopetrol and Drummond in the Race to Drill Colombia’s First Fracking Well",
+          "url": "https://www.financecolombia.com/geopark-joins-ecopetrol-and-drummond-in-the-race-to-drill-colombias-first-fracking-well/",
+          "medio": "Finance Colombia",
+          "fecha": "2026-10-02T14:10:40Z",
+          "principal": true
+        },
+        {
+          "titulo": "Video | Acciones de Ecopetrol lideran el volumen de transacciones de la jornada",
+          "url": "https://www.valoraanalitik.com/acciones-de-ecopetrol-lideran-el-volumen-de-transacciones-de-la-jornada/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-02T12:42:08Z",
+          "principal": true
+        },
+        {
+          "titulo": "Ecopetrol, Nubank y Alphabet: las 3 acciones de octubre de 2026 en Colombia",
+          "url": "https://www.rankia.co/blog/analisis-colcap/7490155-mejores-acciones-para-invertir-octubre-2026",
+          "medio": "Rankia Colombia",
+          "fecha": "2026-10-01T21:00:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Invertir en acciones colombianas: mejores opciones para 2026",
+          "url": "https://www.rankia.co/blog/analisis-colcap/3809381-acciones-mas-valorizadas-bolsa-valores-colombia",
+          "medio": "Rankia Colombia",
+          "fecha": "2026-09-30T21:00:00Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo Cibest S.A.",
+      "ticker": "CIBEST",
+      "ticker_preferencial": "PFCIBEST",
+      "sector": "Banca y Finanzas",
+      "n_noticias": 3,
+      "ultima": "2026-10-02T22:49:29Z",
+      "noticias": [
+        {
+          "titulo": "Más formas de recibir pagos y gestionar las ventas con las tres novedades de Nequi Negocios",
+          "url": "https://www.valoraanalitik.com/mas-formas-de-recibir-pagos-y-gestionar-las-ventas-con-las-tres-novedades-de-nequi-negocios/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-02T22:49:29Z",
+          "principal": true
+        },
+        {
+          "titulo": "Grupo Cibest Says Higher Fed Rates Would Limit Room for a Cheaper Dollar in Colombia",
+          "url": "https://www.financecolombia.com/grupo-cibest-says-higher-fed-rates-would-limit-room-for-a-cheaper-dollar-in-colombia/",
+          "medio": "Finance Colombia",
+          "fecha": "2026-10-02T14:15:23Z",
+          "principal": true
+        },
+        {
+          "titulo": "Invertir en acciones colombianas: mejores opciones para 2026",
+          "url": "https://www.rankia.co/blog/analisis-colcap/3809381-acciones-mas-valorizadas-bolsa-valores-colombia",
+          "medio": "Rankia Colombia",
+          "fecha": "2026-09-30T21:00:00Z",
+          "principal": false
+        }
+      ]
+    },
+    {
+      "nombre": "Avianca Group International",
+      "ticker": "AVIANCA",
+      "ticker_preferencial": null,
+      "sector": "Transporte Aéreo",
+      "n_noticias": 2,
+      "ultima": "2026-10-02T14:04:32Z",
+      "noticias": [
+        {
+          "titulo": "Colombian Delegation Expects More Than $11 Million USD in Tourism Deals From IFTM Top Resa in Paris",
+          "url": "https://www.financecolombia.com/colombian-delegation-expects-more-than-11-million-usd-in-tourism-deals-from-iftm-top-resa-in-paris/",
+          "medio": "Finance Colombia",
+          "fecha": "2026-10-02T14:04:32Z",
+          "principal": true
+        },
+        {
+          "titulo": "Así funciona la propuesta Business Class de Avianca: antes, durante y después del vuelo",
+          "url": "https://www.larepublica.co/empresas/asi-funciona-la-propuesta-business-class-de-avianca-antes-durante-y-despues-del-vuelo-4491884",
+          "medio": "La República",
+          "fecha": "2026-09-28T17:24:57Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo Energía Bogotá S.A. E.S.P.",
+      "ticker": "GEB",
+      "ticker_preferencial": null,
+      "sector": "Energía y Servicios",
+      "n_noticias": 2,
+      "ultima": "2026-10-01T22:00:00Z",
+      "noticias": [
+        {
+          "titulo": "La UPME adjudicó al Grupo Energía Bogotá importante proyecto para el abastecimiento de la Sabana de Bogotá",
+          "url": "https://www.valoraanalitik.com/la-upme-adjudico-al-grupo-energia-bogota-importante-proyecto-para-el-abastecimiento-de-la-sabana-de-bogota/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-01T22:00:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Grupo Energía de Bogotá será la quinta empresa local que se listará en EE.UU.",
+          "url": "https://www.larepublica.co/empresas/grupo-energia-de-bogota-sera-la-quinta-empresa-local-que-se-listara-en-mercado-de-valores-de-ee-uu-4492376",
+          "medio": "La República",
+          "fecha": "2026-09-29T05:01:41Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo Nutresa S.A.",
+      "ticker": "NUTRESA",
+      "ticker_preferencial": null,
+      "sector": "Alimentos y Bebidas",
+      "n_noticias": 2,
+      "ultima": "2026-10-01T12:10:59Z",
+      "noticias": [
+        {
+          "titulo": "Grupo Nutresa absorbió a Nugil y Jgdb con la totalidad de sus activos, pasivos y patrimonio",
+          "url": "https://www.larepublica.co/empresas/absorcion-de-nugil-y-jgdb-en-el-grupo-nutresa-4494259",
+          "medio": "La República",
+          "fecha": "2026-10-01T12:10:59Z",
+          "principal": true
+        },
+        {
+          "titulo": "Grupo Nutresa adquirió 100% de las acciones de Empaques Industriales de Colombia S.A.S.",
+          "url": "https://www.larepublica.co/empresas/compra-de-empaques-industriales-de-colombia-por-nutresa-4493344",
+          "medio": "La República",
+          "fecha": "2026-09-30T11:34:56Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Organización Terpel S.A.",
+      "ticker": "TERPEL",
+      "ticker_preferencial": null,
+      "sector": "Distribución de Combustibles",
+      "n_noticias": 2,
+      "ultima": "2026-09-29T12:13:57Z",
+      "noticias": [
+        {
+          "titulo": "Terpel, a través de Terpel Exportaciones, suscribió contrato de combustible Jet A-1",
+          "url": "https://www.larepublica.co/empresas/terpel-exportaciones-suscribio-contrato-con-aerolineas-para-el-combustible-4492575",
+          "medio": "La República",
+          "fecha": "2026-09-29T12:13:57Z",
+          "principal": true
+        },
+        {
+          "titulo": "Cómo comprar acciones en Terpel desde Colombia: guía actualizada 2026",
+          "url": "https://www.rankia.co/blog/analisis-colcap/6272115-como-comprar-acciones-terpel",
+          "medio": "Rankia Colombia",
+          "fecha": "2026-09-28T13:00:00Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Almacenes Éxito S.A.",
+      "ticker": "EXITO",
+      "ticker_preferencial": null,
+      "sector": "Comercio Minorista / Retail",
+      "n_noticias": 1,
+      "ultima": "2026-09-29T13:15:14Z",
+      "noticias": [
+        {
+          "titulo": "Los usuarios de Móvil Éxito ahora pueden utilizar la red de Claro para ampliar su cobertura",
+          "url": "https://www.larepublica.co/empresas/movil-exito-hizo-alianza-con-claro-4492639",
+          "medio": "La República",
+          "fecha": "2026-09-29T13:15:14Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Banco Davivienda S.A.",
+      "ticker": "DAVIVIENDA",
+      "ticker_preferencial": null,
+      "sector": "Banca y Finanzas",
+      "n_noticias": 1,
+      "ultima": "2026-10-01T17:07:00Z",
+      "noticias": [
+        {
+          "titulo": "Davivienda Group refuerza apuesta por finanzas personales: busca ser socio de Carvajal en app para gestionar dinero",
+          "url": "https://www.valoraanalitik.com/davivienda-group-socio-carvajal-app-dinero/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-01T17:07:00Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Cementos Argos S.A.",
+      "ticker": "CEMARGOS",
+      "ticker_preferencial": "PFCEMARGOS",
+      "sector": "Materiales y Construcción",
+      "n_noticias": 1,
+      "ultima": "2026-09-30T22:04:25Z",
+      "noticias": [
+        {
+          "titulo": "Opain refinancia deuda por US$185 millones y libera US$55 millones de capital",
+          "url": "https://www.larepublica.co/empresas/opain-refinancia-deuda-por-us-185-millones-y-libera-us-55-millones-de-capital-4493950",
+          "medio": "La República",
+          "fecha": "2026-09-30T22:04:25Z",
+          "principal": false
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo Argos S.A.",
+      "ticker": "GRUPOARGOS",
+      "ticker_preferencial": "PFGRUPOARGOS",
+      "sector": "Infraestructura e Inversión",
+      "n_noticias": 1,
+      "ultima": "2026-09-30T22:04:25Z",
+      "noticias": [
+        {
+          "titulo": "Opain refinancia deuda por US$185 millones y libera US$55 millones de capital",
+          "url": "https://www.larepublica.co/empresas/opain-refinancia-deuda-por-us-185-millones-y-libera-us-55-millones-de-capital-4493950",
+          "medio": "La República",
+          "fecha": "2026-09-30T22:04:25Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo de Inversiones Suramericana S.A.",
+      "ticker": "GRUPOSURA",
+      "ticker_preferencial": "PFGRUPSURA",
+      "sector": "Servicios Financieros",
+      "n_noticias": 1,
+      "ultima": "2026-09-18T21:00:00Z",
+      "noticias": [
+        {
+          "titulo": "¿Cómo comprar acciones del Grupo Sura en Colombia? Guía paso a paso",
+          "url": "https://www.rankia.co/blog/analisis-colcap/5141868-como-comprar-acciones-grupo-sura",
+          "medio": "Rankia Colombia",
+          "fecha": "2026-09-18T21:00:00Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Banco de Bogotá S.A.",
+      "ticker": "BOGOTA",
+      "ticker_preferencial": null,
+      "sector": "Banca y Finanzas",
+      "n_noticias": 0,
+      "ultima": null,
+      "noticias": []
+    },
+    {
+      "nombre": "Canacol Energy Ltd.",
+      "ticker": "CNE",
+      "ticker_preferencial": null,
+      "sector": "Gas Natural y Energía",
+      "n_noticias": 0,
+      "ultima": null,
+      "noticias": []
+    },
+    {
+      "nombre": "Celsia S.A. E.S.P.",
+      "ticker": "CELSIA",
+      "ticker_preferencial": null,
+      "sector": "Energía y Renovables",
+      "n_noticias": 0,
+      "ultima": null,
+      "noticias": []
+    },
+    {
+      "nombre": "Corporación Financiera Colombiana S.A.",
+      "ticker": "CORFICOLCF",
+      "ticker_preferencial": null,
+      "sector": "Banca y Finanzas",
+      "n_noticias": 0,
+      "ultima": null,
+      "noticias": []
+    },
+    {
+      "nombre": "Empresa de Telecomunicaciones de Bogotá S.A. E.S.P.",
+      "ticker": "ETB",
+      "ticker_preferencial": null,
+      "sector": "Telecomunicaciones",
+      "n_noticias": 0,
+      "ultima": null,
+      "noticias": []
+    },
+    {
+      "nombre": "Grupo Aval Acciones y Valores S.A.",
+      "ticker": "GRUPOAVAL",
+      "ticker_preferencial": "PFAVAL",
+      "sector": "Banca y Finanzas",
+      "n_noticias": 0,
+      "ultima": null,
+      "noticias": []
+    },
+    {
+      "nombre": "Interconexión Eléctrica S.A. E.S.P.",
+      "ticker": "ISA",
+      "ticker_preferencial": null,
+      "sector": "Energía y Servicios",
+      "n_noticias": 0,
+      "ultima": null,
+      "noticias": []
+    },
+    {
+      "nombre": "Mineros S.A.",
+      "ticker": "MINEROS",
+      "ticker_preferencial": null,
+      "sector": "Minería",
+      "n_noticias": 0,
+      "ultima": null,
+      "noticias": []
+    }
+  ]
+}

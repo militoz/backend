@@ -1,0 +1,253 @@
+{
+  "exportado_el": "2026-10-03T12:43:42Z",
+  "ultima_recoleccion": "2026-10-03T12:43:34Z",
+  "total_fuentes": 21,
+  "degradadas_count": 1,
+  "errores_count": 12,
+  "fuentes": [
+    {
+      "fuente_id": "bvc_hechos_relevantes",
+      "nombre": "Bolsa de Valores de Colombia - Hechos Relevantes",
+      "tipo": "oficial",
+      "estado": "error",
+      "items_recolectados": 0,
+      "ultima_recoleccion": "2026-10-02T15:29:37Z",
+      "motivo": "robots.txt no permite la descarga (o no se pudo leer robots.txt)",
+      "exitos": 0,
+      "fallos": 1
+    },
+    {
+      "fuente_id": "gnews_empresas_colombia",
+      "nombre": "Google News - Empresas y Negocios Colombia",
+      "tipo": "prensa",
+      "estado": "error",
+      "items_recolectados": 0,
+      "ultima_recoleccion": "2026-10-02T15:29:39Z",
+      "motivo": "robots.txt no permite la descarga (o no se pudo leer robots.txt)",
+      "exitos": 0,
+      "fallos": 1
+    },
+    {
+      "fuente_id": "gnews_macro_colombia",
+      "nombre": "Google News - Economía y Macro Colombia",
+      "tipo": "prensa",
+      "estado": "error",
+      "items_recolectados": 0,
+      "ultima_recoleccion": "2026-10-02T15:29:39Z",
+      "motivo": "robots.txt no permite la descarga (o no se pudo leer robots.txt)",
+      "exitos": 0,
+      "fallos": 1
+    },
+    {
+      "fuente_id": "medio_bloomberg_linea",
+      "nombre": "Bloomberg Línea - Colombia",
+      "tipo": "prensa",
+      "estado": "error",
+      "items_recolectados": 0,
+      "ultima_recoleccion": "2026-10-02T20:44:46Z",
+      "motivo": "HTTP 404: la dirección ya no existe; revisar la URL en sources.yaml",
+      "exitos": 0,
+      "fallos": 2
+    },
+    {
+      "fuente_id": "medio_dinero",
+      "nombre": "Semana Dinero - Empresas",
+      "tipo": "prensa",
+      "estado": "error",
+      "items_recolectados": 0,
+      "ultima_recoleccion": "2026-10-02T20:44:45Z",
+      "motivo": "HTTP 404: la dirección ya no existe; revisar la URL en sources.yaml",
+      "exitos": 0,
+      "fallos": 2
+    },
+    {
+      "fuente_id": "medio_elespectador_economia",
+      "nombre": "El Espectador - Economía",
+      "tipo": "prensa",
+      "estado": "error",
+      "items_recolectados": 0,
+      "ultima_recoleccion": "2026-10-02T20:44:46Z",
+      "motivo": "HTTP 404: la dirección ya no existe; revisar la URL en sources.yaml",
+      "exitos": 0,
+      "fallos": 2
+    },
+    {
+      "fuente_id": "medio_eltiempo_economia",
+      "nombre": "El Tiempo - Economía",
+      "tipo": "prensa",
+      "estado": "ok",
+      "items_recolectados": 10,
+      "ultima_recoleccion": "2026-10-03T12:43:29Z",
+      "motivo": null,
+      "exitos": 12,
+      "fallos": 0
+    },
+    {
+      "fuente_id": "medio_eltiempo_sector_financiero",
+      "nombre": "El Tiempo - Sector Financiero",
+      "tipo": "prensa",
+      "estado": "ok",
+      "items_recolectados": 10,
+      "ultima_recoleccion": "2026-10-03T12:43:33Z",
+      "motivo": null,
+      "exitos": 7,
+      "fallos": 0
+    },
+    {
+      "fuente_id": "medio_finance_colombia",
+      "nombre": "Finance Colombia",
+      "tipo": "prensa",
+      "estado": "ok",
+      "items_recolectados": 10,
+      "ultima_recoleccion": "2026-10-03T12:43:31Z",
+      "motivo": null,
+      "exitos": 11,
+      "fallos": 0
+    },
+    {
+      "fuente_id": "medio_larepublica",
+      "nombre": "La República - Empresas",
+      "tipo": "prensa",
+      "estado": "ok",
+      "items_recolectados": 60,
+      "ultima_recoleccion": "2026-10-03T12:43:29Z",
+      "motivo": null,
+      "exitos": 10,
+      "fallos": 1
+    },
+    {
+      "fuente_id": "medio_portafolio",
+      "nombre": "Portafolio - Economía",
+      "tipo": "prensa",
+      "estado": "ok",
+      "items_recolectados": 10,
+      "ultima_recoleccion": "2026-10-03T12:43:31Z",
+      "motivo": null,
+      "exitos": 7,
+      "fallos": 1
+    },
+    {
+      "fuente_id": "medio_portafolio_finanzas",
+      "nombre": "Portafolio - Finanzas",
+      "tipo": "prensa",
+      "estado": "ok",
+      "items_recolectados": 10,
+      "ultima_recoleccion": "2026-10-03T12:43:33Z",
+      "motivo": null,
+      "exitos": 7,
+      "fallos": 0
+    },
+    {
+      "fuente_id": "medio_rankia_colombia",
+      "nombre": "Rankia Colombia - Titulares",
+      "tipo": "prensa",
+      "estado": "ok",
+      "items_recolectados": 50,
+      "ultima_recoleccion": "2026-10-03T12:43:31Z",
+      "motivo": null,
+      "exitos": 10,
+      "fallos": 1
+    },
+    {
+      "fuente_id": "medio_valora_analitik",
+      "nombre": "Valora Analitik - Empresas",
+      "tipo": "prensa",
+      "estado": "ok",
+      "items_recolectados": 50,
+      "ultima_recoleccion": "2026-10-03T12:43:30Z",
+      "motivo": null,
+      "exitos": 10,
+      "fallos": 1
+    },
+    {
+      "fuente_id": "serie_insumo_fertilizantes",
+      "nombre": "Precios de Insumos Agropecuarios (Fertilizantes / Urea)",
+      "tipo": "serie",
+      "estado": "error",
+      "items_recolectados": 0,
+      "ultima_recoleccion": "2026-10-02T15:29:42Z",
+      "motivo": "HTTP 404: la dirección ya no existe; revisar la URL en sources.yaml",
+      "exitos": 0,
+      "fallos": 1
+    },
+    {
+      "fuente_id": "serie_ipc",
+      "nombre": "Índice de Precios al Consumidor (IPC - DANE)",
+      "tipo": "serie",
+      "estado": "error",
+      "items_recolectados": 0,
+      "ultima_recoleccion": "2026-10-02T15:29:41Z",
+      "motivo": "HTTP 404: la dirección ya no existe; revisar la URL en sources.yaml",
+      "exitos": 0,
+      "fallos": 1
+    },
+    {
+      "fuente_id": "serie_tasa_politica",
+      "nombre": "Tasa de Interés de Política Monetaria BanRep",
+      "tipo": "serie",
+      "estado": "error",
+      "items_recolectados": 0,
+      "ultima_recoleccion": "2026-10-02T15:29:40Z",
+      "motivo": "HTTP 404: la dirección ya no existe; revisar la URL en sources.yaml",
+      "exitos": 0,
+      "fallos": 1
+    },
+    {
+      "fuente_id": "serie_trm",
+      "nombre": "Tasa Representativa del Mercado (TRM)",
+      "tipo": "serie",
+      "estado": "degradada",
+      "items_recolectados": 0,
+      "ultima_recoleccion": "2026-10-03T12:43:34Z",
+      "motivo": "0 items durante 13 corridas consecutivas",
+      "exitos": 13,
+      "fallos": 0
+    },
+    {
+      "fuente_id": "sic_integraciones",
+      "nombre": "Superintendencia de Industria y Comercio - Integraciones Empresariales",
+      "tipo": "oficial",
+      "estado": "error",
+      "items_recolectados": 0,
+      "ultima_recoleccion": "2026-10-02T15:29:37Z",
+      "motivo": "robots.txt no permite la descarga (o no se pudo leer robots.txt)",
+      "exitos": 0,
+      "fallos": 1
+    },
+    {
+      "fuente_id": "superfinanciera_relevante",
+      "nombre": "Superfinanciera - Información Relevante",
+      "tipo": "oficial",
+      "estado": "error",
+      "items_recolectados": 0,
+      "ultima_recoleccion": "2026-10-02T16:04:13Z",
+      "motivo": "HTTP 500: error del servidor de la fuente",
+      "exitos": 0,
+      "fallos": 2
+    },
+    {
+      "fuente_id": "supersociedades_insolvencia",
+      "nombre": "Supersociedades - Reorganización e Insolvencia",
+      "tipo": "oficial",
+      "estado": "error",
+      "items_recolectados": 0,
+      "ultima_recoleccion": "2026-10-02T15:29:39Z",
+      "motivo": "HTTP 404: la dirección ya no existe; revisar la URL en sources.yaml",
+      "exitos": 0,
+      "fallos": 1
+    }
+  ],
+  "degradadas": [
+    {
+      "fuente_id": "serie_trm",
+      "nombre": "Tasa Representativa del Mercado (TRM)",
+      "tipo": "serie",
+      "estado": "degradada",
+      "items_recolectados": 0,
+      "ultima_recoleccion": "2026-10-03T12:43:34Z",
+      "motivo": "0 items durante 13 corridas consecutivas",
+      "exitos": 13,
+      "fallos": 0
+    }
+  ]
+}

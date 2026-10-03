@@ -1,0 +1,45 @@
+{
+  "exportado_el": "2026-10-03T12:43:42Z",
+  "esquema_version": 1,
+  "generado_por": "colombia_radar",
+  "incluye_resumenes": false,
+  "conteos": {
+    "senales": 22,
+    "eventos_macro": 7,
+    "series": 1,
+    "articulos": 274,
+    "fuentes": 21
+  },
+  "sectores": [
+    "Alimentos y Bebidas",
+    "Banca y Finanzas",
+    "Comercio Minorista / Retail",
+    "Distribución de Combustibles",
+    "Energía y Renovables",
+    "Energía y Servicios",
+    "Gas Natural y Energía",
+    "Infraestructura e Inversión",
+    "Materiales y Construcción",
+    "Minería",
+    "Petróleo y Gas",
+    "Servicios Financieros",
+    "Telecomunicaciones",
+    "Transporte Aéreo"
+  ],
+  "pesosTipo": {
+    "Integración": 1.5,
+    "Corporativo": 1.3,
+    "Regulatorio": 1.35,
+    "Insolvencia": 1.5,
+    "Inversión": 1.2,
+    "Nombramiento": 1.15,
+    "Suministro": 1.3,
+    "Macro": 1.25
+  },
+  "pesosCerteza": {
+    "Confirmada": 1.4,
+    "Oficial": 1.5,
+    "Probable": 1.1,
+    "Rumor": 0.7
+  }
+}

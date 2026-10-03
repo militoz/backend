@@ -1,0 +1,306 @@
+{
+  "exportado_el": "2026-10-03T12:43:42Z",
+  "series": {
+    "trm": [
+      {
+        "serie_id": "trm",
+        "fecha": "2026-10-03",
+        "valor": 3273.49
+      },
+      {
+        "serie_id": "trm",
+        "fecha": "2026-10-02",
+        "valor": 3307.73
+      },
+      {
+        "serie_id": "trm",
+        "fecha": "2026-10-01",
+        "valor": 3312.84
+      },
+      {
+        "serie_id": "trm",
+        "fecha": "2026-09-30",
+        "valor": 3341.23
+      },
+      {
+        "serie_id": "trm",
+        "fecha": "2026-09-29",
+        "valor": 3349.63
+      },
+      {
+        "serie_id": "trm",
+        "fecha": "2026-09-26",
+        "valor": 3306.86
+      },
+      {
+        "serie_id": "trm",
+        "fecha": "2026-09-25",
+        "valor": 3329.61
+      },
+      {
+        "serie_id": "trm",
+        "fecha": "2026-09-24",
+        "valor": 3264.39
+      },
+      {
+        "serie_id": "trm",
+        "fecha": "2026-09-23",
+        "valor": 3208.66
+      },
+      {
+        "serie_id": "trm",
+        "fecha": "2026-09-22",
+        "valor": 3192.53
+      },
+      {
+        "serie_id": "trm",
+        "fecha": "2026-09-19",
+        "valor": 3192.92
+      },
+      {
+        "serie_id": "trm",
+        "fecha": "2026-09-18",
+        "valor": 3151.73
+      },
+      {
+        "serie_id": "trm",
+        "fecha": "2026-09-17",
+        "valor": 3128.46
+      },
+      {
+        "serie_id": "trm",
+        "fecha": "2026-09-16",
+        "valor": 3100.45
+      },
+      {
+        "serie_id": "trm",
+        "fecha": "2026-09-15",
+        "valor": 3109.3
+      },
+      {
+        "serie_id": "trm",
+        "fecha": "2026-09-12",
+        "valor": 3072.27
+      },
+      {
+        "serie_id": "trm",
+        "fecha": "2026-09-11",
+        "valor": 3101.0
+      },
+      {
+        "serie_id": "trm",
+        "fecha": "2026-09-10",
+        "valor": 3099.48
+      },
+      {
+        "serie_id": "trm",
+        "fecha": "2026-09-09",
+        "valor": 3116.47
+      },
+      {
+        "serie_id": "trm",
+        "fecha": "2026-09-05",
+        "valor": 3126.08
+      },
+      {
+        "serie_id": "trm",
+        "fecha": "2026-09-04",
+        "valor": 3141.36
+      },
+      {
+        "serie_id": "trm",
+        "fecha": "2026-09-03",
+        "valor": 3140.55
+      },
+      {
+        "serie_id": "trm",
+        "fecha": "2026-09-02",
+        "valor": 3184.0
+      },
+      {
+        "serie_id": "trm",
+        "fecha": "2026-09-01",
+        "valor": 3213.97
+      },
+      {
+        "serie_id": "trm",
+        "fecha": "2026-08-29",
+        "valor": 3202.79
+      },
+      {
+        "serie_id": "trm",
+        "fecha": "2026-08-28",
+        "valor": 3144.28
+      },
+      {
+        "serie_id": "trm",
+        "fecha": "2026-08-27",
+        "valor": 3118.24
+      },
+      {
+        "serie_id": "trm",
+        "fecha": "2026-08-26",
+        "valor": 3081.67
+      },
+      {
+        "serie_id": "trm",
+        "fecha": "2026-08-25",
+        "valor": 3056.51
+      },
+      {
+        "serie_id": "trm",
+        "fecha": "2026-08-22",
+        "valor": 3048.12
+      }
+    ]
+  },
+  "macro": [
+    {
+      "id": "macro_sin-empresa-57a3d0_2026-w40_d05df6",
+      "cluster_id": 260365124,
+      "etiqueta": "Movimiento Macroeconómico Significativo",
+      "tipo": "Macro",
+      "ultima": "2026-10-03T12:20:00Z",
+      "n_fuentes": 1,
+      "n_notas": 1,
+      "impacto": null,
+      "sectoresAfectados": [],
+      "resumen": null,
+      "articulos": [
+        {
+          "url": "https://www.portafolio.co/economia/finanzas/dolar-perdio-casi-80-durante-la-semana-y-cedio-terreno-frente-al-peso-luego-del-aumento-de-la-tasa-de-interes-503796",
+          "titulo": "Dólar perdió casi $80 durante la semana y cedió terreno frente al peso luego del aumento de la tasa de interés",
+          "medio": "Portafolio",
+          "fecha": "2026-10-03T12:20:00Z",
+          "certeza": "Probable"
+        }
+      ]
+    },
+    {
+      "id": "macro_sin-empresa-143fcf_2026-w40_4ef18f",
+      "cluster_id": 329135134,
+      "etiqueta": "Movimiento Macroeconómico Significativo",
+      "tipo": "Macro",
+      "ultima": "2026-10-02T18:02:40Z",
+      "n_fuentes": 1,
+      "n_notas": 1,
+      "impacto": null,
+      "sectoresAfectados": [],
+      "resumen": null,
+      "articulos": [
+        {
+          "url": "https://www.portafolio.co/economia/gobierno/tiene-deudas-o-piensa-pedir-un-nuevo-prestamo-asi-afectara-su-bolsillo-el-aumento-de-la-tasa-de-interes-al-12-503765",
+          "titulo": "¿Tiene deudas o piensa pedir un nuevo préstamo? Así afectará su bolsillo el aumento de la tasa de interés al 12,25%",
+          "medio": "Portafolio",
+          "fecha": "2026-10-02T18:02:40Z",
+          "certeza": "Probable"
+        }
+      ]
+    },
+    {
+      "id": "macro_sin-empresa-497f85_2026-w40_db94fe",
+      "cluster_id": 52606007,
+      "etiqueta": "Movimiento Macroeconómico Significativo",
+      "tipo": "Macro",
+      "ultima": "2026-10-02T15:28:26Z",
+      "n_fuentes": 1,
+      "n_notas": 1,
+      "impacto": null,
+      "sectoresAfectados": [],
+      "resumen": null,
+      "articulos": [
+        {
+          "url": "https://www.valoraanalitik.com/tasas-de-interes-llegan-a-1225-quienes-salen-ganando-y-quienes-pierden-con-la-decision-del-banco-de-la-republica/",
+          "titulo": "Tasas de interés llegan a 12,25 %: ¿Quiénes salen ganando y quiénes pierden con la decisión del Banco de la República?",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-02T15:28:26Z",
+          "certeza": "Probable"
+        }
+      ]
+    },
+    {
+      "id": "macro_sin-empresa-92c9ef_2026-w40_e822b0",
+      "cluster_id": 21647321,
+      "etiqueta": "Movimiento Macroeconómico Significativo",
+      "tipo": "Macro",
+      "ultima": "2026-10-01T19:11:51Z",
+      "n_fuentes": 1,
+      "n_notas": 1,
+      "impacto": null,
+      "sectoresAfectados": [],
+      "resumen": null,
+      "articulos": [
+        {
+          "url": "https://www.portafolio.co/economia/finanzas/dolar-en-colombia-inicia-jornada-a-la-baja-tras-decision-del-banco-de-la-republica-de-subir-la-tasa-de-interes-503639",
+          "titulo": "Dólar bajó y se acercó a los 3.300 en una semana marcada por el aumento de la tasa de interés",
+          "medio": "Portafolio",
+          "fecha": "2026-10-01T19:11:51Z",
+          "certeza": "Probable"
+        }
+      ]
+    },
+    {
+      "id": "macro_sin-empresa-f7e739_2026-w40_466066",
+      "cluster_id": 291556767,
+      "etiqueta": "Movimiento Macroeconómico Significativo",
+      "tipo": "Macro",
+      "ultima": "2026-10-01T02:21:04Z",
+      "n_fuentes": 1,
+      "n_notas": 1,
+      "impacto": null,
+      "sectoresAfectados": [],
+      "resumen": null,
+      "articulos": [
+        {
+          "url": "https://www.eltiempo.com/economia/sector-financiero/aumento-de-la-tasa-de-interes-al-12-25-sorprendio-al-mercado-la-decision-tiene-varios-mensajes-encontrados-3590347",
+          "titulo": "Aumento de la tasa de interés al 12,25 % sorprendió al mercado: 'la decisión tiene varios mensajes encontrados'",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-01T02:21:04Z",
+          "certeza": "Probable"
+        }
+      ]
+    },
+    {
+      "id": "macro_sin-empresa-87ee2a_2026-w40_8376a5",
+      "cluster_id": 141212314,
+      "etiqueta": "Movimiento Macroeconómico Significativo",
+      "tipo": "Macro",
+      "ultima": "2026-10-01T00:55:56Z",
+      "n_fuentes": 1,
+      "n_notas": 1,
+      "impacto": null,
+      "sectoresAfectados": [],
+      "resumen": null,
+      "articulos": [
+        {
+          "url": "https://www.eltiempo.com/economia/sector-financiero/banco-de-la-republica-subio-la-tasa-de-interes-paso-del-12-al-12-25-anual-por-mayoria-de-votos-3590170",
+          "titulo": "Gobierno De La Espriella se alinea con mayoría del Banco de la República para aumentar la tasa de interés al 12,25 %",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-01T00:55:56Z",
+          "certeza": "Probable"
+        }
+      ]
+    },
+    {
+      "id": "macro_sin-empresa-dd363e_2026-w40_8d4635",
+      "cluster_id": 750833673,
+      "etiqueta": "Movimiento Macroeconómico Significativo",
+      "tipo": "Macro",
+      "ultima": "2026-09-30T21:35:40Z",
+      "n_fuentes": 1,
+      "n_notas": 1,
+      "impacto": null,
+      "sectoresAfectados": [],
+      "resumen": null,
+      "articulos": [
+        {
+          "url": "https://www.portafolio.co/economia/finanzas/el-banco-de-la-republica-aumenta-la-tasa-de-interes-en-25-puntos-basicos-y-queda-en-12-503597",
+          "titulo": "El Banco de la República aumenta la tasa de interés en 25 puntos básicos: queda en 12,25%",
+          "medio": "Portafolio",
+          "fecha": "2026-09-30T21:35:40Z",
+          "certeza": "Probable"
+        }
+      ]
+    }
+  ]
+}
