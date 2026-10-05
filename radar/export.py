@@ -152,11 +152,28 @@ def construir_macro(db, cfg: Dict[str, Any], ahora: Optional[datetime] = None) -
     return {"exportado_el": _ahora_iso(ahora), "series": series, "macro": eventos}
 
 
+def _ids_fuentes_activas(cfg: Dict[str, Any]) -> Optional[set]:
+    """IDs de las fuentes encendidas en sources.yaml. None = no hay lista de fuentes: no se filtra nada."""
+    fuentes = (cfg or {}).get("fuentes") or []
+    if not fuentes:
+        return None
+    return {f.get("id") for f in fuentes if f.get("id") and f.get("activo", True)}
+
+
 def construir_salud(db, cfg: Dict[str, Any], ahora: Optional[datetime] = None) -> Dict[str, Any]:
-    """Contenido de salud.json: estado de cada fuente según la última corrida."""
+    """Contenido de salud.json: estado de cada fuente ENCENDIDA según la última corrida.
+
+    Las fuentes apagadas (activo: false) conservan en la base su último intento, pero ese dato es
+    historia: no se cuentan como errores. Sus nombres salen aparte, en "desactivadas".
+    """
     mapa = mapa_fuentes(cfg)
+    activas = _ids_fuentes_activas(cfg)
     fuentes = []
+    desactivadas = []
     for f in db.obtener_salud_fuentes():
+        if activas is not None and f["fuente_id"] not in activas:
+            desactivadas.append(f["fuente_id"])
+            continue
         f_cfg = mapa.get(f["fuente_id"]) or {}
         fuentes.append(
             {
@@ -180,6 +197,7 @@ def construir_salud(db, cfg: Dict[str, Any], ahora: Optional[datetime] = None) -
         "total_fuentes": len(fuentes),
         "degradadas_count": len(degradadas),
         "errores_count": len(con_error),
+        "desactivadas": desactivadas,
         "fuentes": fuentes,
         "degradadas": degradadas,
     }
@@ -225,7 +243,7 @@ def construir_meta(db, cfg: Dict[str, Any], ahora: Optional[datetime] = None) ->
             "eventos_macro": len(macro["macro"]),
             "series": len(macro["series"]),
             "articulos": db.contar_articulos(),
-            "fuentes": len(db.obtener_salud_fuentes()),
+            "fuentes": construir_salud(db, cfg, ahora)["total_fuentes"],
         },
         "sectores": sectores,
         "pesosTipo": pesos_tipo,

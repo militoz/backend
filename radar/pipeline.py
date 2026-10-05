@@ -106,10 +106,15 @@ def recolectar(cfg: Dict[str, Any], fetcher, db, estadisticas: Optional[Dict[str
             stats["fuentes_error"] += 1
         stats["detalle"][fuente_id] = {"ok": exito, "items": len(items_fuente) if exito else 0, "motivo": motivo_error}
  
-        # Registrar salud de la fuente en la base de datos
+        # Registrar salud de la fuente en la base de datos.
+        # En las series (dólar, IPC...) tener 0 eventos es normal: lo que cuenta como "datos" es
+        # cuántos puntos leyó. Si lee 0 puntos, sí se marca como problema.
+        items_salud = 0
+        if exito:
+            items_salud = len(items_fuente) or int(getattr(colector, "puntos_leidos", 0) or 0)
         db.registrar_salud(
             fuente_id=fuente_id,
-            items_recolectados=len(items_fuente) if exito else 0,
+            items_recolectados=items_salud,
             exito=exito,
             motivo_error=motivo_error,
             max_corridas_vacias=cfg.get("salud", {}).get("max_corridas_vacias", 3),

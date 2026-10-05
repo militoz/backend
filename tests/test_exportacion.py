@@ -291,3 +291,65 @@ def test_api_local_usa_el_mismo_formato(temp_db):
         assert "fuentes" in cliente.get("/api/salud").get_json()
     finally:
         server.db = original
+
+
+# ---------------------------------------------------------------- reporte de salud honesto
+def test_salud_no_cuenta_fuentes_apagadas(temp_db):
+    cfg = {"fuentes": [
+        {"id": "medio_a", "nombre": "Medio A", "tipo": "rss", "activo": True},
+        {"id": "bvc_x", "nombre": "BVC", "tipo": "bvc", "activo": False},
+    ]}
+    temp_db.registrar_salud("medio_a", items_recolectados=5, exito=True)
+    temp_db.registrar_salud("bvc_x", items_recolectados=0, exito=False, motivo_error="robots.txt no permite la descarga")
+
+    salud = construir_salud(temp_db, cfg)
+
+    assert [f["fuente_id"] for f in salud["fuentes"]] == ["medio_a"]
+    assert salud["total_fuentes"] == 1 and salud["errores_count"] == 0 and salud["degradadas_count"] == 0
+    assert salud["desactivadas"] == ["bvc_x"]
+    # La hora de última recolección sale solo de las fuentes encendidas
+    assert salud["ultima_recoleccion"] == salud["fuentes"][0]["ultima_recoleccion"]
+
+
+def test_salud_sin_lista_de_fuentes_no_filtra(temp_db):
+    temp_db.registrar_salud("x", items_recolectados=1, exito=True)
+    salud = construir_salud(temp_db, {})
+    assert salud["total_fuentes"] == 1 and salud["desactivadas"] == []
+
+
+def _cfg_serie(url):
+    return {"fuentes": [{
+        "id": "serie_trm", "tipo": "serie", "activo": True, "serie_id": "trm", "url": url,
+        "campo_fecha": "vigenciadesde", "campo_valor": "valor", "umbral_variacion_pct": 1.5,
+    }]}
+
+
+def test_serie_sin_eventos_no_se_marca_degradada(temp_db):
+    # Tres datos que casi no varían (menos de 1,5 %): no hay evento macro, pero la serie está sana.
+    filas = [{"valor": str(v), "vigenciadesde": f"2026-09-{10 + i:02d}T00:00:00.000"}
+             for i, v in enumerate([3300.0, 3310.0, 3305.0])]
+    cfg = _cfg_serie("https://mock.local/trm")
+    fetcher = Fetcher(db=temp_db)
+    fetcher.registrar_mock("https://mock.local/trm", status_code=200, body=json.dumps(filas).encode("utf-8"))
+
+    for _ in range(5):
+        stats = {}
+        recolectar(cfg, fetcher, temp_db, estadisticas=stats)
+        assert stats["items"] == 0  # no hubo evento macro
+
+    f = construir_salud(temp_db, cfg)["fuentes"][0]
+    assert f["estado"] == "ok" and f["items_recolectados"] == 3
+    assert len(temp_db.obtener_ultimos_valores_serie("trm")) == 3
+
+
+def test_serie_que_lee_cero_datos_si_se_degrada(temp_db):
+    # Respuesta 200 pero sin ningún dato válido: eso sí es un problema y debe verse.
+    cfg = _cfg_serie("https://mock.local/trm_vacia")
+    fetcher = Fetcher(db=temp_db)
+    fetcher.registrar_mock("https://mock.local/trm_vacia", status_code=200, body=b"[]")
+
+    for _ in range(3):
+        recolectar(cfg, fetcher, temp_db, estadisticas={})
+
+    f = construir_salud(temp_db, cfg)["fuentes"][0]
+    assert f["estado"] == "degradada"

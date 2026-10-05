@@ -24,8 +24,12 @@ class SerieCollector(Collector):
         self.etiqueta_nombre = config.get("etiqueta_nombre", self.serie_id.upper())
         self.insumo_nombre = config.get("insumo_nombre")
         self.unidad = config.get("unidad", "")
+        # Cuántos datos válidos leyó en la última corrida. Sirve para el reporte de salud:
+        # una serie puede traer 0 EVENTOS (el dólar no se movió lo suficiente) y estar sana.
+        self.puntos_leidos = 0
 
     def recolectar(self, fetcher) -> List[Item]:
+        self.puntos_leidos = 0
         if not self.url:
             return []
 
@@ -67,6 +71,8 @@ class SerieCollector(Collector):
 
         if not items_puntos:
             return []
+
+        self.puntos_leidos = len(items_puntos)
 
         # Ordenar por fecha ascendente
         items_puntos.sort(key=lambda x: x["fecha"])
