@@ -1,0 +1,123 @@
+{
+  "exportado_el": "2026-10-10T13:58:16Z",
+  "ultima_recoleccion": "2026-10-10T13:58:07Z",
+  "total_fuentes": 9,
+  "degradadas_count": 0,
+  "errores_count": 0,
+  "desactivadas": [
+    "bvc_hechos_relevantes",
+    "gnews_empresas_colombia",
+    "gnews_macro_colombia",
+    "medio_bloomberg_linea",
+    "medio_dinero",
+    "medio_elespectador_economia",
+    "serie_insumo_fertilizantes",
+    "serie_ipc",
+    "serie_tasa_politica",
+    "sic_integraciones",
+    "superfinanciera_relevante",
+    "supersociedades_insolvencia"
+  ],
+  "fuentes": [
+    {
+      "fuente_id": "medio_eltiempo_economia",
+      "nombre": "El Tiempo - Economía",
+      "tipo": "prensa",
+      "estado": "ok",
+      "items_recolectados": 10,
+      "ultima_recoleccion": "2026-10-10T13:58:02Z",
+      "motivo": null,
+      "exitos": 31,
+      "fallos": 0
+    },
+    {
+      "fuente_id": "medio_eltiempo_sector_financiero",
+      "nombre": "El Tiempo - Sector Financiero",
+      "tipo": "prensa",
+      "estado": "ok",
+      "items_recolectados": 10,
+      "ultima_recoleccion": "2026-10-10T13:58:06Z",
+      "motivo": null,
+      "exitos": 26,
+      "fallos": 0
+    },
+    {
+      "fuente_id": "medio_finance_colombia",
+      "nombre": "Finance Colombia",
+      "tipo": "prensa",
+      "estado": "ok",
+      "items_recolectados": 10,
+      "ultima_recoleccion": "2026-10-10T13:58:04Z",
+      "motivo": null,
+      "exitos": 30,
+      "fallos": 0
+    },
+    {
+      "fuente_id": "medio_larepublica",
+      "nombre": "La República - Empresas",
+      "tipo": "prensa",
+      "estado": "ok",
+      "items_recolectados": 60,
+      "ultima_recoleccion": "2026-10-10T13:58:02Z",
+      "motivo": null,
+      "exitos": 29,
+      "fallos": 1
+    },
+    {
+      "fuente_id": "medio_portafolio",
+      "nombre": "Portafolio - Economía",
+      "tipo": "prensa",
+      "estado": "ok",
+      "items_recolectados": 10,
+      "ultima_recoleccion": "2026-10-10T13:58:04Z",
+      "motivo": null,
+      "exitos": 26,
+      "fallos": 1
+    },
+    {
+      "fuente_id": "medio_portafolio_finanzas",
+      "nombre": "Portafolio - Finanzas",
+      "tipo": "prensa",
+      "estado": "ok",
+      "items_recolectados": 10,
+      "ultima_recoleccion": "2026-10-10T13:58:06Z",
+      "motivo": null,
+      "exitos": 26,
+      "fallos": 0
+    },
+    {
+      "fuente_id": "medio_rankia_colombia",
+      "nombre": "Rankia Colombia - Titulares",
+      "tipo": "prensa",
+      "estado": "ok",
+      "items_recolectados": 50,
+      "ultima_recoleccion": "2026-10-10T13:58:03Z",
+      "motivo": null,
+      "exitos": 29,
+      "fallos": 1
+    },
+    {
+      "fuente_id": "medio_valora_analitik",
+      "nombre": "Valora Analitik - Empresas",
+      "tipo": "prensa",
+      "estado": "ok",
+      "items_recolectados": 50,
+      "ultima_recoleccion": "2026-10-10T13:58:03Z",
+      "motivo": null,
+      "exitos": 29,
+      "fallos": 1
+    },
+    {
+      "fuente_id": "serie_trm",
+      "nombre": "Tasa Representativa del Mercado (TRM)",
+      "tipo": "serie",
+      "estado": "ok",
+      "items_recolectados": 30,
+      "ultima_recoleccion": "2026-10-10T13:58:07Z",
+      "motivo": null,
+      "exitos": 32,
+      "fallos": 0
+    }
+  ],
+  "degradadas": []
+}

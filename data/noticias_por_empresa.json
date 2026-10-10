@@ -1,0 +1,572 @@
+{
+  "exportado_el": "2026-10-10T13:58:16Z",
+  "estadisticas": {
+    "articulos_analizados": 817,
+    "con_empresa": 51,
+    "sin_empresa": 766
+  },
+  "empresas": [
+    {
+      "nombre": "Ecopetrol S.A.",
+      "ticker": "ECOPETROL",
+      "ticker_preferencial": null,
+      "sector": "Petróleo y Gas",
+      "n_noticias": 13,
+      "ultima": "2026-10-09T16:42:26Z",
+      "noticias": [
+        {
+          "titulo": "Llegó a Buenaventura 'Tura', la embarcación que permitirá la importación de gas natural para Ecopetrol",
+          "url": "https://www.eltiempo.com/economia/sectores/llego-a-buenaventura-tura-la-embarcacion-que-permitira-la-importacion-de-gas-natural-para-ecopetrol-3592539",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-09T16:42:26Z",
+          "principal": true
+        },
+        {
+          "titulo": "Senador Enrique Gómez pide a Ecopetrol investigar ventas de polietileno a empresa Química Comercial Andina",
+          "url": "https://www.eltiempo.com/economia/sectores/senador-enrique-gomez-pide-a-ecopetrol-investigar-ventas-de-polietileno-a-empresa-quimica-comercial-andina-3592398",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-09T13:29:14Z",
+          "principal": true
+        },
+        {
+          "titulo": "Senador Enrique Gómez pide investigar ventas de polietileno de Ecopetrol a Química Comercial Andina",
+          "url": "https://www.portafolio.co/economia/gobierno/senador-enrique-gomez-pide-investigar-ventas-de-polietileno-de-ecopetrol-a-quimica-comercial-andina-504159",
+          "medio": "Portafolio",
+          "fecha": "2026-10-09T04:39:22Z",
+          "principal": true
+        },
+        {
+          "titulo": "Ecopetrol Asks Prosecutors to Investigate Its Pacific Regasification Contract",
+          "url": "https://www.financecolombia.com/ecopetrol-asks-prosecutors-to-investigate-its-pacific-regasification-contract/",
+          "medio": "Finance Colombia",
+          "fecha": "2026-10-05T22:08:30Z",
+          "principal": true
+        },
+        {
+          "titulo": "Ecopetrol y Petrobras terminan histórica campaña exploratoria de US$ 1.000 millones en el Caribe colombiano",
+          "url": "https://www.eltiempo.com/economia/sectores/ecopetrol-y-petrobras-terminan-historica-campana-exploratoria-de-us-1-000-millones-en-el-caribe-colombiano-3591358",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-05T17:20:14Z",
+          "principal": true
+        },
+        {
+          "titulo": "Bolsa de Valores de Colombia hoy: Éxito lidera las ganancias y Ecopetrol mueve $17.715 millones",
+          "url": "https://www.portafolio.co/economia/finanzas/bolsa-de-valores-de-colombia-hoy-exito-lidera-las-ganancias-y-ecopetrol-mueve-17-715-millones-503896",
+          "medio": "Portafolio",
+          "fecha": "2026-10-05T16:56:31Z",
+          "principal": false
+        },
+        {
+          "titulo": "Con cinco pozos y US$1.000 millones concluyó campaña exploratoria de Ecopetrol y Petrobras en el Caribe",
+          "url": "https://www.valoraanalitik.com/con-cinco-pozos-y-us1-000-millones-concluyo-campana-exploratoria-de-ecopetrol-y-petrobras-en-el-caribe/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-05T14:20:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Mauricio Gutiérrez Dangond fue nombrado como vicepresidente de Estrategia y Nuevos Negocios de Ecopetrol: este es su perfil",
+          "url": "https://www.eltiempo.com/economia/sectores/mauricio-gutierrez-dangond-fue-nombrado-como-vicepresidente-de-estrategia-y-nuevos-negocios-de-ecopetrol-este-es-su-perfil-3590904",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-02T23:37:54Z",
+          "principal": true
+        },
+        {
+          "titulo": "ANLA otorga licencia a proyecto de petróleo de Ecopetrol en Meta",
+          "url": "https://www.valoraanalitik.com/anla-otorga-licencia-a-proyecto-de-petroleo-de-ecopetrol-en-meta/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-02T20:30:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "GeoPark Joins Ecopetrol and Drummond in the Race to Drill Colombia’s First Fracking Well",
+          "url": "https://www.financecolombia.com/geopark-joins-ecopetrol-and-drummond-in-the-race-to-drill-colombias-first-fracking-well/",
+          "medio": "Finance Colombia",
+          "fecha": "2026-10-02T14:10:40Z",
+          "principal": true
+        },
+        {
+          "titulo": "Video | Acciones de Ecopetrol lideran el volumen de transacciones de la jornada",
+          "url": "https://www.valoraanalitik.com/acciones-de-ecopetrol-lideran-el-volumen-de-transacciones-de-la-jornada/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-02T12:42:08Z",
+          "principal": true
+        },
+        {
+          "titulo": "Ecopetrol, Nubank y Alphabet: las 3 acciones de octubre de 2026 en Colombia",
+          "url": "https://www.rankia.co/blog/analisis-colcap/7490155-mejores-acciones-para-invertir-octubre-2026",
+          "medio": "Rankia Colombia",
+          "fecha": "2026-10-01T21:00:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Invertir en acciones colombianas: mejores opciones para 2026",
+          "url": "https://www.rankia.co/blog/analisis-colcap/3809381-acciones-mas-valorizadas-bolsa-valores-colombia",
+          "medio": "Rankia Colombia",
+          "fecha": "2026-09-30T21:00:00Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo Cibest S.A.",
+      "ticker": "CIBEST",
+      "ticker_preferencial": "PFCIBEST",
+      "sector": "Banca y Finanzas",
+      "n_noticias": 13,
+      "ultima": "2026-10-09T23:30:00Z",
+      "noticias": [
+        {
+          "titulo": "Economía colombiana pierde tracción en el tercer trimestre de 2026: NowCast Bancolombia proyecta un PIB de 2,1 %",
+          "url": "https://www.valoraanalitik.com/economia-colombiana-pierde-traccion-en-el-tercer-trimestre-de-2026-nowcast-bancolombia-proyecta-un-pib-de-21/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-09T23:30:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Personas y negocios afectados por terremoto en Colombia accedieron a créditos de Bancolombia por $775.100 millones",
+          "url": "https://www.valoraanalitik.com/creditos-bancolombia-terremoto-colombia/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-09T17:00:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Tarjeta de crédito sin historial crediticio en Colombia",
+          "url": "https://www.rankia.co/blog/ranking-tarjetas-credito-debito/4691752-donde-puedo-sacar-tarjeta-credito-historial-crediticio",
+          "medio": "Rankia Colombia",
+          "fecha": "2026-10-09T13:00:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Bancolombia acuerda aumento salarial del 10,15 % y más beneficios en salud y vivienda para 11.000 empleados",
+          "url": "https://www.eltiempo.com/economia/sector-financiero/bancolombia-acuerda-aumento-salarial-del-10-15-y-mas-beneficios-en-salud-y-vivienda-para-11-000-empleados-3592329",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-08T22:05:36Z",
+          "principal": true
+        },
+        {
+          "titulo": "Video | Acciones de Cibest lideran la corrección del índice MSCI Colcap",
+          "url": "https://www.valoraanalitik.com/video-acciones-de-cibest-lideran-la-correccion-del-indice-msci-colcap/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-08T12:33:30Z",
+          "principal": true
+        },
+        {
+          "titulo": "Bancolombia pone a la venta casas y lotes desde $36 millones en varias ciudades del país: este es el catálogo",
+          "url": "https://www.eltiempo.com/economia/finanzas-personales/bancolombia-pone-a-la-venta-casas-y-lotes-desde-36-millones-en-varias-ciudades-del-pais-este-es-el-catalogo-3591875",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-07T14:28:18Z",
+          "principal": true
+        },
+        {
+          "titulo": "Las acciones de la Bolsa de Colombia que recomienda Cibest Capital para invertir en octubre",
+          "url": "https://www.valoraanalitik.com/las-acciones-de-la-bolsa-de-colombia-que-recomienda-cibest-capital/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-05T20:20:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Relevante | Bancolombia compra parque logístico en Bogotá a la firma Logistic Properties of the Americas",
+          "url": "https://www.valoraanalitik.com/relevante-bancolombia-compra-parque-logistico-en-bogota-a-la-firma-logistic-properties-of-the-americas/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-05T14:00:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Review de la plataforma E-Trading de Bancolombia",
+          "url": "https://www.rankia.co/blog/analisis-colcap/4750423-bancolombia-etrading-como-negociar-acciones",
+          "medio": "Rankia Colombia",
+          "fecha": "2026-10-05T13:00:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Entrevista | Bancolombia señala que la seguridad energética es clave para la competitividad del país",
+          "url": "https://www.valoraanalitik.com/entrevista-bancolombia-senala-que-la-seguridad-energetica-es-clave-para-la-competitividad-del-pais/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-05T12:20:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Más formas de recibir pagos y gestionar las ventas con las tres novedades de Nequi Negocios",
+          "url": "https://www.valoraanalitik.com/mas-formas-de-recibir-pagos-y-gestionar-las-ventas-con-las-tres-novedades-de-nequi-negocios/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-02T22:49:29Z",
+          "principal": true
+        },
+        {
+          "titulo": "Grupo Cibest Says Higher Fed Rates Would Limit Room for a Cheaper Dollar in Colombia",
+          "url": "https://www.financecolombia.com/grupo-cibest-says-higher-fed-rates-would-limit-room-for-a-cheaper-dollar-in-colombia/",
+          "medio": "Finance Colombia",
+          "fecha": "2026-10-02T14:15:23Z",
+          "principal": true
+        },
+        {
+          "titulo": "Invertir en acciones colombianas: mejores opciones para 2026",
+          "url": "https://www.rankia.co/blog/analisis-colcap/3809381-acciones-mas-valorizadas-bolsa-valores-colombia",
+          "medio": "Rankia Colombia",
+          "fecha": "2026-09-30T21:00:00Z",
+          "principal": false
+        }
+      ]
+    },
+    {
+      "nombre": "Avianca Group International",
+      "ticker": "AVIANCA",
+      "ticker_preferencial": null,
+      "sector": "Transporte Aéreo",
+      "n_noticias": 6,
+      "ultima": "2026-10-09T14:47:39Z",
+      "noticias": [
+        {
+          "titulo": "Vuelo de Avianca fue desviado preventivamente a Miami tras presentar turbulencia",
+          "url": "https://www.larepublica.co/empresas/vuelo-de-avianca-fue-desviado-preventivamente-a-miami-tras-presentar-turbulencia-4500132",
+          "medio": "La República",
+          "fecha": "2026-10-09T14:47:39Z",
+          "principal": true
+        },
+        {
+          "titulo": "Precios muy bajos en redes y chats: Avianca alerta por estafas en la venta de tiquetes para la Semana de Receso",
+          "url": "https://www.portafolio.co/economia/precios-muy-bajos-en-redes-y-chats-avianca-alerta-por-estafas-en-la-venta-de-tiquetes-para-la-semana-de-receso-503908",
+          "medio": "Portafolio",
+          "fecha": "2026-10-05T19:50:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Avianca reforzará su operación con más de 4.600 vuelos para la semana de receso escolar del 5 al 12 de octubre",
+          "url": "https://www.eltiempo.com/economia/sectores/avianca-reforzara-su-operacion-con-mas-de-4-600-vuelos-para-la-semana-de-receso-escolar-del-5-al-12-de-octubre-3591372",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-05T17:53:57Z",
+          "principal": true
+        },
+        {
+          "titulo": "Avianca ofrecerá 4.600 vuelos y más de 800.000 sillas durante la semana de receso escolar",
+          "url": "https://www.larepublica.co/empresas/oferta-de-avianca-para-la-semana-de-receso-4497001",
+          "medio": "La República",
+          "fecha": "2026-10-05T17:35:29Z",
+          "principal": true
+        },
+        {
+          "titulo": "Colombian Delegation Expects More Than $11 Million USD in Tourism Deals From IFTM Top Resa in Paris",
+          "url": "https://www.financecolombia.com/colombian-delegation-expects-more-than-11-million-usd-in-tourism-deals-from-iftm-top-resa-in-paris/",
+          "medio": "Finance Colombia",
+          "fecha": "2026-10-02T14:04:32Z",
+          "principal": true
+        },
+        {
+          "titulo": "Así funciona la propuesta Business Class de Avianca: antes, durante y después del vuelo",
+          "url": "https://www.larepublica.co/empresas/asi-funciona-la-propuesta-business-class-de-avianca-antes-durante-y-despues-del-vuelo-4491884",
+          "medio": "La República",
+          "fecha": "2026-09-28T17:24:57Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Banco Davivienda S.A.",
+      "ticker": "DAVIVIENDA",
+      "ticker_preferencial": null,
+      "sector": "Banca y Finanzas",
+      "n_noticias": 6,
+      "ultima": "2026-10-09T21:38:40Z",
+      "noticias": [
+        {
+          "titulo": "La confianza de los colombianos en la economía alcanza su nivel más alto de 2026, según indicador de Davivienda",
+          "url": "https://www.portafolio.co/economia/la-confianza-de-los-colombianos-en-la-economia-alcanza-su-nivel-mas-alto-de-2026-segun-indicador-de-davivienda-504209",
+          "medio": "Portafolio",
+          "fecha": "2026-10-09T21:38:40Z",
+          "principal": true
+        },
+        {
+          "titulo": "Confianza en la economía colombiana alcanza en septiembre de 2026 su nivel más alto del año",
+          "url": "https://www.valoraanalitik.com/confianza-en-la-economia-colombiana-alcanza-en-septiembre-de-2026-su-nivel-mas-alto-del-ano/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-09T20:40:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Relevante | María Teresa Uribe deja la presidencia de Davivienda Corredores luego de 35 años en el sector financiero",
+          "url": "https://www.valoraanalitik.com/maria-teresa-uribe-davivienda-corredores/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-09T20:04:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Davibank avanza hacia su integración con Davivienda tras autorización de la Superfinanciera",
+          "url": "https://www.eltiempo.com/economia/sector-financiero/davibank-avanza-hacia-su-integracion-con-davivienda-tras-autorizacion-de-la-superfinanciera-3591740",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-06T23:11:32Z",
+          "principal": true
+        },
+        {
+          "titulo": "Salario mínimo subiría $148.827 en 2027, según expertos de Davivienda: inflación sería clave en el cálculo",
+          "url": "https://www.portafolio.co/economia/empleo/salario-minimo-subiria-148-827-en-2027-segun-expertos-de-davivienda-inflacion-seria-clave-en-el-calculo-503911",
+          "medio": "Portafolio",
+          "fecha": "2026-10-05T21:23:05Z",
+          "principal": true
+        },
+        {
+          "titulo": "Davivienda Group refuerza apuesta por finanzas personales: busca ser socio de Carvajal en app para gestionar dinero",
+          "url": "https://www.valoraanalitik.com/davivienda-group-socio-carvajal-app-dinero/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-01T17:07:00Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo Nutresa S.A.",
+      "ticker": "NUTRESA",
+      "ticker_preferencial": null,
+      "sector": "Alimentos y Bebidas",
+      "n_noticias": 3,
+      "ultima": "2026-10-08T18:45:08Z",
+      "noticias": [
+        {
+          "titulo": "Pietrán proyecta comercializar más de 13 millones de paquetes cárnicos y y diversifica pescados",
+          "url": "https://www.larepublica.co/empresas/pietran-proyecta-comercializar-mas-de-13-millones-de-paquetes-carnicos-y-y-diversifica-pescados-4499491",
+          "medio": "La República",
+          "fecha": "2026-10-08T18:45:08Z",
+          "principal": true
+        },
+        {
+          "titulo": "Grupo Nutresa absorbió a Nugil y Jgdb con la totalidad de sus activos, pasivos y patrimonio",
+          "url": "https://www.larepublica.co/empresas/absorcion-de-nugil-y-jgdb-en-el-grupo-nutresa-4494259",
+          "medio": "La República",
+          "fecha": "2026-10-01T12:10:59Z",
+          "principal": true
+        },
+        {
+          "titulo": "Grupo Nutresa adquirió 100% de las acciones de Empaques Industriales de Colombia S.A.S.",
+          "url": "https://www.larepublica.co/empresas/compra-de-empaques-industriales-de-colombia-por-nutresa-4493344",
+          "medio": "La República",
+          "fecha": "2026-09-30T11:34:56Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Almacenes Éxito S.A.",
+      "ticker": "EXITO",
+      "ticker_preferencial": null,
+      "sector": "Comercio Minorista / Retail",
+      "n_noticias": 2,
+      "ultima": "2026-10-05T16:56:31Z",
+      "noticias": [
+        {
+          "titulo": "Bolsa de Valores de Colombia hoy: Éxito lidera las ganancias y Ecopetrol mueve $17.715 millones",
+          "url": "https://www.portafolio.co/economia/finanzas/bolsa-de-valores-de-colombia-hoy-exito-lidera-las-ganancias-y-ecopetrol-mueve-17-715-millones-503896",
+          "medio": "Portafolio",
+          "fecha": "2026-10-05T16:56:31Z",
+          "principal": true
+        },
+        {
+          "titulo": "Los usuarios de Móvil Éxito ahora pueden utilizar la red de Claro para ampliar su cobertura",
+          "url": "https://www.larepublica.co/empresas/movil-exito-hizo-alianza-con-claro-4492639",
+          "medio": "La República",
+          "fecha": "2026-09-29T13:15:14Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo Aval Acciones y Valores S.A.",
+      "ticker": "GRUPOAVAL",
+      "ticker_preferencial": "PFAVAL",
+      "sector": "Banca y Finanzas",
+      "n_noticias": 2,
+      "ultima": "2026-10-07T16:30:00Z",
+      "noticias": [
+        {
+          "titulo": "Entrevista | Banco de Occidente creció 23 % en el primer semestre de 2026 y apuesta por la digitalización",
+          "url": "https://www.valoraanalitik.com/entrevista-banco-de-occidente-crecio-23-en-el-primer-semestre-de-2026-y-apuesta-por-la-digitalizacion/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-07T16:30:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Visa premia al Banco de Occidente por aprobar más del 90% de las compras",
+          "url": "https://www.portafolio.co/economia/visa-premia-al-banco-de-occidente-por-aprobar-mas-del-90-de-las-compras-503924",
+          "medio": "Portafolio",
+          "fecha": "2026-10-05T21:38:35Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo Energía Bogotá S.A. E.S.P.",
+      "ticker": "GEB",
+      "ticker_preferencial": null,
+      "sector": "Energía y Servicios",
+      "n_noticias": 2,
+      "ultima": "2026-10-01T22:00:00Z",
+      "noticias": [
+        {
+          "titulo": "La UPME adjudicó al Grupo Energía Bogotá importante proyecto para el abastecimiento de la Sabana de Bogotá",
+          "url": "https://www.valoraanalitik.com/la-upme-adjudico-al-grupo-energia-bogota-importante-proyecto-para-el-abastecimiento-de-la-sabana-de-bogota/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-01T22:00:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Grupo Energía de Bogotá será la quinta empresa local que se listará en EE.UU.",
+          "url": "https://www.larepublica.co/empresas/grupo-energia-de-bogota-sera-la-quinta-empresa-local-que-se-listara-en-mercado-de-valores-de-ee-uu-4492376",
+          "medio": "La República",
+          "fecha": "2026-09-29T05:01:41Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo de Inversiones Suramericana S.A.",
+      "ticker": "GRUPOSURA",
+      "ticker_preferencial": "PFGRUPSURA",
+      "sector": "Servicios Financieros",
+      "n_noticias": 2,
+      "ultima": "2026-10-07T12:00:00Z",
+      "noticias": [
+        {
+          "titulo": "Grupo Sura pone en marcha un programa de readquisición de acciones por hasta $500.000 millones",
+          "url": "https://www.valoraanalitik.com/grupo-sura-pone-en-marcha-un-programa-de-readquisicion-de-acciones-por-hasta-500-000-millones/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-07T12:00:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "¿Cómo comprar acciones del Grupo Sura en Colombia? Guía paso a paso",
+          "url": "https://www.rankia.co/blog/analisis-colcap/5141868-como-comprar-acciones-grupo-sura",
+          "medio": "Rankia Colombia",
+          "fecha": "2026-09-18T21:00:00Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Organización Terpel S.A.",
+      "ticker": "TERPEL",
+      "ticker_preferencial": null,
+      "sector": "Distribución de Combustibles",
+      "n_noticias": 2,
+      "ultima": "2026-09-29T12:13:57Z",
+      "noticias": [
+        {
+          "titulo": "Terpel, a través de Terpel Exportaciones, suscribió contrato de combustible Jet A-1",
+          "url": "https://www.larepublica.co/empresas/terpel-exportaciones-suscribio-contrato-con-aerolineas-para-el-combustible-4492575",
+          "medio": "La República",
+          "fecha": "2026-09-29T12:13:57Z",
+          "principal": true
+        },
+        {
+          "titulo": "Cómo comprar acciones en Terpel desde Colombia: guía actualizada 2026",
+          "url": "https://www.rankia.co/blog/analisis-colcap/6272115-como-comprar-acciones-terpel",
+          "medio": "Rankia Colombia",
+          "fecha": "2026-09-28T13:00:00Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Banco de Bogotá S.A.",
+      "ticker": "BOGOTA",
+      "ticker_preferencial": null,
+      "sector": "Banca y Finanzas",
+      "n_noticias": 1,
+      "ultima": "2026-10-10T03:03:25Z",
+      "noticias": [
+        {
+          "titulo": "Los TES en pesos regresaron a tasas cercanas al 13% y abrieron oportunidades de compra para bancos y extranjeros",
+          "url": "https://www.portafolio.co/economia/los-tes-en-pesos-regresaron-a-tasas-cercanas-al-13-y-abrieron-oportunidades-de-compra-para-bancos-y-extranjeros-504170",
+          "medio": "Portafolio",
+          "fecha": "2026-10-10T03:03:25Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Cementos Argos S.A.",
+      "ticker": "CEMARGOS",
+      "ticker_preferencial": "PFCEMARGOS",
+      "sector": "Materiales y Construcción",
+      "n_noticias": 1,
+      "ultima": "2026-10-04T13:02:00Z",
+      "noticias": [
+        {
+          "titulo": "Grupo Argos y Nicky Jam donarán 100 viviendas para la reconstrucción de Caldas: Gobernación aportará la mano de obra",
+          "url": "https://www.valoraanalitik.com/grupo-argos-y-nicky-jam-donaran-100-viviendas-para-la-reconstruccion-de-caldas-gobernacion-aportara-la-mano-de-obra/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-04T13:02:00Z",
+          "principal": false
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo Argos S.A.",
+      "ticker": "GRUPOARGOS",
+      "ticker_preferencial": "PFGRUPOARGOS",
+      "sector": "Infraestructura e Inversión",
+      "n_noticias": 1,
+      "ultima": "2026-10-04T13:02:00Z",
+      "noticias": [
+        {
+          "titulo": "Grupo Argos y Nicky Jam donarán 100 viviendas para la reconstrucción de Caldas: Gobernación aportará la mano de obra",
+          "url": "https://www.valoraanalitik.com/grupo-argos-y-nicky-jam-donaran-100-viviendas-para-la-reconstruccion-de-caldas-gobernacion-aportara-la-mano-de-obra/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-04T13:02:00Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Canacol Energy Ltd.",
+      "ticker": "CNE",
+      "ticker_preferencial": null,
+      "sector": "Gas Natural y Energía",
+      "n_noticias": 0,
+      "ultima": null,
+      "noticias": []
+    },
+    {
+      "nombre": "Celsia S.A. E.S.P.",
+      "ticker": "CELSIA",
+      "ticker_preferencial": null,
+      "sector": "Energía y Renovables",
+      "n_noticias": 0,
+      "ultima": null,
+      "noticias": []
+    },
+    {
+      "nombre": "Corporación Financiera Colombiana S.A.",
+      "ticker": "CORFICOLCF",
+      "ticker_preferencial": null,
+      "sector": "Banca y Finanzas",
+      "n_noticias": 0,
+      "ultima": null,
+      "noticias": []
+    },
+    {
+      "nombre": "Empresa de Telecomunicaciones de Bogotá S.A. E.S.P.",
+      "ticker": "ETB",
+      "ticker_preferencial": null,
+      "sector": "Telecomunicaciones",
+      "n_noticias": 0,
+      "ultima": null,
+      "noticias": []
+    },
+    {
+      "nombre": "Interconexión Eléctrica S.A. E.S.P.",
+      "ticker": "ISA",
+      "ticker_preferencial": null,
+      "sector": "Energía y Servicios",
+      "n_noticias": 0,
+      "ultima": null,
+      "noticias": []
+    },
+    {
+      "nombre": "Mineros S.A.",
+      "ticker": "MINEROS",
+      "ticker_preferencial": null,
+      "sector": "Minería",
+      "n_noticias": 0,
+      "ultima": null,
+      "noticias": []
+    }
+  ]
+}
