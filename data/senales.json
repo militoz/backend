@@ -1,0 +1,2841 @@
+{
+  "exportado_el": "2026-10-17T11:45:18Z",
+  "total": 68,
+  "senales": [
+    {
+      "id": "insolvencia_sin-empresa-6db95a_2026-w42_2a1df1",
+      "cluster_id": 422524864,
+      "tipo": "Insolvencia",
+      "score": 1.94,
+      "scoreBreakdown": {
+        "pesoTipo": 1.5,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.77,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Reorganización / Insolvencia Empresarial",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Valora Analitik"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Alerta de estrés financiero severo o renegociación de pasivos con acreedores financieros y comerciales.",
+      "articulos": [
+        {
+          "url": "https://www.valoraanalitik.com/presto-va-a-la-quiebra-supersociedades/",
+          "titulo": "Presto va a la quiebra: SuperSociedades ordena liquidar la tradicional cadena de hamburguesas en Colombia",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-16T17:39:00Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-16T17:39:00Z",
+      "ultima": "2026-10-16T17:39:00Z",
+      "n_notas": 1
+    },
+    {
+      "id": "insolvencia_sin-empresa-7ff20c_2026-w42_9c21c7",
+      "cluster_id": 754334304,
+      "tipo": "Insolvencia",
+      "score": 1.94,
+      "scoreBreakdown": {
+        "pesoTipo": 1.5,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.77,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Reorganización / Insolvencia Empresarial",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "La República"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Alerta de estrés financiero severo o renegociación de pasivos con acreedores financieros y comerciales.",
+      "articulos": [
+        {
+          "url": "https://www.larepublica.co/empresas/franquicias-y-concesiones-operadora-de-presto-fue-declarada-en-liquidacion-judicial-4504547",
+          "titulo": "Franquicias y Concesiones, operadora de Presto, fue declarada en liquidación judicial",
+          "medio": "La República",
+          "fecha": "2026-10-16T17:10:26Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-16T17:10:26Z",
+      "ultima": "2026-10-16T17:10:26Z",
+      "n_notas": 1
+    },
+    {
+      "id": "integracion_banco-davivienda-s-a_2026-w42_7fe9fc",
+      "cluster_id": 633223558,
+      "tipo": "Integración",
+      "score": 1.81,
+      "scoreBreakdown": {
+        "pesoTipo": 1.45,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.7,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Integración Empresarial / Adquisición",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "El Tiempo"
+      ],
+      "sectores": [
+        "Banca y Finanzas"
+      ],
+      "evolucion": [],
+      "empresas": [
+        "Banco Davivienda S.A."
+      ],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Posible cambio de control o concentración de mercado con impacto en competencia y valoración bursátil.",
+      "articulos": [
+        {
+          "url": "https://www.eltiempo.com/economia/sector-financiero/desde-el-1-de-noviembre-empieza-el-desmonte-de-davibank-e-inicia-la-fusion-con-davivienda-3593190",
+          "titulo": "Desde el 1 de noviembre empieza el desmonte de Davibank e inicia la fusión con Davivienda",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-14T22:32:09Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-14T22:32:09Z",
+      "ultima": "2026-10-14T22:32:09Z",
+      "n_notas": 1
+    },
+    {
+      "id": "regulatorio_sin-empresa-76af8f_2026-w42_b31b7f",
+      "cluster_id": 571876083,
+      "tipo": "Regulatorio",
+      "score": 1.78,
+      "scoreBreakdown": {
+        "pesoTipo": 1.35,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.8,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Investigación / Sanción Regulatoria",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Portafolio"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Exposición a contingencias legales, multas regulatorias o restricciones operativas por parte de autoridades de supervisión.",
+      "articulos": [
+        {
+          "url": "https://www.portafolio.co/economia/empleo/ocho-decretos-laborales-van-a-revision-gobierno-busca-corregir-sanciones-y-reglas-cuestionadas-ante-la-justicia-504619",
+          "titulo": "Ocho decretos laborales van a revisión: Gobierno busca corregir sanciones y reglas cuestionadas ante la justicia",
+          "medio": "Portafolio",
+          "fecha": "2026-10-17T00:56:31Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-17T00:56:31Z",
+      "ultima": "2026-10-17T00:56:31Z",
+      "n_notas": 1
+    },
+    {
+      "id": "integracion_sin-empresa-ca6ba4_2026-w42_e203fb",
+      "cluster_id": 903235310,
+      "tipo": "Integración",
+      "score": 1.77,
+      "scoreBreakdown": {
+        "pesoTipo": 1.45,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.67,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Integración Empresarial / Adquisición",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Valora Analitik"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Posible cambio de control o concentración de mercado con impacto en competencia y valoración bursátil.",
+      "articulos": [
+        {
+          "url": "https://www.valoraanalitik.com/fusion-negocio-alimentos-unilever-colombia/",
+          "titulo": "Fruco, Maizena y otras marcas consumidas por los colombianos cambiarán de dueño: avanza fusión del negocio de Unilever",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-13T15:40:00Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-13T15:40:00Z",
+      "ultima": "2026-10-13T15:40:00Z",
+      "n_notas": 1
+    },
+    {
+      "id": "regulatorio_sin-empresa-7bce85_2026-w42_06670d",
+      "cluster_id": 522684865,
+      "tipo": "Regulatorio",
+      "score": 1.72,
+      "scoreBreakdown": {
+        "pesoTipo": 1.35,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.73,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Investigación / Sanción Regulatoria",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Portafolio"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Exposición a contingencias legales, multas regulatorias o restricciones operativas por parte de autoridades de supervisión.",
+      "articulos": [
+        {
+          "url": "https://www.portafolio.co/economia/deudas-con-bogota-tendran-descuento-del-60-en-intereses-y-sanciones-este-es-el-plazo-para-acceder-al-beneficio-504503",
+          "titulo": "Deudas con Bogotá tendrán descuento del 60% en intereses y sanciones: este es el plazo para acceder al beneficio",
+          "medio": "Portafolio",
+          "fecha": "2026-10-15T13:22:02Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-15T13:22:02Z",
+      "ultima": "2026-10-15T13:22:02Z",
+      "n_notas": 1
+    },
+    {
+      "id": "integracion_grupo-nutresa-s-a_2026-w40_201474",
+      "cluster_id": 434199818,
+      "tipo": "Integración",
+      "score": 1.7,
+      "scoreBreakdown": {
+        "pesoTipo": 1.45,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.6,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 2
+      },
+      "etiqueta": "Integración Empresarial / Adquisición",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "La República"
+      ],
+      "sectores": [
+        "Alimentos y Bebidas"
+      ],
+      "evolucion": [],
+      "empresas": [
+        "Grupo Nutresa S.A."
+      ],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Posible cambio de control o concentración de mercado con impacto en competencia y valoración bursátil.",
+      "articulos": [
+        {
+          "url": "https://www.larepublica.co/empresas/absorcion-de-nugil-y-jgdb-en-el-grupo-nutresa-4494259",
+          "titulo": "Grupo Nutresa absorbió a Nugil y Jgdb con la totalidad de sus activos, pasivos y patrimonio",
+          "medio": "La República",
+          "fecha": "2026-10-01T12:10:59Z",
+          "certeza": "Probable"
+        },
+        {
+          "url": "https://www.larepublica.co/empresas/compra-de-empaques-industriales-de-colombia-por-nutresa-4493344",
+          "titulo": "Grupo Nutresa adquirió 100% de las acciones de Empaques Industriales de Colombia S.A.S.",
+          "medio": "La República",
+          "fecha": "2026-09-30T11:34:56Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-09-30T11:34:56Z",
+      "ultima": "2026-10-01T12:10:59Z",
+      "n_notas": 2
+    },
+    {
+      "id": "corporativo_sin-empresa-6ce43b_2026-w42_e30318",
+      "cluster_id": 253842098,
+      "tipo": "Corporativo",
+      "score": 1.68,
+      "scoreBreakdown": {
+        "pesoTipo": 1.3,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.77,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Calificación Crediticia",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Valora Analitik"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Cambios de calificación alteran el costo de la deuda, el acceso a fondeo y la demanda de inversionistas institucionales.",
+      "articulos": [
+        {
+          "url": "https://www.valoraanalitik.com/fitch-creditos-libranzas-colombia/",
+          "titulo": "Fitch: Créditos de libranzas cayeron 9,2 % en primer semestre en Colombia, pero mantienen tendencia positiva",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-16T15:00:00Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-16T15:00:00Z",
+      "ultima": "2026-10-16T15:00:00Z",
+      "n_notas": 1
+    },
+    {
+      "id": "suministro_sin-empresa-9b4593_2026-w42_008b59",
+      "cluster_id": 950058343,
+      "tipo": "Suministro",
+      "score": 1.65,
+      "scoreBreakdown": {
+        "pesoTipo": 1.3,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.73,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Disrupción de Suministro / Logística",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "El Tiempo"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Riesgo de interrupción operativa, alza de fletes o incumplimiento de despachos a clientes.",
+      "articulos": [
+        {
+          "url": "https://www.eltiempo.com/economia/sectores/es-posible-que-se-presente-a-finales-del-verano-la-dura-advertencia-de-xm-sobre-riesgo-de-racionamiento-de-energia-3593781",
+          "titulo": "'Es posible que se presente a finales del verano': la advertencia de XM sobre riesgo de racionamiento de energía",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-15T17:41:25Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-15T17:41:25Z",
+      "ultima": "2026-10-15T17:41:25Z",
+      "n_notas": 1
+    },
+    {
+      "id": "suministro_sin-empresa-dc1683_2026-w42_7d4bda",
+      "cluster_id": 743619276,
+      "tipo": "Suministro",
+      "score": 1.65,
+      "scoreBreakdown": {
+        "pesoTipo": 1.3,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.73,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Disrupción de Suministro / Logística",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "El Tiempo"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Riesgo de interrupción operativa, alza de fletes o incumplimiento de despachos a clientes.",
+      "articulos": [
+        {
+          "url": "https://www.eltiempo.com/economia/sectores/colombia-estuvo-a-punto-de-dos-apagones-en-septiembre-empresas-y-maniobras-de-ultima-hora-que-evitaron-los-racionamientos-de-energia-3593643",
+          "titulo": "Colombia estuvo a punto de dos apagones hace 15 días: así fueron las maniobras de última hora para evitar los racionamientos de energía",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-15T14:38:59Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-15T14:38:59Z",
+      "ultima": "2026-10-15T14:38:59Z",
+      "n_notas": 1
+    },
+    {
+      "id": "suministro_sin-empresa-eb7bcf_2026-w42_713b38",
+      "cluster_id": 483297852,
+      "tipo": "Suministro",
+      "score": 1.65,
+      "scoreBreakdown": {
+        "pesoTipo": 1.3,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.73,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Disrupción de Suministro / Logística",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Valora Analitik"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Riesgo de interrupción operativa, alza de fletes o incumplimiento de despachos a clientes.",
+      "articulos": [
+        {
+          "url": "https://www.valoraanalitik.com/colombia-ya-importa-mas-de-40-del-gas-que-consume-el-racionamiento-sera-inevitable-si-no-aumenta-la-capacidad-de-importarlo/",
+          "titulo": "Colombia ya importa más de 40 % del gas que consume; el racionamiento será inevitable si no aumenta la capacidad de importarlo",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-15T11:15:00Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-15T11:15:00Z",
+      "ultima": "2026-10-15T11:15:00Z",
+      "n_notas": 1
+    },
+    {
+      "id": "regulatorio_sin-empresa-972b26_2026-w42_6607ca",
+      "cluster_id": 879353971,
+      "tipo": "Regulatorio",
+      "score": 1.59,
+      "scoreBreakdown": {
+        "pesoTipo": 1.25,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.73,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Regulación Sectorial / Política",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Portafolio"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Cambios de reglas, tarifas o impuestos afectan márgenes y riesgos de todo un sector, no de una sola empresa.",
+      "articulos": [
+        {
+          "url": "https://www.portafolio.co/economia/los-dos-cambios-de-la-reforma-pensional-que-transformaran-el-ahorro-y-la-inversion-para-la-jubilacion-504539",
+          "titulo": "Los dos cambios de la reforma pensional que transformarán el ahorro y la inversión para la jubilación",
+          "medio": "Portafolio",
+          "fecha": "2026-10-15T20:43:14Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-15T20:43:14Z",
+      "ultima": "2026-10-15T20:43:14Z",
+      "n_notas": 1
+    },
+    {
+      "id": "regulatorio_sin-empresa-3cd1b5_2026-w42_bf5272",
+      "cluster_id": 986935566,
+      "tipo": "Regulatorio",
+      "score": 1.59,
+      "scoreBreakdown": {
+        "pesoTipo": 1.25,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.73,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Regulación Sectorial / Política: Reforma pensional podría entrar en vigor desde esta fecha",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Valora Analitik"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Cambios de reglas, tarifas o impuestos afectan márgenes y riesgos de todo un sector, no de una sola empresa.",
+      "articulos": [
+        {
+          "url": "https://www.valoraanalitik.com/reforma-pensional-podria-entrar-en-vigor-desde-esta-fecha/",
+          "titulo": "Reforma pensional podría entrar en vigor desde esta fecha",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-15T16:20:00Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-15T16:20:00Z",
+      "ultima": "2026-10-15T16:20:00Z",
+      "n_notas": 1
+    },
+    {
+      "id": "regulatorio_sin-empresa-b0d720_2026-w42_3f8bae",
+      "cluster_id": 961587945,
+      "tipo": "Regulatorio",
+      "score": 1.59,
+      "scoreBreakdown": {
+        "pesoTipo": 1.25,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.73,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Regulación Sectorial / Política",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Portafolio"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Cambios de reglas, tarifas o impuestos afectan márgenes y riesgos de todo un sector, no de una sola empresa.",
+      "articulos": [
+        {
+          "url": "https://www.portafolio.co/economia/salario-minimo-y-reforma-laboral-presionaran-los-costos-de-contratacion-de-las-empresas-colombianas-en-504505",
+          "titulo": "Salario mínimo y reforma laboral presionarán los costos de contratación de las empresas colombianas en 2027",
+          "medio": "Portafolio",
+          "fecha": "2026-10-15T13:58:33Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-15T13:58:33Z",
+      "ultima": "2026-10-15T13:58:33Z",
+      "n_notas": 1
+    },
+    {
+      "id": "regulatorio_sin-empresa-41a523_2026-w42_220d92",
+      "cluster_id": 661802095,
+      "tipo": "Regulatorio",
+      "score": 1.59,
+      "scoreBreakdown": {
+        "pesoTipo": 1.25,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.73,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Regulación Sectorial / Política",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Portafolio"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Cambios de reglas, tarifas o impuestos afectan márgenes y riesgos de todo un sector, no de una sola empresa.",
+      "articulos": [
+        {
+          "url": "https://www.portafolio.co/economia/gobierno/hacienda-tiene-30-dias-para-sustentar-el-impacto-fiscal-de-la-reforma-pensional-ante-la-corte-constitucional-504493",
+          "titulo": "Hacienda tiene 30 días para sustentar el impacto fiscal de la reforma pensional ante la Corte Constitucional",
+          "medio": "Portafolio",
+          "fecha": "2026-10-15T11:26:08Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-15T11:26:08Z",
+      "ultima": "2026-10-15T11:26:08Z",
+      "n_notas": 1
+    },
+    {
+      "id": "suministro_sin-empresa-d6e4a2_2026-w42_d09c2e",
+      "cluster_id": 838236745,
+      "tipo": "Suministro",
+      "score": 1.59,
+      "scoreBreakdown": {
+        "pesoTipo": 1.3,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.67,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Disrupción de Suministro / Logística",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Portafolio"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Riesgo de interrupción operativa, alza de fletes o incumplimiento de despachos a clientes.",
+      "articulos": [
+        {
+          "url": "https://www.portafolio.co/economia/gobierno/presidente-de-la-espriella-pide-traslado-presupuestal-para-enfrentar-el-nino-y-reducir-riesgo-de-racionamiento-504346",
+          "titulo": "Presidente De La Espriella pide traslado presupuestal para enfrentar El Niño y reducir riesgo de racionamiento",
+          "medio": "Portafolio",
+          "fecha": "2026-10-13T02:08:15Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-13T02:08:15Z",
+      "ultima": "2026-10-13T02:08:15Z",
+      "n_notas": 1
+    },
+    {
+      "id": "corporativo_sin-empresa-22fd9a_2026-w42_62b6d4",
+      "cluster_id": 336575946,
+      "tipo": "Corporativo",
+      "score": 1.58,
+      "scoreBreakdown": {
+        "pesoTipo": 1.2,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.8,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Resultados Financieros / Guías",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "El Tiempo"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Sorpresas frente a lo esperado y cambios en las metas de la compañía suelen mover el precio.",
+      "articulos": [
+        {
+          "url": "https://www.eltiempo.com/economia/grupos-economicos-reportaron-ganancias-por-28-8-billones-en-2025-estos-fueron-sus-ingresos-segun-supersociedades-3594201",
+          "titulo": "Grupos económicos reportaron ganancias por $28,8 billones en 2025: estos fueron sus ingresos según Supersociedades",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-17T01:17:28Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-17T01:17:28Z",
+      "ultima": "2026-10-17T01:17:28Z",
+      "n_notas": 1
+    },
+    {
+      "id": "regulatorio_sin-empresa-22aeee_2026-w42_6f50bc",
+      "cluster_id": 931730363,
+      "tipo": "Regulatorio",
+      "score": 1.56,
+      "scoreBreakdown": {
+        "pesoTipo": 1.25,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.7,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Regulación Sectorial / Política",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Valora Analitik"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Cambios de reglas, tarifas o impuestos afectan márgenes y riesgos de todo un sector, no de una sola empresa.",
+      "articulos": [
+        {
+          "url": "https://www.valoraanalitik.com/corte-constitucional-le-da-30-dias-al-gobierno-para-sustentar-el-impacto-fiscal-de-5-billones-en-la-reforma-pensional/",
+          "titulo": "Corte Constitucional le da 30 días al Gobierno para sustentar el impacto fiscal de $5 billones en la reforma pensional",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-14T22:39:00Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-14T22:39:00Z",
+      "ultima": "2026-10-14T22:39:00Z",
+      "n_notas": 1
+    },
+    {
+      "id": "inversion_sin-empresa-a152a7_2026-w42_c412ee",
+      "cluster_id": 757848075,
+      "tipo": "Inversión",
+      "score": 1.55,
+      "scoreBreakdown": {
+        "pesoTipo": 1.2,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.77,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Inversión de Capital / Expansión",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "El Tiempo"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Despliegue de capital productivo que incrementará capacidad operativa o flujos futuros de caja.",
+      "articulos": [
+        {
+          "url": "https://www.eltiempo.com/economia/ghl-estrena-en-cartagena-la-marca-ac-hotel-by-marriott-una-inversion-de-us-2-millones-que-ya-abre-sus-puertas-al-publico-3594183",
+          "titulo": "GHL estrena en Cartagena la marca AC Hotel by Marriott: una inversión de US$2 millones que ya abre sus puertas al público",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-16T23:31:57Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-16T23:31:57Z",
+      "ultima": "2026-10-16T23:31:57Z",
+      "n_notas": 1
+    },
+    {
+      "id": "inversion_sin-empresa-be83ca_2026-w42_12a234",
+      "cluster_id": 364863626,
+      "tipo": "Inversión",
+      "score": 1.53,
+      "scoreBreakdown": {
+        "pesoTipo": 1.2,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.73,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Inversión de Capital / Expansión",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Portafolio"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Despliegue de capital productivo que incrementará capacidad operativa o flujos futuros de caja.",
+      "articulos": [
+        {
+          "url": "https://www.portafolio.co/economia/regiones/comenzo-la-ampliacion-de-la-autopista-norte-el-megaproyecto-vial-suma-inversion-de-1-8-billones-504546",
+          "titulo": "Comenzó la ampliación de la Autopista Norte: el megaproyecto vial suma inversión de $1,8 billones",
+          "medio": "Portafolio",
+          "fecha": "2026-10-15T21:33:06Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-15T21:33:06Z",
+      "ultima": "2026-10-15T21:33:06Z",
+      "n_notas": 1
+    },
+    {
+      "id": "inversion_sin-empresa-3afa73_2026-w42_679f2d",
+      "cluster_id": 517355275,
+      "tipo": "Inversión",
+      "score": 1.53,
+      "scoreBreakdown": {
+        "pesoTipo": 1.2,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.73,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Inversión de Capital / Expansión",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Valora Analitik"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Despliegue de capital productivo que incrementará capacidad operativa o flujos futuros de caja.",
+      "articulos": [
+        {
+          "url": "https://www.valoraanalitik.com/millicom-anuncia-inversion-de-85-billones-en-colombia-para-los-proximos-cuatro-anos-frentes-que-contempla-la-estrategia/",
+          "titulo": "Millicom anuncia inversión de $8,5 billones en Colombia para los próximos cuatro años: frentes que contempla la estrategia",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-15T00:50:00Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-15T00:50:00Z",
+      "ultima": "2026-10-15T00:50:00Z",
+      "n_notas": 1
+    },
+    {
+      "id": "nombramiento_sin-empresa-31444e_2026-w42_4f9f95",
+      "cluster_id": 192617626,
+      "tipo": "Nombramiento",
+      "score": 1.52,
+      "scoreBreakdown": {
+        "pesoTipo": 1.15,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.8,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Cambio en Alta Dirección / Junta",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "El Tiempo"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Reestructuración del liderazgo estratégico de la compañía.",
+      "articulos": [
+        {
+          "url": "https://www.eltiempo.com/economia/sector-financiero/nelson-javier-alarcon-es-designado-como-nuevo-presidente-de-la-central-unitaria-de-trabajadores-de-colombia-cut-elegido-por-una-mayoria-3594224",
+          "titulo": "Nelson Javier Alarcón es designado como nuevo presidente de la Central Unitaria de Trabajadores de Colombia (CUT): 'Elegido por una mayoría'",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-17T03:41:54Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-17T03:41:54Z",
+      "ultima": "2026-10-17T03:41:54Z",
+      "n_notas": 1
+    },
+    {
+      "id": "nombramiento_sin-empresa-527e18_2026-w42_34074a",
+      "cluster_id": 856218184,
+      "tipo": "Nombramiento",
+      "score": 1.52,
+      "scoreBreakdown": {
+        "pesoTipo": 1.15,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.8,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Cambio en Alta Dirección / Junta",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Portafolio"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Reestructuración del liderazgo estratégico de la compañía.",
+      "articulos": [
+        {
+          "url": "https://www.portafolio.co/economia/gobierno/la-cut-eligio-nuevo-presidente-y-ratifico-su-oposicion-al-gobierno-de-abelardo-de-la-espriella-504618",
+          "titulo": "La CUT eligió nuevo presidente y ratificó su oposición al gobierno de Abelardo De La Espriella",
+          "medio": "Portafolio",
+          "fecha": "2026-10-17T00:29:27Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-17T00:29:27Z",
+      "ultima": "2026-10-17T00:29:27Z",
+      "n_notas": 1
+    },
+    {
+      "id": "regulatorio_sin-empresa-387b4d_2026-w42_a145ff",
+      "cluster_id": 661510105,
+      "tipo": "Regulatorio",
+      "score": 1.5,
+      "scoreBreakdown": {
+        "pesoTipo": 1.25,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.63,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Regulación Sectorial / Política",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "El Tiempo"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Cambios de reglas, tarifas o impuestos afectan márgenes y riesgos de todo un sector, no de una sola empresa.",
+      "articulos": [
+        {
+          "url": "https://www.eltiempo.com/economia/sectores/estas-son-las-claves-que-deberia-tener-una-contrarreforma-pensional-antes-de-que-opere-el-nuevo-sistema-3583733",
+          "titulo": "Estas son las claves que debería tener una contrarreforma pensional antes de que opere el nuevo sistema",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-12T03:25:00Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-12T03:25:00Z",
+      "ultima": "2026-10-12T03:25:00Z",
+      "n_notas": 1
+    },
+    {
+      "id": "nombramiento_sin-empresa-22378e_2026-w42_81e853",
+      "cluster_id": 815504018,
+      "tipo": "Nombramiento",
+      "score": 1.49,
+      "scoreBreakdown": {
+        "pesoTipo": 1.15,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.77,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Cambio en Alta Dirección / Junta: Nicolás Saade será el nuevo director general de Gabrica",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Valora Analitik"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Reestructuración del liderazgo estratégico de la compañía.",
+      "articulos": [
+        {
+          "url": "https://www.valoraanalitik.com/nicolas-saade-sera-el-nuevo-director-general-de-gabrica/",
+          "titulo": "Nicolás Saade será el nuevo director general de Gabrica",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-16T23:30:00Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-16T23:30:00Z",
+      "ultima": "2026-10-16T23:30:00Z",
+      "n_notas": 1
+    },
+    {
+      "id": "nombramiento_sin-empresa-b04ebf_2026-w42_86da0b",
+      "cluster_id": 835005729,
+      "tipo": "Nombramiento",
+      "score": 1.49,
+      "scoreBreakdown": {
+        "pesoTipo": 1.15,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.77,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Cambio en Alta Dirección / Junta",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "El Tiempo"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Reestructuración del liderazgo estratégico de la compañía.",
+      "articulos": [
+        {
+          "url": "https://www.eltiempo.com/economia/sectores/colombia-a-aprovechar-ubicacion-y-capacidad-productiva-para-atraer-inversion-diversificar-y-recuperar-terreno-en-asia-nuevo-presidente-de-analdex-3593297",
+          "titulo": "'Colombia, a aprovechar ubicación y capacidad productiva para atraer inversión, diversificar y recuperar terreno en Asia': nuevo presidente de Analdex",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-16T11:49:11Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-16T11:49:11Z",
+      "ultima": "2026-10-16T11:49:11Z",
+      "n_notas": 1
+    },
+    {
+      "id": "nombramiento_sin-empresa-1b1bca_2026-w42_3c492b",
+      "cluster_id": 436457471,
+      "tipo": "Nombramiento",
+      "score": 1.49,
+      "scoreBreakdown": {
+        "pesoTipo": 1.15,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.77,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Cambio en Alta Dirección / Junta: Ignacio Bravo, nuevo gerente general de Banco Falabella Colombia",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Valora Analitik"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Reestructuración del liderazgo estratégico de la compañía.",
+      "articulos": [
+        {
+          "url": "https://www.valoraanalitik.com/ignacio-bravo-nuevo-gerente-general-de-banco-falabella-colombia/",
+          "titulo": "Ignacio Bravo, nuevo gerente general de Banco Falabella Colombia",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-16T01:00:00Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-16T01:00:00Z",
+      "ultima": "2026-10-16T01:00:00Z",
+      "n_notas": 1
+    },
+    {
+      "id": "regulatorio_sin-empresa-f05d93_2026-w41_0d03ed",
+      "cluster_id": 356328345,
+      "tipo": "Regulatorio",
+      "score": 1.49,
+      "scoreBreakdown": {
+        "pesoTipo": 1.3,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.57,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Licencia / Adjudicación / Concesión",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Valora Analitik"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Licencias y adjudicaciones habilitan proyectos y flujos futuros, o retrasan proyectos cuando se niegan.",
+      "articulos": [
+        {
+          "url": "https://www.valoraanalitik.com/gobierno-de-la-espriella-aprueba-licencia-ambiental-de-megaobra-para-recuperar-el-laguito-en-cartagena/",
+          "titulo": "Gobierno De La Espriella aprueba licencia ambiental de megaobra para recuperar El Laguito en Cartagena",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-10T21:30:00Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-10T21:30:00Z",
+      "ultima": "2026-10-10T21:30:00Z",
+      "n_notas": 1
+    },
+    {
+      "id": "corporativo_sin-empresa-4f76d6_2026-w41_b23a8e",
+      "cluster_id": 27766705,
+      "tipo": "Corporativo",
+      "score": 1.49,
+      "scoreBreakdown": {
+        "pesoTipo": 1.3,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.57,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Calificación Crediticia",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Valora Analitik"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Cambios de calificación alteran el costo de la deuda, el acceso a fondeo y la demanda de inversionistas institucionales.",
+      "articulos": [
+        {
+          "url": "https://www.valoraanalitik.com/fitch-menor-flujo-de-caja-empresas-colombia/",
+          "titulo": "Fitch advierte menor flujo de caja y presión por costos de financiamiento en empresas colombianas",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-07T16:00:00Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-07T16:00:00Z",
+      "ultima": "2026-10-07T16:00:00Z",
+      "n_notas": 1
+    },
+    {
+      "id": "regulatorio_ecopetrol-s-a_2026-w40_32947b",
+      "cluster_id": 144061201,
+      "tipo": "Regulatorio",
+      "score": 1.49,
+      "scoreBreakdown": {
+        "pesoTipo": 1.3,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.57,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Licencia / Adjudicación / Concesión: ANLA otorga licencia a proyecto de petróleo de Ecopetrol en Meta",
+      "insumo": "Petróleo y Combustibles",
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Valora Analitik"
+      ],
+      "sectores": [
+        "Petróleo y Gas"
+      ],
+      "evolucion": [],
+      "empresas": [
+        "Ecopetrol S.A."
+      ],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Licencias y adjudicaciones habilitan proyectos y flujos futuros, o retrasan proyectos cuando se niegan.",
+      "articulos": [
+        {
+          "url": "https://www.valoraanalitik.com/anla-otorga-licencia-a-proyecto-de-petroleo-de-ecopetrol-en-meta/",
+          "titulo": "ANLA otorga licencia a proyecto de petróleo de Ecopetrol en Meta",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-02T20:30:00Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-02T20:30:00Z",
+      "ultima": "2026-10-02T20:30:00Z",
+      "n_notas": 1
+    },
+    {
+      "id": "regulatorio_grupo-energia-bogota-s-a-e-s-p_2026-w40_bf50c2",
+      "cluster_id": 859101713,
+      "tipo": "Regulatorio",
+      "score": 1.49,
+      "scoreBreakdown": {
+        "pesoTipo": 1.3,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.57,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Licencia / Adjudicación / Concesión",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Valora Analitik"
+      ],
+      "sectores": [
+        "Energía y Servicios"
+      ],
+      "evolucion": [],
+      "empresas": [
+        "Grupo Energía Bogotá S.A. E.S.P."
+      ],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Licencias y adjudicaciones habilitan proyectos y flujos futuros, o retrasan proyectos cuando se niegan.",
+      "articulos": [
+        {
+          "url": "https://www.valoraanalitik.com/la-upme-adjudico-al-grupo-energia-bogota-importante-proyecto-para-el-abastecimiento-de-la-sabana-de-bogota/",
+          "titulo": "La UPME adjudicó al Grupo Energía Bogotá importante proyecto para el abastecimiento de la Sabana de Bogotá",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-01T22:00:00Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-01T22:00:00Z",
+      "ultima": "2026-10-01T22:00:00Z",
+      "n_notas": 1
+    },
+    {
+      "id": "corporativo_grupo-energia-bogota-s-a-e-s-p_2026-w42_c9016b",
+      "cluster_id": 75152803,
+      "tipo": "Corporativo",
+      "score": 1.46,
+      "scoreBreakdown": {
+        "pesoTipo": 1.15,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.73,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Emisión / Recompra / Titularización",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Valora Analitik"
+      ],
+      "sectores": [
+        "Energía y Servicios"
+      ],
+      "evolucion": [],
+      "empresas": [
+        "Grupo Energía Bogotá S.A. E.S.P."
+      ],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Emitir acciones diluye; recomprarlas apoya el precio; emitir deuda cambia el costo financiero y el apalancamiento.",
+      "articulos": [
+        {
+          "url": "https://www.valoraanalitik.com/detonantes-geb-camino-wall-street-acciones/",
+          "titulo": "Exclusiva | Los dos “detonantes” para que el GEB comience su camino a Wall Street; no descarta emisión de acciones",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-15T18:20:00Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-15T18:20:00Z",
+      "ultima": "2026-10-15T18:20:00Z",
+      "n_notas": 1
+    },
+    {
+      "id": "regulatorio_sin-empresa-74d427_2026-w41_2d7fd7",
+      "cluster_id": 830284517,
+      "tipo": "Regulatorio",
+      "score": 1.44,
+      "scoreBreakdown": {
+        "pesoTipo": 1.25,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.57,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Regulación Sectorial / Política: ¿Qué viene para la reforma pensional en Colombia?",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Portafolio"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Cambios de reglas, tarifas o impuestos afectan márgenes y riesgos de todo un sector, no de una sola empresa.",
+      "articulos": [
+        {
+          "url": "https://www.portafolio.co/economia/gobierno/que-viene-para-la-reforma-pensional-en-colombia-504108",
+          "titulo": "¿Qué viene para la reforma pensional en Colombia?",
+          "medio": "Portafolio",
+          "fecha": "2026-10-08T15:01:54Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-08T15:01:54Z",
+      "ultima": "2026-10-08T15:01:54Z",
+      "n_notas": 1
+    },
+    {
+      "id": "regulatorio_sin-empresa-3e314f_2026-w40_0c1ae5",
+      "cluster_id": 134851511,
+      "tipo": "Regulatorio",
+      "score": 1.44,
+      "scoreBreakdown": {
+        "pesoTipo": 1.25,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.57,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Regulación Sectorial / Política",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "El Tiempo"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Cambios de reglas, tarifas o impuestos afectan márgenes y riesgos de todo un sector, no de una sola empresa.",
+      "articulos": [
+        {
+          "url": "https://www.eltiempo.com/economia/sectores/ministra-de-transporte-anuncia-reforma-a-la-ley-de-app-para-ampliar-alcances-y-tiempo-de-las-concesiones-3590796",
+          "titulo": "Ministra Elsa Noguera anuncia reforma a la Ley de APP para ampliar alcances y tiempo de las concesiones",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-02T21:24:09Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-02T21:24:09Z",
+      "ultima": "2026-10-02T21:24:09Z",
+      "n_notas": 1
+    },
+    {
+      "id": "inversion_sin-empresa-6986c5_2026-w40_fe2963",
+      "cluster_id": 410120669,
+      "tipo": "Inversión",
+      "score": 1.44,
+      "scoreBreakdown": {
+        "pesoTipo": 1.2,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.63,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Inversión de Capital / Expansión",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "La República"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Despliegue de capital productivo que incrementará capacidad operativa o flujos futuros de caja.",
+      "articulos": [
+        {
+          "url": "https://www.larepublica.co/empresas/nuevo-proyecto-de-marval-soho-26-4495361",
+          "titulo": "Marval anunció proyecto urbano en Bogotá, Soho 26, con una inversión de $2,8 billones",
+          "medio": "La República",
+          "fecha": "2026-10-02T16:08:44Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-02T16:08:44Z",
+      "ultima": "2026-10-02T16:08:44Z",
+      "n_notas": 1
+    },
+    {
+      "id": "corporativo_grupo-energia-bogota-s-a-e-s-p_2026-w40_11feb2",
+      "cluster_id": 204482451,
+      "tipo": "Corporativo",
+      "score": 1.43,
+      "scoreBreakdown": {
+        "pesoTipo": 1.3,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.5,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Cambio de Control / Listado en Bolsa",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "La República"
+      ],
+      "sectores": [
+        "Energía y Servicios"
+      ],
+      "evolucion": [],
+      "empresas": [
+        "Grupo Energía Bogotá S.A. E.S.P."
+      ],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Listados, deslistados o cambios de matriz alteran el flotante, la liquidez y el perfil de inversionistas.",
+      "articulos": [
+        {
+          "url": "https://www.larepublica.co/empresas/grupo-energia-de-bogota-sera-la-quinta-empresa-local-que-se-listara-en-mercado-de-valores-de-ee-uu-4492376",
+          "titulo": "Grupo Energía de Bogotá será la quinta empresa local que se listará en EE.UU.",
+          "medio": "La República",
+          "fecha": "2026-09-29T05:01:41Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-09-29T05:01:41Z",
+      "ultima": "2026-09-29T05:01:41Z",
+      "n_notas": 1
+    },
+    {
+      "id": "nombramiento_sin-empresa-e6fee3_2026-w42_e2f0e8",
+      "cluster_id": 769138280,
+      "tipo": "Nombramiento",
+      "score": 1.41,
+      "scoreBreakdown": {
+        "pesoTipo": 1.15,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.67,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Cambio en Alta Dirección / Junta",
+      "insumo": "Cemento y Clinker",
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Valora Analitik"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Reestructuración del liderazgo estratégico de la compañía.",
+      "articulos": [
+        {
+          "url": "https://www.valoraanalitik.com/primicia-carlos-casado-sera-el-nuevo-presidente-ejecutivo-de-holcim-colombia/",
+          "titulo": "Primicia | Carlos Casado será el nuevo presidente ejecutivo de Holcim Colombia",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-13T20:00:00Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-13T20:00:00Z",
+      "ultima": "2026-10-13T20:00:00Z",
+      "n_notas": 1
+    },
+    {
+      "id": "regulatorio_sin-empresa-ae8e64_2026-w41_e16820",
+      "cluster_id": 830941825,
+      "tipo": "Regulatorio",
+      "score": 1.41,
+      "scoreBreakdown": {
+        "pesoTipo": 1.25,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.53,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Regulación Sectorial / Política",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Portafolio"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Cambios de reglas, tarifas o impuestos afectan márgenes y riesgos de todo un sector, no de una sola empresa.",
+      "articulos": [
+        {
+          "url": "https://www.portafolio.co/economia/a-la-camara-le-quedan-20-dias-para-subsanar-los-reparos-de-la-corte-constitucional-a-la-reforma-pensional-504135",
+          "titulo": "Contrarreloj: a la Cámara le quedan 20 días para subsanar reparos de la Corte Constitucional a la reforma pensional",
+          "medio": "Portafolio",
+          "fecha": "2026-10-08T22:52:03Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-08T22:52:03Z",
+      "ultima": "2026-10-08T22:52:03Z",
+      "n_notas": 1
+    },
+    {
+      "id": "regulatorio_sin-empresa-8c4c9c_2026-w40_dd7387",
+      "cluster_id": 404460786,
+      "tipo": "Regulatorio",
+      "score": 1.41,
+      "scoreBreakdown": {
+        "pesoTipo": 1.25,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.53,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Regulación Sectorial / Política",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Valora Analitik"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Cambios de reglas, tarifas o impuestos afectan márgenes y riesgos de todo un sector, no de una sola empresa.",
+      "articulos": [
+        {
+          "url": "https://www.valoraanalitik.com/gobierno-de-la-espriella-prepara-reforma-a-la-ley-app-para-ajustar-plazos-de-concesiones/",
+          "titulo": "Gobierno De la Espriella prepara reforma a la Ley APP para ajustar plazos de concesiones",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-02T21:20:00Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-02T21:20:00Z",
+      "ultima": "2026-10-02T21:20:00Z",
+      "n_notas": 1
+    },
+    {
+      "id": "inversion_sin-empresa-ae8c24_2026-w41_fdc070",
+      "cluster_id": 762864778,
+      "tipo": "Inversión",
+      "score": 1.38,
+      "scoreBreakdown": {
+        "pesoTipo": 1.2,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.57,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Inversión de Capital / Expansión",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "El Tiempo"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Despliegue de capital productivo que incrementará capacidad operativa o flujos futuros de caja.",
+      "articulos": [
+        {
+          "url": "https://www.eltiempo.com/economia/empresas/movet-acelera-su-expansion-en-colombia-con-inversion-de-6-000-millones-de-pesos-en-antioquia-3592073",
+          "titulo": "Movet acelera su expansión en Colombia con inversión de 6.000 millones de pesos en Antioquia",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-08T00:21:12Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-08T00:21:12Z",
+      "ultima": "2026-10-08T00:21:12Z",
+      "n_notas": 1
+    },
+    {
+      "id": "inversion_sin-empresa-ca93b3_2026-w40_eea6d4",
+      "cluster_id": 492781151,
+      "tipo": "Inversión",
+      "score": 1.38,
+      "scoreBreakdown": {
+        "pesoTipo": 1.2,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.57,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Inversión de Capital / Expansión",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Valora Analitik"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Despliegue de capital productivo que incrementará capacidad operativa o flujos futuros de caja.",
+      "articulos": [
+        {
+          "url": "https://www.valoraanalitik.com/gobierno-acuerda-con-barranquilla-manejo-del-aeropuerto-ernesto-cortissoz-y-una-inversion-de-40-000-millones/",
+          "titulo": "Gobierno acuerda con Barranquilla manejo del aeropuerto Ernesto Cortissoz y una inversión de $40.000 millones",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-01T21:20:00Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-01T21:20:00Z",
+      "ultima": "2026-10-01T21:20:00Z",
+      "n_notas": 1
+    },
+    {
+      "id": "inversion_sin-empresa-ef76e6_2026-w40_e1e581",
+      "cluster_id": 722480942,
+      "tipo": "Inversión",
+      "score": 1.38,
+      "scoreBreakdown": {
+        "pesoTipo": 1.2,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.57,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Inversión de Capital / Expansión",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Valora Analitik"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Despliegue de capital productivo que incrementará capacidad operativa o flujos futuros de caja.",
+      "articulos": [
+        {
+          "url": "https://www.valoraanalitik.com/cartagena-inaugura-nuevo-chambacu-ligas-mayores-tras-inversion-de-68-000-millones/",
+          "titulo": "Cartagena inaugura Nuevo Chambacú Ligas Mayores tras inversión de $68.000 millones",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-01T20:36:39Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-01T20:36:39Z",
+      "ultima": "2026-10-01T20:36:39Z",
+      "n_notas": 1
+    },
+    {
+      "id": "corporativo_sin-empresa-24db44_2026-w42_b8008f",
+      "cluster_id": 136976915,
+      "tipo": "Corporativo",
+      "score": 1.37,
+      "scoreBreakdown": {
+        "pesoTipo": 1.1,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.7,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Alianza / Contrato Estratégico",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Valora Analitik"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Acuerdos comerciales o societarios que pueden abrir ingresos o compromisos de capital; la materialidad depende del tamaño.",
+      "articulos": [
+        {
+          "url": "https://www.valoraanalitik.com/banco-w-colmena-seguros-nueva-alianza/",
+          "titulo": "Banco W y Colmena Seguros buscan proteger a 100.000 colombianos con nueva alianza",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-14T23:00:00Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-14T23:00:00Z",
+      "ultima": "2026-10-14T23:00:00Z",
+      "n_notas": 1
+    },
+    {
+      "id": "integracion_sin-empresa-b51052_2026-w40_6461a4",
+      "cluster_id": 28865004,
+      "tipo": "Integración",
+      "score": 1.35,
+      "scoreBreakdown": {
+        "pesoTipo": 1.2,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.53,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Reorganización Societaria / Activos",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "La República"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Cambios en la estructura de propiedad o de activos de un grupo: pueden alterar el valor de las partes y el descuento de holding.",
+      "articulos": [
+        {
+          "url": "https://www.larepublica.co/empresas/falabella-reorganiza-sus-activos-y-fortalece-la-operacion-de-su-filial-mallplaza-4495670",
+          "titulo": "Falabella reorganiza sus activos y fortalece la operación de su filial Mallplaza",
+          "medio": "La República",
+          "fecha": "2026-10-02T21:27:42Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-02T21:27:42Z",
+      "ultima": "2026-10-02T21:27:42Z",
+      "n_notas": 1
+    },
+    {
+      "id": "corporativo_grupo-de-inversiones-suramericana-s-a_2026-w41_4cd341",
+      "cluster_id": 541447764,
+      "tipo": "Corporativo",
+      "score": 1.32,
+      "scoreBreakdown": {
+        "pesoTipo": 1.15,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.57,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Emisión / Recompra / Titularización",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Valora Analitik"
+      ],
+      "sectores": [
+        "Servicios Financieros"
+      ],
+      "evolucion": [],
+      "empresas": [
+        "Grupo de Inversiones Suramericana S.A."
+      ],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Emitir acciones diluye; recomprarlas apoya el precio; emitir deuda cambia el costo financiero y el apalancamiento.",
+      "articulos": [
+        {
+          "url": "https://www.valoraanalitik.com/grupo-sura-pone-en-marcha-un-programa-de-readquisicion-de-acciones-por-hasta-500-000-millones/",
+          "titulo": "Grupo Sura pone en marcha un programa de readquisición de acciones por hasta $500.000 millones",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-07T12:00:00Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-07T12:00:00Z",
+      "ultima": "2026-10-07T12:00:00Z",
+      "n_notas": 1
+    },
+    {
+      "id": "nombramiento_sin-empresa-3fb491_2026-w41_8c9ce6",
+      "cluster_id": 938077862,
+      "tipo": "Nombramiento",
+      "score": 1.32,
+      "scoreBreakdown": {
+        "pesoTipo": 1.15,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.57,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Cambio en Alta Dirección / Junta",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "El Tiempo"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Reestructuración del liderazgo estratégico de la compañía.",
+      "articulos": [
+        {
+          "url": "https://www.eltiempo.com/economia/juan-valdez-nombra-nuevo-gerente-general-luis-guillermo-quintero-llega-desde-el-movistar-arena-3591480",
+          "titulo": "Juan Valdez nombra nuevo gerente general: Luis Guillermo Quintero llega desde el Movistar Arena",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-06T01:26:43Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-06T01:26:43Z",
+      "ultima": "2026-10-06T01:26:43Z",
+      "n_notas": 1
+    },
+    {
+      "id": "nombramiento_sin-empresa-9bc702_2026-w41_4d5b9b",
+      "cluster_id": 357172535,
+      "tipo": "Nombramiento",
+      "score": 1.32,
+      "scoreBreakdown": {
+        "pesoTipo": 1.15,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.57,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Cambio en Alta Dirección / Junta",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "El Tiempo"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Reestructuración del liderazgo estratégico de la compañía.",
+      "articulos": [
+        {
+          "url": "https://www.eltiempo.com/economia/junta-directiva-de-la-andi-acepta-la-renuncia-de-bruce-mac-master-y-conformara-un-comite-para-escoger-al-nuevo-presidente-3591464",
+          "titulo": "Junta directiva de la Andi conformará un comité para escoger al nuevo presidente tras la renuncia de Bruce Mac Master",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-06T00:33:12Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-06T00:33:12Z",
+      "ultima": "2026-10-06T00:33:12Z",
+      "n_notas": 1
+    },
+    {
+      "id": "corporativo_ecopetrol-s-a_2026-w40_f16754",
+      "cluster_id": 383143112,
+      "tipo": "Corporativo",
+      "score": 1.32,
+      "scoreBreakdown": {
+        "pesoTipo": 1.1,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.63,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Alianza / Contrato Estratégico",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Finance Colombia"
+      ],
+      "sectores": [
+        "Petróleo y Gas"
+      ],
+      "evolucion": [],
+      "empresas": [
+        "Ecopetrol S.A."
+      ],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Acuerdos comerciales o societarios que pueden abrir ingresos o compromisos de capital; la materialidad depende del tamaño.",
+      "articulos": [
+        {
+          "url": "https://www.financecolombia.com/geopark-joins-ecopetrol-and-drummond-in-the-race-to-drill-colombias-first-fracking-well/",
+          "titulo": "GeoPark Joins Ecopetrol and Drummond in the Race to Drill Colombia’s First Fracking Well",
+          "medio": "Finance Colombia",
+          "fecha": "2026-10-02T14:10:40Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-02T14:10:40Z",
+      "ultima": "2026-10-02T14:10:40Z",
+      "n_notas": 1
+    },
+    {
+      "id": "corporativo_sin-empresa-125887_2026-w40_380c4c",
+      "cluster_id": 91457003,
+      "tipo": "Corporativo",
+      "score": 1.32,
+      "scoreBreakdown": {
+        "pesoTipo": 1.15,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.57,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Emisión / Recompra / Titularización",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Valora Analitik"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Emitir acciones diluye; recomprarlas apoya el precio; emitir deuda cambia el costo financiero y el apalancamiento.",
+      "articulos": [
+        {
+          "url": "https://www.valoraanalitik.com/koa-cierra-titularizacion-por-85-000-millones-en-la-bolsa-de-valores-de-colombia-para-ampliar-acceso-a-credito/",
+          "titulo": "KOA cierra titularización por $85.000 millones en la Bolsa de Valores de Colombia para ampliar acceso a crédito",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-01T22:40:00Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-01T22:40:00Z",
+      "ultima": "2026-10-01T22:40:00Z",
+      "n_notas": 1
+    },
+    {
+      "id": "corporativo_sin-empresa-4ee269_2026-w41_fdbc8e",
+      "cluster_id": 804115346,
+      "tipo": "Corporativo",
+      "score": 1.29,
+      "scoreBreakdown": {
+        "pesoTipo": 1.1,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.6,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Alianza / Contrato Estratégico",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Valora Analitik"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Acuerdos comerciales o societarios que pueden abrir ingresos o compromisos de capital; la materialidad depende del tamaño.",
+      "articulos": [
+        {
+          "url": "https://www.valoraanalitik.com/empresa-colombiana-entra-al-negocio-de-patrocinios-deportivos-tras-alianza-entre-mastercard-e-inter-bogota/",
+          "titulo": "Empresa colombiana entra al negocio de patrocinios deportivos tras alianza entre Mastercard e Inter Bogotá",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-11T21:00:00Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-11T21:00:00Z",
+      "ultima": "2026-10-11T21:00:00Z",
+      "n_notas": 1
+    },
+    {
+      "id": "corporativo_sin-empresa-213f1e_2026-w41_6a7765",
+      "cluster_id": 396981093,
+      "tipo": "Corporativo",
+      "score": 1.29,
+      "scoreBreakdown": {
+        "pesoTipo": 1.15,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.53,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Emisión / Recompra / Titularización",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Valora Analitik"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Emitir acciones diluye; recomprarlas apoya el precio; emitir deuda cambia el costo financiero y el apalancamiento.",
+      "articulos": [
+        {
+          "url": "https://www.valoraanalitik.com/bbva-colombia-emision-bonos-bolsa-colombia/",
+          "titulo": "BBVA Colombia regresó al mercado local luego de 12 años con emisión de bonos sostenibles en Bolsa de Colombia",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-06T21:00:00Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-06T21:00:00Z",
+      "ultima": "2026-10-06T21:00:00Z",
+      "n_notas": 1
+    },
+    {
+      "id": "nombramiento_sin-empresa-2ce5bb_2026-w41_4130c8",
+      "cluster_id": 448276037,
+      "tipo": "Nombramiento",
+      "score": 1.29,
+      "scoreBreakdown": {
+        "pesoTipo": 1.15,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.53,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Cambio en Alta Dirección / Junta",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Valora Analitik"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Reestructuración del liderazgo estratégico de la compañía.",
+      "articulos": [
+        {
+          "url": "https://www.valoraanalitik.com/efrain-cepeda-tarud-nuevo-presidente-de-la-camara-de-comercio-de-barranquilla/",
+          "titulo": "Efraín Cepeda Tarud es el nuevo presidente de la Cámara de Comercio de Barranquilla",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-05T22:00:00Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-05T22:00:00Z",
+      "ultima": "2026-10-05T22:00:00Z",
+      "n_notas": 1
+    },
+    {
+      "id": "nombramiento_sin-empresa-cfa6fd_2026-w41_3c8092",
+      "cluster_id": 361994803,
+      "tipo": "Nombramiento",
+      "score": 1.29,
+      "scoreBreakdown": {
+        "pesoTipo": 1.15,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.53,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Cambio en Alta Dirección / Junta",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Valora Analitik"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Reestructuración del liderazgo estratégico de la compañía.",
+      "articulos": [
+        {
+          "url": "https://www.valoraanalitik.com/juan-carlos-vega-es-el-nuevo-gerente-de-oracle-para-colombia-centroamerica-y-el-caribe/",
+          "titulo": "Oracle fortalece su operación regional con nuevo gerente para Colombia, Centroamérica y el Caribe",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-05T18:20:00Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-05T18:20:00Z",
+      "ultima": "2026-10-05T18:20:00Z",
+      "n_notas": 1
+    },
+    {
+      "id": "nombramiento_sin-empresa-581f5e_2026-w40_41ace4",
+      "cluster_id": 69316531,
+      "tipo": "Nombramiento",
+      "score": 1.29,
+      "scoreBreakdown": {
+        "pesoTipo": 1.15,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.53,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Cambio en Alta Dirección / Junta",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Valora Analitik"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Reestructuración del liderazgo estratégico de la compañía.",
+      "articulos": [
+        {
+          "url": "https://www.valoraanalitik.com/el-ministerio-de-hacienda-presento-a-jaime-vives-como-nuevo-presidente-de-coljuegos/",
+          "titulo": "El Ministerio de Hacienda presentó a Jaime Vives como nuevo presidente de Coljuegos",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-02T23:27:00Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-02T23:27:00Z",
+      "ultima": "2026-10-02T23:27:00Z",
+      "n_notas": 1
+    },
+    {
+      "id": "nombramiento_sin-empresa-467abc_2026-w40_73492e",
+      "cluster_id": 513204200,
+      "tipo": "Nombramiento",
+      "score": 1.29,
+      "scoreBreakdown": {
+        "pesoTipo": 1.15,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.53,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Cambio en Alta Dirección / Junta",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Valora Analitik"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Reestructuración del liderazgo estratégico de la compañía.",
+      "articulos": [
+        {
+          "url": "https://www.valoraanalitik.com/oracle-nombro-a-juan-carlos-vega-como-nuevo-gerente-para-colombia-centroamerica-y-el-caribe/",
+          "titulo": "Oracle nombró a Juan Carlos Vega como nuevo gerente para Colombia, Centroamérica y el Caribe",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-02T23:02:22Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-02T23:02:22Z",
+      "ultima": "2026-10-02T23:02:22Z",
+      "n_notas": 1
+    },
+    {
+      "id": "nombramiento_sin-empresa-713fad_2026-w40_e4975b",
+      "cluster_id": 882914134,
+      "tipo": "Nombramiento",
+      "score": 1.29,
+      "scoreBreakdown": {
+        "pesoTipo": 1.15,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.53,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Cambio en Alta Dirección / Junta",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Portafolio"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Reestructuración del liderazgo estratégico de la compañía.",
+      "articulos": [
+        {
+          "url": "https://www.portafolio.co/economia/gobierno/este-es-jaime-gregorio-vives-pinedo-nombrado-por-de-la-espriella-como-nuevo-presidente-de-coljuegos-503768",
+          "titulo": "Este es Jaime Gregorio Vives Pinedo, nombrado por De La Espriella como nuevo presidente de Coljuegos",
+          "medio": "Portafolio",
+          "fecha": "2026-10-02T18:57:01Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-02T18:57:01Z",
+      "ultima": "2026-10-02T18:57:01Z",
+      "n_notas": 1
+    },
+    {
+      "id": "corporativo_sin-empresa-0425d8_2026-w40_a35c30",
+      "cluster_id": 645885496,
+      "tipo": "Corporativo",
+      "score": 1.29,
+      "scoreBreakdown": {
+        "pesoTipo": 1.1,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.6,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Alianza / Contrato Estratégico",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "La República"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Acuerdos comerciales o societarios que pueden abrir ingresos o compromisos de capital; la materialidad depende del tamaño.",
+      "articulos": [
+        {
+          "url": "https://www.larepublica.co/empresas/win-concreto-alianza-con-dsports-para-ampliar-oferta-deportiva-en-su-plataforma-4494691",
+          "titulo": "Win concretó alianza con DSports para ampliar oferta deportiva en su plataforma",
+          "medio": "La República",
+          "fecha": "2026-10-01T20:37:56Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-01T20:37:56Z",
+      "ultima": "2026-10-01T20:37:56Z",
+      "n_notas": 1
+    },
+    {
+      "id": "corporativo_sin-empresa-d9ad33_2026-w41_aa45aa",
+      "cluster_id": 284067864,
+      "tipo": "Corporativo",
+      "score": 1.26,
+      "scoreBreakdown": {
+        "pesoTipo": 1.1,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.57,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Alianza / Contrato Estratégico",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "El Tiempo"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Acuerdos comerciales o societarios que pueden abrir ingresos o compromisos de capital; la materialidad depende del tamaño.",
+      "articulos": [
+        {
+          "url": "https://www.eltiempo.com/economia/sectores/latam-y-delta-suman-nueve-rutas-entre-sudamerica-y-norteamerica-aumentan-31-su-capacidad-en-cuatro-anos-de-alianza-3592383",
+          "titulo": "Latam y Delta suman nueve rutas entre Sudamérica y Norteamérica: aumentan 31 % su capacidad en cuatro años de alianza",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-09T02:01:03Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-09T02:01:03Z",
+      "ultima": "2026-10-09T02:01:03Z",
+      "n_notas": 1
+    },
+    {
+      "id": "corporativo_sin-empresa-258da4_2026-w41_ddd68e",
+      "cluster_id": 334116328,
+      "tipo": "Corporativo",
+      "score": 1.26,
+      "scoreBreakdown": {
+        "pesoTipo": 1.1,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.57,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Alianza / Contrato Estratégico",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "La República"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Acuerdos comerciales o societarios que pueden abrir ingresos o compromisos de capital; la materialidad depende del tamaño.",
+      "articulos": [
+        {
+          "url": "https://www.larepublica.co/empresas/comfandi-y-la-uao-firmaran-una-alianza-de-capacidades-educativas-para-el-valle-del-cauca-4498559",
+          "titulo": "Comfandi y la Universidad Autónoma de Occidente firmarán una alianza educativa",
+          "medio": "La República",
+          "fecha": "2026-10-07T16:31:29Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-07T16:31:29Z",
+      "ultima": "2026-10-07T16:31:29Z",
+      "n_notas": 1
+    },
+    {
+      "id": "corporativo_sin-empresa-f0f03c_2026-w41_fd9b20",
+      "cluster_id": 624976030,
+      "tipo": "Corporativo",
+      "score": 1.26,
+      "scoreBreakdown": {
+        "pesoTipo": 1.1,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.57,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Alianza / Contrato Estratégico",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "La República"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Acuerdos comerciales o societarios que pueden abrir ingresos o compromisos de capital; la materialidad depende del tamaño.",
+      "articulos": [
+        {
+          "url": "https://www.larepublica.co/empresas/manuelita-y-el-minuto-de-dios-llegan-a-mas-de-1-000-personas-con-alianza-social-4498519",
+          "titulo": "Manuelita y El Minuto de Dios llegan a más de 1.000 personas con alianza social",
+          "medio": "La República",
+          "fecha": "2026-10-07T15:17:20Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-07T15:17:20Z",
+      "ultima": "2026-10-07T15:17:20Z",
+      "n_notas": 1
+    },
+    {
+      "id": "corporativo_banco-davivienda-s-a_2026-w40_37fa1d",
+      "cluster_id": 73207176,
+      "tipo": "Corporativo",
+      "score": 1.26,
+      "scoreBreakdown": {
+        "pesoTipo": 1.1,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.57,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Alianza / Contrato Estratégico",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Valora Analitik"
+      ],
+      "sectores": [
+        "Banca y Finanzas"
+      ],
+      "evolucion": [],
+      "empresas": [
+        "Banco Davivienda S.A."
+      ],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Acuerdos comerciales o societarios que pueden abrir ingresos o compromisos de capital; la materialidad depende del tamaño.",
+      "articulos": [
+        {
+          "url": "https://www.valoraanalitik.com/davivienda-group-socio-carvajal-app-dinero/",
+          "titulo": "Davivienda Group refuerza apuesta por finanzas personales: busca ser socio de Carvajal en app para gestionar dinero",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-01T17:07:00Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-01T17:07:00Z",
+      "ultima": "2026-10-01T17:07:00Z",
+      "n_notas": 1
+    },
+    {
+      "id": "inversion_sin-empresa-faa4b4_2026-w39_db3c94",
+      "cluster_id": 405230905,
+      "tipo": "Inversión",
+      "score": 1.26,
+      "scoreBreakdown": {
+        "pesoTipo": 1.2,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.43,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Inversión de Capital / Expansión",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "La República"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Despliegue de capital productivo que incrementará capacidad operativa o flujos futuros de caja.",
+      "articulos": [
+        {
+          "url": "https://www.larepublica.co/empresas/de-la-espriella-anuncia-inversion-de-us-1-000-millones-por-parte-de-pepsico-en-colombia-4491464",
+          "titulo": "De la Espriella anuncia una inversión de US$1.000 millones por parte de PepsiCo en el país",
+          "medio": "La República",
+          "fecha": "2026-09-27T22:23:27Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-09-27T22:23:27Z",
+      "ultima": "2026-09-27T22:23:27Z",
+      "n_notas": 1
+    },
+    {
+      "id": "corporativo_sin-empresa-bd8042_2026-w41_3b98ec",
+      "cluster_id": 17684628,
+      "tipo": "Corporativo",
+      "score": 1.24,
+      "scoreBreakdown": {
+        "pesoTipo": 1.1,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.53,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Alianza / Contrato Estratégico",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "El Tiempo"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Acuerdos comerciales o societarios que pueden abrir ingresos o compromisos de capital; la materialidad depende del tamaño.",
+      "articulos": [
+        {
+          "url": "https://www.eltiempo.com/economia/empresas/corona-entra-al-negocio-de-la-cristaleria-a-traves-de-una-alianza-estrategica-con-la-espanola-vicrila-3591699",
+          "titulo": "Corona entra al negocio de la cristalería a través de una alianza estratégica con la española Vicrila",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-06T21:00:03Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-06T21:00:03Z",
+      "ultima": "2026-10-06T21:00:03Z",
+      "n_notas": 1
+    },
+    {
+      "id": "corporativo_sin-empresa-f3fac2_2026-w40_34ab61",
+      "cluster_id": 322932410,
+      "tipo": "Corporativo",
+      "score": 1.24,
+      "scoreBreakdown": {
+        "pesoTipo": 1.1,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.53,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Alianza / Contrato Estratégico",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Valora Analitik"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Acuerdos comerciales o societarios que pueden abrir ingresos o compromisos de capital; la materialidad depende del tamaño.",
+      "articulos": [
+        {
+          "url": "https://www.valoraanalitik.com/gobierno-de-la-espriella-reactivo-alianza-con-colfuturo-y-la-respaldara-con-us25-millones/",
+          "titulo": "Gobierno de la Espriella reactivó alianza con Colfuturo y la respaldará con US$25 millones",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-03T00:50:00Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-03T00:50:00Z",
+      "ultima": "2026-10-03T00:50:00Z",
+      "n_notas": 1
+    },
+    {
+      "id": "corporativo_sin-empresa-0c79c8_2026-w40_58380f",
+      "cluster_id": 13531666,
+      "tipo": "Corporativo",
+      "score": 1.24,
+      "scoreBreakdown": {
+        "pesoTipo": 1.1,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.53,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Alianza / Contrato Estratégico",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Portafolio"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Acuerdos comerciales o societarios que pueden abrir ingresos o compromisos de capital; la materialidad depende del tamaño.",
+      "articulos": [
+        {
+          "url": "https://www.portafolio.co/economia/gobierno/gobierno-de-la-espriella-reactivo-alianza-con-colfuturo-que-habia-terminado-durante-la-administracion-petro-503786",
+          "titulo": "Gobierno De La Espriella reactivó alianza con Colfuturo que había terminado durante la administración Petro",
+          "medio": "Portafolio",
+          "fecha": "2026-10-02T23:19:03Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-02T23:19:03Z",
+      "ultima": "2026-10-02T23:19:03Z",
+      "n_notas": 1
+    },
+    {
+      "id": "corporativo_organizacion-terpel-s-a_2026-w40_cba5b5",
+      "cluster_id": 622177749,
+      "tipo": "Corporativo",
+      "score": 1.21,
+      "scoreBreakdown": {
+        "pesoTipo": 1.1,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.5,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Alianza / Contrato Estratégico",
+      "insumo": "Petróleo y Combustibles",
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "La República"
+      ],
+      "sectores": [
+        "Distribución de Combustibles"
+      ],
+      "evolucion": [],
+      "empresas": [
+        "Organización Terpel S.A."
+      ],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Acuerdos comerciales o societarios que pueden abrir ingresos o compromisos de capital; la materialidad depende del tamaño.",
+      "articulos": [
+        {
+          "url": "https://www.larepublica.co/empresas/terpel-exportaciones-suscribio-contrato-con-aerolineas-para-el-combustible-4492575",
+          "titulo": "Terpel, a través de Terpel Exportaciones, suscribió contrato de combustible Jet A-1",
+          "medio": "La República",
+          "fecha": "2026-09-29T12:13:57Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-09-29T12:13:57Z",
+      "ultima": "2026-09-29T12:13:57Z",
+      "n_notas": 1
+    },
+    {
+      "id": "corporativo_sin-empresa-9b5138_2026-w41_94f751",
+      "cluster_id": 24720122,
+      "tipo": "Corporativo",
+      "score": 1.15,
+      "scoreBreakdown": {
+        "pesoTipo": 1.0,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 1.57,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Dividendos: Acciones de Nintendo: historia, dividendo y cómo comprarlas",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Rankia Colombia"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Flujo para el accionista y fechas clave (ex-dividendo).",
+      "articulos": [
+        {
+          "url": "https://www.rankia.co/blog/analisis-colcap/6502664-nintendo-historia-competencia-como-invertir-sus-acciones",
+          "titulo": "Acciones de Nintendo: historia, dividendo y cómo comprarlas",
+          "medio": "Rankia Colombia",
+          "fecha": "2026-10-10T21:00:00Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-10-10T21:00:00Z",
+      "ultima": "2026-10-10T21:00:00Z",
+      "n_notas": 1
+    },
+    {
+      "id": "corporativo_sin-empresa-b02721_2026-w37_908b86",
+      "cluster_id": 149892216,
+      "tipo": "Corporativo",
+      "score": 0.59,
+      "scoreBreakdown": {
+        "pesoTipo": 1.0,
+        "pesoCerteza": 1.1,
+        "pesoFuente": 1.0,
+        "pesoRecencia": 0.8,
+        "certezaDesconocida": false,
+        "fechaDesconocida": false,
+        "mediosCount": 1,
+        "articulosCount": 1
+      },
+      "etiqueta": "Dividendos",
+      "insumo": null,
+      "certeza": "Probable",
+      "n_fuentes": 1,
+      "mediosIndependientes": [
+        "Rankia Colombia"
+      ],
+      "sectores": [],
+      "evolucion": [],
+      "empresas": [],
+      "vinculosEmpresas": [],
+      "candidatos": [],
+      "razonamiento": "Flujo para el accionista y fechas clave (ex-dividendo).",
+      "articulos": [
+        {
+          "url": "https://www.rankia.co/blog/analisis-colcap/7462818-acciones-dividendo-semana-8-11-septiembre-2026",
+          "titulo": "Acciones con dividendo de la semana: del 8 al 11 de septiembre de 2026",
+          "medio": "Rankia Colombia",
+          "fecha": "2026-09-08T13:00:00Z",
+          "certeza": "Probable"
+        }
+      ],
+      "primera": "2026-09-08T13:00:00Z",
+      "ultima": "2026-09-08T13:00:00Z",
+      "n_notas": 1
+    }
+  ]
+}
