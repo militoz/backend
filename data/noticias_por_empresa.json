@@ -1,0 +1,1142 @@
+{
+  "exportado_el": "2026-11-07T00:06:44Z",
+  "estadisticas": {
+    "articulos_analizados": 2000,
+    "con_empresa": 133,
+    "sin_empresa": 1867
+  },
+  "empresas": [
+    {
+      "nombre": "Grupo Nutresa S.A.",
+      "ticker": "NUTRESA",
+      "ticker_preferencial": null,
+      "sector": "Alimentos y Bebidas",
+      "n_noticias": 23,
+      "ultima": "2026-11-05T23:48:10Z",
+      "noticias": [
+        {
+          "titulo": "Grupo Nutresa asume la operación de Presto e inicia plan de reapertura en 12 restaurantes en Colombia: 'Trabajando en la transformación de la marca'",
+          "url": "https://www.eltiempo.com/economia/empresas/grupo-nutresa-asume-la-operacion-de-presto-e-inicia-plan-de-reaperturas-en-12-restaurantes-en-colombia-trabajando-en-la-transformacion-de-la-marca-3598868",
+          "medio": "El Tiempo",
+          "fecha": "2026-11-05T23:48:10Z",
+          "principal": true
+        },
+        {
+          "titulo": "Presto vuelve a encender sus parrillas: reabrirá 12 restaurantes y generará más de 100 empleos de la mano de Nutresa",
+          "url": "https://www.eltiempo.com/economia/empresas/presto-vuelve-a-encender-sus-parrillas-reabrira-12-restaurantes-y-generara-mas-de-100-empleos-de-la-mano-de-nutresa-3598852",
+          "medio": "El Tiempo",
+          "fecha": "2026-11-05T22:33:39Z",
+          "principal": true
+        },
+        {
+          "titulo": "Presto ya es oficialmente una marca de Nutresa: Reabrirán puntos cerrados y anuncia expansión",
+          "url": "https://www.valoraanalitik.com/presto-ya-es-oficialmente-una-marca-de-nutresa-reabriran-puntos-cerrados-y-anuncia-expansion/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-11-05T22:33:36Z",
+          "principal": true
+        },
+        {
+          "titulo": "Grupo Nutresa confirmó cierre del proceso para adquirir el negocio de Presto",
+          "url": "https://www.larepublica.co/empresas/grupo-nutresa-confirmo-cierre-del-proceso-para-adquirir-el-negocio-de-presto-4518633",
+          "medio": "La República",
+          "fecha": "2026-11-05T21:49:35Z",
+          "principal": true
+        },
+        {
+          "titulo": "Con la adquisición de la ecuatoriana La Universal, Nutresa va por US$200 millones",
+          "url": "https://www.larepublica.co/empresas/con-la-universal-nutresa-va-por-us-200-millones-4516940",
+          "medio": "La República",
+          "fecha": "2026-11-04T05:01:14Z",
+          "principal": true
+        },
+        {
+          "titulo": "Nutresa descarta más recompras de acciones en 2026; revela estrategia para enfrentar El Niño",
+          "url": "https://www.valoraanalitik.com/nutresa-descarta-recompras-acciones-2026/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-11-03T17:30:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Utilidades de Grupo Nutresa crecieron 8,3 % a septiembre de 2026; ventas en Colombia alcanzaron los $ 10 billones",
+          "url": "https://www.eltiempo.com/economia/empresas/utilidades-de-grupo-nutresa-crecieron-8-3-a-septiembre-de-2026-ventas-en-colombia-alcanzaron-los-10-billones-3597594",
+          "medio": "El Tiempo",
+          "fecha": "2026-11-01T11:58:06Z",
+          "principal": true
+        },
+        {
+          "titulo": "Grupo Nutresa cierra compra de La Universal, se integrará al Negocio de Chocolates",
+          "url": "https://www.larepublica.co/empresas/grupo-nutresa-cierra-compra-de-la-universal-se-integrara-al-negocio-de-chocolates-4515320",
+          "medio": "La República",
+          "fecha": "2026-10-30T22:22:34Z",
+          "principal": true
+        },
+        {
+          "titulo": "SIC aprobó integración entre Grupo Nutresa y Presto: operación no tendrá condicionamientos",
+          "url": "https://www.valoraanalitik.com/sic-aprobo-integracion-entre-grupo-nutresa-y-presto-operacion-no-tendra-condicionamientos/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-30T22:00:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Grupo Nutresa reportó ingresos por $15,4 billones con corte a septiembre, creciendo 0,4%",
+          "url": "https://www.larepublica.co/empresas/grupo-nutresa-reporto-ingresos-por-15-4-billones-con-corte-a-septiembre-4515292",
+          "medio": "La República",
+          "fecha": "2026-10-30T21:35:40Z",
+          "principal": true
+        },
+        {
+          "titulo": "Nutresa recibe luz verde para integrar a Presto: la SIC aprobó la operación sin condiciones y descartó riesgos de competencia",
+          "url": "https://www.eltiempo.com/economia/empresas/nutresa-recibe-luz-verde-para-integrar-a-presto-la-sic-aprobo-la-operacion-sin-condiciones-y-descarto-riesgos-de-competencia-3597561",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-30T21:08:16Z",
+          "principal": true
+        },
+        {
+          "titulo": "Aprueban operación para que Presto pueda integrarse al portafolio de Nutresa",
+          "url": "https://www.larepublica.co/empresas/aaprueban-operacion-para-que-presto-pueda-integrarse-al-portafolio-de-nutresa-4515003",
+          "medio": "La República",
+          "fecha": "2026-10-30T20:48:29Z",
+          "principal": true
+        },
+        {
+          "titulo": "Utilidad neta de Grupo Nutresa, de Gilinski, cayó 60 % a septiembre de este año por gastos no recurrentes",
+          "url": "https://www.valoraanalitik.com/utilidad-nutresa-septiembre-2026/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-30T20:46:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "El Grupo Nutresa asegura cuota superior a 50% en el mercado venezolano de helados",
+          "url": "https://www.larepublica.co/empresas/nutresa-asegura-cuota-superior-a-50-en-el-mercado-venezolano-de-helados-4514472",
+          "medio": "La República",
+          "fecha": "2026-10-30T05:01:12Z",
+          "principal": true
+        },
+        {
+          "titulo": "Nutresa confirmó el cierre del proceso de adquisición de helados Tío Rico en Venezuela",
+          "url": "https://www.larepublica.co/empresas/nutresa-confirmo-el-cierre-del-proceso-de-adquicion-de-industrias-tio-rico-4513796",
+          "medio": "La República",
+          "fecha": "2026-10-29T12:13:20Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Ecopetrol S.A.",
+      "ticker": "ECOPETROL",
+      "ticker_preferencial": null,
+      "sector": "Petróleo y Gas",
+      "n_noticias": 22,
+      "ultima": "2026-11-06T23:18:00Z",
+      "noticias": [
+        {
+          "titulo": "Gladys Vega es nombrada nueva vicepresidenta corporativa de Talento Organizacional de Ecopetrol",
+          "url": "https://www.valoraanalitik.com/gladys-vega-es-nombrada-nueva-vicepresidenta-corporativa-de-talento-organizacional-de-ecopetrol/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-11-06T23:18:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Empresa colombiana ofrece reparar el gasoducto con Venezuela para importar gas en 2027: 'Dejamos saber a Ecopetrol nuestra absoluta capacidad'",
+          "url": "https://www.eltiempo.com/economia/sectores/empresa-colombiana-ofrece-reparar-el-gasoducto-con-venezuela-para-importar-gas-dejamos-saber-a-ecopetrol-nuestra-absoluta-capacidad-3598595",
+          "medio": "El Tiempo",
+          "fecha": "2026-11-06T16:07:12Z",
+          "principal": true
+        },
+        {
+          "titulo": "Exclusivo | Ecopetrol destraba la perforación del pozo Komodo, frenado por el Gobierno Petro: en 20 días le retiraron exigencias",
+          "url": "https://www.eltiempo.com/economia/sectores/exclusivo-ecopetrol-destraba-la-perforacion-del-pozo-komodo-frenado-por-el-gobierno-petro-en-20-dias-le-retiraron-exigencias-3598900",
+          "medio": "El Tiempo",
+          "fecha": "2026-11-06T12:23:34Z",
+          "principal": true
+        },
+        {
+          "titulo": "Video | Acciones de Ecopetrol lideran la caída del índice MSCI Colcap",
+          "url": "https://www.valoraanalitik.com/acciones-de-ecopetrol-lideran-la-caida-del-indice-msci-colcap/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-11-05T12:32:08Z",
+          "principal": true
+        },
+        {
+          "titulo": "Barómetro Petrolero 2026: Se dispara la confianza en la presidencia de la República, pero se desploma la imagen de Ecopetrol y la industria",
+          "url": "https://www.eltiempo.com/economia/sectores/barometro-petrolero-2026-se-dispara-la-confianza-en-la-presidencia-de-la-republica-pero-se-desploma-la-imagen-de-ecopetrol-y-la-industria-3598573",
+          "medio": "El Tiempo",
+          "fecha": "2026-11-05T11:15:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Declaran de interés estratégico la recuperación del gasoducto Antonio Ricaurte para que Ecopetrol importe gas desde Venezuela",
+          "url": "https://www.eltiempo.com/economia/sectores/declaran-de-interes-estrategico-la-recuperacion-del-gasoducto-antonio-ricaurte-para-que-ecopetrol-importe-gas-desde-venezuela-3598352",
+          "medio": "El Tiempo",
+          "fecha": "2026-11-04T14:33:33Z",
+          "principal": true
+        },
+        {
+          "titulo": "Las cuentas que Ecopetrol deberá rendir en el debate de control político con el Congreso de la República",
+          "url": "https://www.portafolio.co/economia/gobierno/las-cuentas-que-ecopetrol-debera-rendir-en-el-debate-de-control-politico-con-el-congreso-de-la-republica-505310",
+          "medio": "Portafolio",
+          "fecha": "2026-10-28T20:15:05Z",
+          "principal": true
+        },
+        {
+          "titulo": "Relevante | ISA cambia procesos para elegir Junta y presidente tras propuesta de Ecopetrol; accionistas eligen nuevos directivos",
+          "url": "https://www.valoraanalitik.com/arranca-asamblea-extraordinaria-de-isa-se-buscara-cambiar-estatutos-y-elegir-nueva-junta/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-28T15:40:00Z",
+          "principal": false
+        },
+        {
+          "titulo": "Ecopetrol presentará resultados del tercer trimestre de 2026 el 10 de noviembre",
+          "url": "https://www.valoraanalitik.com/ecopetrol-presentara-resultados-del-tercer-trimestre-de-2026-el-10-de-noviembre/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-28T01:38:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Joaquín Gutiérrez, presidente de Ecopetrol, se reunió con la Embajada de EE. UU. en Colombia: de qué hablaron",
+          "url": "https://www.portafolio.co/economia/gobierno/joaquin-gutierrez-presidente-de-ecopetrol-se-reunio-con-la-embajada-de-ee-uu-en-colombia-de-que-hablaron-505028",
+          "medio": "Portafolio",
+          "fecha": "2026-10-24T00:08:57Z",
+          "principal": true
+        },
+        {
+          "titulo": "Ecopetrol, fondos de pensiones y EPM presentan candidatos para la Junta Directiva de ISA",
+          "url": "https://www.valoraanalitik.com/ecopetrol-fondos-de-pensiones-y-epm-presentan-candidatos-para-la-junta-directiva-de-isa/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-23T03:00:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Atención: Estados Unidos le quitó la visa a Ricardo Roa, expresidente de Ecopetrol, y otros seis colombianos",
+          "url": "https://www.portafolio.co/economia/gobierno/atencion-estados-unidos-le-quito-la-visa-a-ricardo-roa-expresidente-de-ecopetrol-y-otros-seis-colombianos-504935",
+          "medio": "Portafolio",
+          "fecha": "2026-10-22T18:31:14Z",
+          "principal": true
+        },
+        {
+          "titulo": "Exviceministro de Energía llega a Ecopetrol: Armando José Cuello será vicepresidente de Energías para la Transición",
+          "url": "https://www.valoraanalitik.com/exviceministro-de-energia-llega-a-ecopetrol-armando-jose-cuello-sera-vicepresidente-de-energias-para-la-transicion/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-22T15:15:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Video | Acciones de Ecopetrol continúan liderando el volumen de operaciones",
+          "url": "https://www.valoraanalitik.com/video-acciones-de-ecopetrol-continuan-liderando-el-volumen-de-operaciones/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-22T12:46:46Z",
+          "principal": true
+        },
+        {
+          "titulo": "¿Ecopetrol es la acción preferida para invertir en Colombia?: Esto recomiendan expertos",
+          "url": "https://www.valoraanalitik.com/ecopetrol-es-la-accion-preferida-para-invertir-en-colombia-esto-recomiendan-expertos/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-21T22:00:00Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Cementos Argos S.A.",
+      "ticker": "CEMARGOS",
+      "ticker_preferencial": "PFCEMARGOS",
+      "sector": "Materiales y Construcción",
+      "n_noticias": 16,
+      "ultima": "2026-11-04T12:58:49Z",
+      "noticias": [
+        {
+          "titulo": "Grupo Argos lanza una nueva oferta de readquisición de acciones por $150.000 millones",
+          "url": "https://www.larepublica.co/empresas/grupo-argos-lanza-nueva-oferta-de-readquisucion-de-acciones-por-150-000-millones-4517271",
+          "medio": "La República",
+          "fecha": "2026-11-04T12:58:49Z",
+          "principal": false
+        },
+        {
+          "titulo": "Grupo Argos lanza nueva recompra de acciones hasta por $150.000 millones como parte de su programa ACE 1.0",
+          "url": "https://www.valoraanalitik.com/grupo-argos-nueva-recompra-acciones-ace-10/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-11-04T12:11:00Z",
+          "principal": false
+        },
+        {
+          "titulo": "Grupo Argos confirmó que recibirá más de $183.000 millones en dividendos de Odinsa",
+          "url": "https://www.larepublica.co/empresas/grupo-argos-recibira-mas-de-183-000-millones-en-dividendos-extraordinarios-de-odinsa-4513652",
+          "medio": "La República",
+          "fecha": "2026-10-29T01:09:52Z",
+          "principal": false
+        },
+        {
+          "titulo": "Grupo Argos recibirá $183.000 millones en dividendos extraordinarios de Odinsa",
+          "url": "https://www.valoraanalitik.com/grupo-argos-recibira-183-000-millones-en-dividendos-extraordinarios-de-odinsa/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-28T22:45:00Z",
+          "principal": false
+        },
+        {
+          "titulo": "Separación de Argos Latam y Argos Materials se concretaría en 2027; empresa aumentará flota e invertirá en plantas",
+          "url": "https://www.valoraanalitik.com/separacion-de-argos-latam-y-argos-materials-se-concretaria-en-2027-empresa-aumentara-flota-e-invertira-en-plantas/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-28T19:00:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Grupo Argos alista Obras por Impuestos en Colombia para acelerar reconstrucción tras el terremoto",
+          "url": "https://www.valoraanalitik.com/grupo-argos-alista-obras-por-impuestos-en-colombia-para-acelerar-reconstruccion-tras-el-terremoto/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-23T23:30:00Z",
+          "principal": false
+        },
+        {
+          "titulo": "Exclusiva | Grupo Argos revela sus apuestas para Colombia, Venezuela y EE. UU. para 2027",
+          "url": "https://www.valoraanalitik.com/exclusiva-grupo-argos-revela-sus-apuestas-para-colombia-venezuela-y-ee-uu-para-2027/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-23T21:20:00Z",
+          "principal": false
+        },
+        {
+          "titulo": "Kingspan se suma a Adopta un Hogar de Grupo Argos con cubiertas termoacústicas para las 500 viviendas en Chocó",
+          "url": "https://www.valoraanalitik.com/kingspan-se-suma-a-adopta-un-hogar-de-grupo-argos-con-cubiertas-termoacusticas-para-las-500-viviendas-en-choco/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-23T16:55:29Z",
+          "principal": false
+        },
+        {
+          "titulo": "Grupo Argos busca constructoras para entregar 1.000 viviendas a familias damnificadas tras sismo",
+          "url": "https://www.larepublica.co/empresas/grupo-argos-busca-constructoras-para-entregar-1-000-viviendas-a-familias-damnificadas-4509692",
+          "medio": "La República",
+          "fecha": "2026-10-23T16:41:43Z",
+          "principal": false
+        },
+        {
+          "titulo": "Presidente de Grupo Argos: «Es el momento de invertir en Colombia»",
+          "url": "https://www.valoraanalitik.com/presidente-grupo-argos-es-el-momento-de-invertir-en-colombia/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-23T00:00:00Z",
+          "principal": false
+        },
+        {
+          "titulo": "Clínica de Oftalmología Sandiego se suma a Adopta un Hogar, de Grupo Argos, con aporte de $84 millones",
+          "url": "https://www.valoraanalitik.com/clinica-de-oftalmologia-sandiego-se-suma-a-adopta-un-hogar-de-grupo-argos-con-aporte-de-84-millones/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-22T16:34:04Z",
+          "principal": false
+        },
+        {
+          "titulo": "Grupo Sura ya ejecutó 6 % del programa de recompra de acciones; así ha crecido su valor tras la escisión con Grupo Argos",
+          "url": "https://www.valoraanalitik.com/grupo-sura-ya-ejecuto-6-del-programa-de-recompra-de-acciones-asi-ha-crecido-su-valor-tras-la-escision-con-grupo-argos/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-20T17:40:00Z",
+          "principal": false
+        },
+        {
+          "titulo": "Grupo Argos, EPM y otras cinco empresas impulsan obra vial que beneficiará a 28.000 personas en Antioquia",
+          "url": "https://www.valoraanalitik.com/grupo-argos-epm-y-otras-cinco-empresas-impulsan-obra-vial-que-beneficiara-a-28-000-personas-en-antioquia/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-20T01:00:00Z",
+          "principal": false
+        },
+        {
+          "titulo": "Del reguetón a la reconstrucción: Grupo Argos y Nicky Jam entregan la primera de las 40 casas tras el terremoto",
+          "url": "https://www.portafolio.co/economia/del-regueton-a-la-reconstruccion-grupo-argos-y-nicky-jam-entregan-la-primera-de-las-40-casas-tras-el-terremoto-504502",
+          "medio": "Portafolio",
+          "fecha": "2026-10-15T13:40:20Z",
+          "principal": false
+        },
+        {
+          "titulo": "Se entregó primera vivienda de Adopta un Hogar de Grupo Argos y Nicky Jam en Quindío; MinVivienda, Federación Nacional de Cafeteros e Isagen se sumaron",
+          "url": "https://www.valoraanalitik.com/se-entrego-primera-vivienda-de-adopta-un-hogar-de-grupo-argos-y-nicky-jam-en-quindio-minvivienda-federacion-nacional-de-cafeteros-e-isagen-se-sumaron/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-15T12:23:00Z",
+          "principal": false
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo Cibest S.A.",
+      "ticker": "CIBEST",
+      "ticker_preferencial": "PFCIBEST",
+      "sector": "Banca y Finanzas",
+      "n_noticias": 16,
+      "ultima": "2026-11-06T21:54:13Z",
+      "noticias": [
+        {
+          "titulo": "Don Omar activa preventa para su regreso a Colombia mientras Maluma impulsa alianza con Visa, Bancolombia y Nequi",
+          "url": "https://www.portafolio.co/economia/don-omar-activa-preventa-para-su-regreso-a-colombia-mientras-maluma-impulsa-alianza-con-visa-bancolombia-y-nequi-505881",
+          "medio": "Portafolio",
+          "fecha": "2026-11-06T21:54:13Z",
+          "principal": true
+        },
+        {
+          "titulo": "Maluma llegará a Bogotá en febrero de 2027: así funcionará la preventa de entradas con Visa, Bancolombia y Nequi",
+          "url": "https://www.valoraanalitik.com/maluma-llegara-a-bogota-en-febrero-de-2027-asi-funcionara-la-preventa-de-entradas-con-visa-bancolombia-y-nequi/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-11-06T20:30:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Nequi entra oficialmente al negocio de las rentabilidades: ofrecerá bolsillos con rendimientos personalizados",
+          "url": "https://www.valoraanalitik.com/nequi-rentabilidades-bolsillos-rendimientos/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-11-06T17:19:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Economía colombiana mostró señales de recuperación en octubre, según indicador de Bancolombia",
+          "url": "https://www.valoraanalitik.com/economia-colombiana-mostro-senales-de-recuperacion-en-octubre-segun-indicador-de-bancolombia/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-11-06T00:32:20Z",
+          "principal": true
+        },
+        {
+          "titulo": "NVIDIA, AMD y Bancolombia: las 3 acciones de noviembre de 2026 en Colombia",
+          "url": "https://www.rankia.co/blog/analisis-colcap/7527793-nvidia-amd-bancolombia-3-acciones-noviembre-2026-colombia",
+          "medio": "Rankia Colombia",
+          "fecha": "2026-11-01T13:00:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Bancolombia actualiza su aplicación: los clientes podrán cambiar las cuotas de sus compras y administrar sus tarjetas desde el celular",
+          "url": "https://www.eltiempo.com/economia/sector-financiero/bancolombia-actualiza-su-aplicacion-los-clientes-podran-cambiar-las-cuotas-de-sus-compras-y-administrar-sus-tarjetas-desde-el-celular-3596646",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-28T04:23:33Z",
+          "principal": true
+        },
+        {
+          "titulo": "Grupo Cibest Expects Colombia to Raise Rates to 12.50% and the Fed to Hold",
+          "url": "https://www.financecolombia.com/grupo-cibest-expects-colombia-to-raise-rates-to-12-50-and-the-fed-to-hold/",
+          "medio": "Finance Colombia",
+          "fecha": "2026-10-26T23:55:58Z",
+          "principal": true
+        },
+        {
+          "titulo": "Presidente de Bancolombia: salario mínimo debería aumentar entre 8 % y 9 % para 2027",
+          "url": "https://www.valoraanalitik.com/presidente-de-bancolombia-salario-minimo-deberia-aumentar-entre-8-y-9-para-2027/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-23T22:40:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Presidente de Bancolombia revela su apuesta por el aumento del salario mínimo para 2027: ¿cuánto debería subir?",
+          "url": "https://www.eltiempo.com/economia/sectores/presidente-de-bancolombia-revela-su-apuesta-por-el-aumento-del-salario-minimo-para-2027-cuanto-deberia-subir-3595896",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-23T21:05:53Z",
+          "principal": true
+        },
+        {
+          "titulo": "Bancolombia llega a $18,2 billones de cartera agro, 19 % más, en un año en que el campo se contrae",
+          "url": "https://www.eltiempo.com/economia/bancolombia-llega-a-18-2-billones-de-cartera-agro-19-mas-en-un-ano-en-que-el-campo-se-contrae-3595869",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-23T20:39:17Z",
+          "principal": true
+        },
+        {
+          "titulo": "Colombian Households Keep Spending Without Loading Up on Debt, Grupo Cibest Reports",
+          "url": "https://www.financecolombia.com/colombian-households-keep-spending-without-loading-up-on-debt-grupo-cibest-reports/",
+          "medio": "Finance Colombia",
+          "fecha": "2026-10-21T19:04:30Z",
+          "principal": true
+        },
+        {
+          "titulo": "Grupo Cibest Sees Colombian Inflation Peaking at 7.3% as Indexed Services Keep Prices Sticky",
+          "url": "https://www.financecolombia.com/grupo-cibest-sees-colombian-inflation-peaking-at-7-3-as-indexed-services-keep-prices-sticky/",
+          "medio": "Finance Colombia",
+          "fecha": "2026-10-21T18:30:52Z",
+          "principal": true
+        },
+        {
+          "titulo": "Bancolombia y NuBank tiene los líderes de mejor reputación según el ranking Merco 2026",
+          "url": "https://www.larepublica.co/empresas/juan-carlos-mora-presidente-de-bancolombia-es-el-lider-del-ranking-merco-lideres-2026-4507712",
+          "medio": "La República",
+          "fecha": "2026-10-21T15:35:05Z",
+          "principal": true
+        },
+        {
+          "titulo": "Plan Semilla Bancolombia: qué es, rentabilidad, comisiones y cómo retirarlo",
+          "url": "https://www.rankia.co/blog/fondos-inversion-colectiva-colombia/4179120-que-plan-semilla-bancolombia",
+          "medio": "Rankia Colombia",
+          "fecha": "2026-10-21T13:00:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Nequi sumó nuevo corresponsal: Ciudadanos podrán hacer pagos y retiros en estas tiendas",
+          "url": "https://www.valoraanalitik.com/nequi-sumo-nuevo-corresponsal-ciudadanos-podran-hacer-pagos-y-retiros-en-estas-tiendas/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-19T17:40:00Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo Argos S.A.",
+      "ticker": "GRUPOARGOS",
+      "ticker_preferencial": "PFGRUPOARGOS",
+      "sector": "Infraestructura e Inversión",
+      "n_noticias": 15,
+      "ultima": "2026-11-04T12:58:49Z",
+      "noticias": [
+        {
+          "titulo": "Grupo Argos lanza una nueva oferta de readquisición de acciones por $150.000 millones",
+          "url": "https://www.larepublica.co/empresas/grupo-argos-lanza-nueva-oferta-de-readquisucion-de-acciones-por-150-000-millones-4517271",
+          "medio": "La República",
+          "fecha": "2026-11-04T12:58:49Z",
+          "principal": true
+        },
+        {
+          "titulo": "Grupo Argos lanza nueva recompra de acciones hasta por $150.000 millones como parte de su programa ACE 1.0",
+          "url": "https://www.valoraanalitik.com/grupo-argos-nueva-recompra-acciones-ace-10/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-11-04T12:11:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Grupo Argos confirmó que recibirá más de $183.000 millones en dividendos de Odinsa",
+          "url": "https://www.larepublica.co/empresas/grupo-argos-recibira-mas-de-183-000-millones-en-dividendos-extraordinarios-de-odinsa-4513652",
+          "medio": "La República",
+          "fecha": "2026-10-29T01:09:52Z",
+          "principal": true
+        },
+        {
+          "titulo": "Grupo Argos recibirá $183.000 millones en dividendos extraordinarios de Odinsa",
+          "url": "https://www.valoraanalitik.com/grupo-argos-recibira-183-000-millones-en-dividendos-extraordinarios-de-odinsa/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-28T22:45:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Grupo Argos alista Obras por Impuestos en Colombia para acelerar reconstrucción tras el terremoto",
+          "url": "https://www.valoraanalitik.com/grupo-argos-alista-obras-por-impuestos-en-colombia-para-acelerar-reconstruccion-tras-el-terremoto/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-23T23:30:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Exclusiva | Grupo Argos revela sus apuestas para Colombia, Venezuela y EE. UU. para 2027",
+          "url": "https://www.valoraanalitik.com/exclusiva-grupo-argos-revela-sus-apuestas-para-colombia-venezuela-y-ee-uu-para-2027/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-23T21:20:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Kingspan se suma a Adopta un Hogar de Grupo Argos con cubiertas termoacústicas para las 500 viviendas en Chocó",
+          "url": "https://www.valoraanalitik.com/kingspan-se-suma-a-adopta-un-hogar-de-grupo-argos-con-cubiertas-termoacusticas-para-las-500-viviendas-en-choco/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-23T16:55:29Z",
+          "principal": true
+        },
+        {
+          "titulo": "Grupo Argos busca constructoras para entregar 1.000 viviendas a familias damnificadas tras sismo",
+          "url": "https://www.larepublica.co/empresas/grupo-argos-busca-constructoras-para-entregar-1-000-viviendas-a-familias-damnificadas-4509692",
+          "medio": "La República",
+          "fecha": "2026-10-23T16:41:43Z",
+          "principal": true
+        },
+        {
+          "titulo": "Presidente de Grupo Argos: «Es el momento de invertir en Colombia»",
+          "url": "https://www.valoraanalitik.com/presidente-grupo-argos-es-el-momento-de-invertir-en-colombia/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-23T00:00:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Clínica de Oftalmología Sandiego se suma a Adopta un Hogar, de Grupo Argos, con aporte de $84 millones",
+          "url": "https://www.valoraanalitik.com/clinica-de-oftalmologia-sandiego-se-suma-a-adopta-un-hogar-de-grupo-argos-con-aporte-de-84-millones/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-22T16:34:04Z",
+          "principal": true
+        },
+        {
+          "titulo": "Grupo Sura ya ejecutó 6 % del programa de recompra de acciones; así ha crecido su valor tras la escisión con Grupo Argos",
+          "url": "https://www.valoraanalitik.com/grupo-sura-ya-ejecuto-6-del-programa-de-recompra-de-acciones-asi-ha-crecido-su-valor-tras-la-escision-con-grupo-argos/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-20T17:40:00Z",
+          "principal": false
+        },
+        {
+          "titulo": "Grupo Argos, EPM y otras cinco empresas impulsan obra vial que beneficiará a 28.000 personas en Antioquia",
+          "url": "https://www.valoraanalitik.com/grupo-argos-epm-y-otras-cinco-empresas-impulsan-obra-vial-que-beneficiara-a-28-000-personas-en-antioquia/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-20T01:00:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Del reguetón a la reconstrucción: Grupo Argos y Nicky Jam entregan la primera de las 40 casas tras el terremoto",
+          "url": "https://www.portafolio.co/economia/del-regueton-a-la-reconstruccion-grupo-argos-y-nicky-jam-entregan-la-primera-de-las-40-casas-tras-el-terremoto-504502",
+          "medio": "Portafolio",
+          "fecha": "2026-10-15T13:40:20Z",
+          "principal": true
+        },
+        {
+          "titulo": "Se entregó primera vivienda de Adopta un Hogar de Grupo Argos y Nicky Jam en Quindío; MinVivienda, Federación Nacional de Cafeteros e Isagen se sumaron",
+          "url": "https://www.valoraanalitik.com/se-entrego-primera-vivienda-de-adopta-un-hogar-de-grupo-argos-y-nicky-jam-en-quindio-minvivienda-federacion-nacional-de-cafeteros-e-isagen-se-sumaron/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-15T12:23:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Fundación Grupo Argos y el Negocio de Desarrollo Urbano entregaron filtros de agua a familias de estos barrios en Barranquilla",
+          "url": "https://www.valoraanalitik.com/fundacion-grupo-argos-y-el-negocio-de-desarrollo-urbano-entregaron-filtros-de-agua-a-familias-de-estos-barrios-en-barranquilla/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-14T22:01:12Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Interconexión Eléctrica S.A. E.S.P.",
+      "ticker": "ISA",
+      "ticker_preferencial": null,
+      "sector": "Energía y Servicios",
+      "n_noticias": 12,
+      "ultima": "2026-11-06T01:00:45Z",
+      "noticias": [
+        {
+          "titulo": "Sonia Abuchar es la nueva presidenta (e) de ISA y Juan Pablo Zárate seguirá como presidente de Junta",
+          "url": "https://www.valoraanalitik.com/sonia-abuchar-es-la-nueva-presidenta-e-de-isa-y-juan-pablo-zarate-seguira-como-presidente-de-junta/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-11-06T01:00:45Z",
+          "principal": true
+        },
+        {
+          "titulo": "Nombran a Sonia Margarita Abuchar como presidenta encargada de ISA",
+          "url": "https://www.larepublica.co/empresas/nombran-a-sonia-margarita-abuchar-como-presidenta-encargada-de-isa-4518791",
+          "medio": "La República",
+          "fecha": "2026-11-05T23:51:08Z",
+          "principal": true
+        },
+        {
+          "titulo": "ISA elevó 19 % sus inversiones y cerró negocios por más de 2.000 millones de dólares, pero su utilidad neta cayó",
+          "url": "https://www.eltiempo.com/economia/isa-elevo-19-sus-inversiones-y-cerro-negocios-por-mas-de-2-000-millones-de-dolares-pero-su-utilidad-neta-cayo-3598547",
+          "medio": "El Tiempo",
+          "fecha": "2026-11-05T23:34:49Z",
+          "principal": true
+        },
+        {
+          "titulo": "ISA podría elevar sus inversiones en Colombia y otros mercados; tiene compromisos por US$8.000 millones a 2030",
+          "url": "https://www.valoraanalitik.com/isa-elevar-inversiones-colombia-mercados/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-11-05T23:00:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "El mercado brasileño es el gran fortín de inversión para Interconexión Eléctrica, ISA",
+          "url": "https://www.larepublica.co/empresas/mercado-brasileno-lidera-los-compromisos-de-inversion-de-interconexion-electrica-isa-4518424",
+          "medio": "La República",
+          "fecha": "2026-11-05T18:43:21Z",
+          "principal": true
+        },
+        {
+          "titulo": "ISA reportó unos ingresos por más de $12,4 billones a septiembre; crecieron 8% anual",
+          "url": "https://www.larepublica.co/empresas/isa-reporto-ingresos-por-12-4-billones-a-septiembre-crecieron-8-anual-4517860",
+          "medio": "La República",
+          "fecha": "2026-11-04T23:57:41Z",
+          "principal": true
+        },
+        {
+          "titulo": "ISA reportó aumento del 8 % en sus ingresos operacionales al tercer trimestre de 2026",
+          "url": "https://www.valoraanalitik.com/isa-reporto-aumento-del-8-en-sus-ingresos-operacionales-al-tercer-trimestre-de-2026/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-11-04T23:52:03Z",
+          "principal": true
+        },
+        {
+          "titulo": "Asamblea Extraordinaria de ISA aprueba reforma estatutaria y elije su nueva junta directiva para 2026-2028",
+          "url": "https://www.eltiempo.com/economia/empresas/asamblea-extraordinaria-de-isa-aprueba-reforma-estatutaria-y-elije-su-nueva-junta-directiva-para-2026-3596990",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-28T20:29:36Z",
+          "principal": true
+        },
+        {
+          "titulo": "La Asamblea de ISA anunció cambios su junta directiva y en la forma de elegir presidente",
+          "url": "https://www.larepublica.co/empresas/la-asamblea-de-isa-anuncio-cambios-su-junta-directiva-y-en-la-forma-de-elegir-presidente-4513117",
+          "medio": "La República",
+          "fecha": "2026-10-28T19:58:06Z",
+          "principal": true
+        },
+        {
+          "titulo": "Relevante | ISA cambia procesos para elegir Junta y presidente tras propuesta de Ecopetrol; accionistas eligen nuevos directivos",
+          "url": "https://www.valoraanalitik.com/arranca-asamblea-extraordinaria-de-isa-se-buscara-cambiar-estatutos-y-elegir-nueva-junta/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-28T15:40:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Ecopetrol, fondos de pensiones y EPM presentan candidatos para la Junta Directiva de ISA",
+          "url": "https://www.valoraanalitik.com/ecopetrol-fondos-de-pensiones-y-epm-presentan-candidatos-para-la-junta-directiva-de-isa/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-23T03:00:00Z",
+          "principal": false
+        },
+        {
+          "titulo": "Relevante | Ecopetrol busca cambios en ISA: propone renovar toda la Junta y simplificar elección del presidente",
+          "url": "https://www.valoraanalitik.com/ecopetrol-busca-cambios-en-isa/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-15T12:51:00Z",
+          "principal": false
+        }
+      ]
+    },
+    {
+      "nombre": "Avianca Group International",
+      "ticker": "AVIANCA",
+      "ticker_preferencial": null,
+      "sector": "Transporte Aéreo",
+      "n_noticias": 11,
+      "ultima": "2026-11-06T04:09:18Z",
+      "noticias": [
+        {
+          "titulo": "LATAM Airlines Colombia Restores Medellín–Cartagena Flights in January 2027",
+          "url": "https://www.financecolombia.com/latam-airlines-colombia-restores-medellin-cartagena-flights-in-january-2027/",
+          "medio": "Finance Colombia",
+          "fecha": "2026-11-06T04:09:18Z",
+          "principal": true
+        },
+        {
+          "titulo": "Avianca anuncia nuevo requisito obligatorio para viajar a Estados Unidos desde noviembre",
+          "url": "https://www.valoraanalitik.com/avianca-anuncia-nuevo-requisito-obligatorio-para-viajar-a-estados-unidos-desde-noviembre/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-31T22:30:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Aerolíneas anuncian nuevos requisitos para pasajeros que viajen a EE.UU. desde noviembre",
+          "url": "https://www.larepublica.co/empresas/avianca-anuncio-nuevo-requisito-para-pasajeros-que-viajen-a-estados-unidos-desde-noviembre-4515811",
+          "medio": "La República",
+          "fecha": "2026-10-31T18:21:54Z",
+          "principal": true
+        },
+        {
+          "titulo": "Avianca aclara la situación de los pasajeros que aseguraron que no les permitieron abordar el vuelo a Toronto: 'No cumplieron con las condiciones'",
+          "url": "https://www.eltiempo.com/economia/empresas/avianca-aclara-la-situacion-de-los-pasajeros-que-aseguraron-que-no-les-permitieron-abordar-el-vuelo-a-toronto-no-cumplieron-con-las-condiciones-3597177",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-29T15:39:44Z",
+          "principal": true
+        },
+        {
+          "titulo": "Avianca iniciará la operación de la ruta Barcelona-Abu Dabi en aviones Boeing 787: la aerolínea colombiana busca conquistar el mercado emiratí",
+          "url": "https://www.eltiempo.com/economia/sectores/avianca-iniciara-la-operacion-de-la-ruta-barcelona-abu-dabi-en-aviones-boeing-787-la-aerolinea-colombiana-busca-conquistar-el-mercado-emirati-3597143",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-29T13:08:08Z",
+          "principal": true
+        },
+        {
+          "titulo": "Avianca fortalece su operación internacional: llega a Emiratos Árabes y suma más vuelos hacia Venezuela",
+          "url": "https://www.eltiempo.com/economia/sectores/avianca-fortalece-su-operacion-internacional-llega-a-emiratos-arabes-y-suma-mas-vuelos-hacia-venezuela-3596518",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-27T01:11:12Z",
+          "principal": true
+        },
+        {
+          "titulo": "Avianca aterriza por primera vez en Emiratos Árabes Unidos: operará un año la ruta Barcelona–Abu Dabi para Etihad",
+          "url": "https://www.portafolio.co/economia/avianca-aterriza-por-primera-vez-en-emiratos-arabes-unidos-operara-un-ano-la-ruta-barcelona-abu-dabi-para-etihad-505160",
+          "medio": "Portafolio",
+          "fecha": "2026-10-26T21:19:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Avianca confirmó nueva alianza y tendrá vuelos entre Barcelona y esta ciudad de medio oriente",
+          "url": "https://www.valoraanalitik.com/avianca-confirmo-nueva-alianza-y-tendra-vuelos-entre-barcelona-y-esta-ciudad-de-medio-oriente/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-26T19:20:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Avianca inició la operación de la ruta Barcelona-Abu Dabi bajo arriendo con tripulación",
+          "url": "https://www.larepublica.co/empresas/ruta-barcelona-abu-dabi-de-avianca-4511233",
+          "medio": "La República",
+          "fecha": "2026-10-26T16:02:22Z",
+          "principal": true
+        },
+        {
+          "titulo": "Avianca retoma su vuelo directo de Cali a Miami de manera permanente",
+          "url": "https://www.portafolio.co/economia/regiones/avianca-retoma-su-vuelo-directo-de-cali-a-miami-de-manera-permanente-505057",
+          "medio": "Portafolio",
+          "fecha": "2026-10-24T19:27:44Z",
+          "principal": true
+        },
+        {
+          "titulo": "Avianca Makes Its Nonstop Cali–Miami Route Permanent",
+          "url": "https://www.financecolombia.com/avianca-makes-its-nonstop-cali-miami-route-permanent/",
+          "medio": "Finance Colombia",
+          "fecha": "2026-10-22T22:42:39Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Banco de Bogotá S.A.",
+      "ticker": "BOGOTA",
+      "ticker_preferencial": null,
+      "sector": "Banca y Finanzas",
+      "n_noticias": 9,
+      "ultima": "2026-11-02T14:17:30Z",
+      "noticias": [
+        {
+          "titulo": "María Fernanda Suárez, nueva presidente del Banco de Bogotá: es la primera mujer en ocupar ese cargo en la entidad financiera",
+          "url": "https://www.eltiempo.com/economia/sector-financiero/maria-fernanda-suarez-nueva-presidente-del-banco-de-bogota-es-la-primera-mujer-en-ocupar-ese-cargo-en-la-entidad-financiera-3597605",
+          "medio": "El Tiempo",
+          "fecha": "2026-11-02T14:17:30Z",
+          "principal": true
+        },
+        {
+          "titulo": "María Fernanda Suárez es la nueva presidenta del Banco de Bogotá: reemplaza a Juan Carlos Echeverry",
+          "url": "https://www.valoraanalitik.com/maria-fernanda-suarez-es-la-nueva-presidenta-del-banco-de-bogota-reemplaza-a-juan-carlos-echeverry/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-30T22:35:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Atención | Juan Carlos Echeverry deja la presidencia del Banco de Bogotá",
+          "url": "https://www.valoraanalitik.com/atencion-juan-carlos-echeverry-deja-la-presidencia-del-banco-de-bogota/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-30T22:21:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Mateo Ravagli y Daniel Puerta serán vicepresidentes en Banco de Bogotá; llegan a estas posiciones",
+          "url": "https://www.valoraanalitik.com/nuevos-vicepresidentes-banco-de-bogota/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-30T13:40:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Comercio en Colombia muestra profundas grietas según análisis del Banco de Bogotá",
+          "url": "https://www.valoraanalitik.com/comercio-en-colombia-muestra-profundas-grietas-segun-analisis-del-banco-de-bogota/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-24T20:00:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Acuerdo del Banco de Bogotá y BID Invest movilizaría hasta US$ 70 millones para el sector de mipymes",
+          "url": "https://www.eltiempo.com/economia/sector-financiero/acuerdo-del-banco-de-bogota-y-bid-invest-movilizaria-hasta-us-70-millones-para-el-sector-de-mipymes-3595461",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-22T15:22:14Z",
+          "principal": true
+        },
+        {
+          "titulo": "Banco de Bogotá vuelve al top 3 de las entidades financieras con mayores utilidades en Colombia: así quedó el ranking",
+          "url": "https://www.valoraanalitik.com/banco-de-bogota-vuelve-al-top-3-de-las-entidades-financieras-con-mayores-utilidades-en-colombia-asi-quedo-el-ranking/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-16T21:42:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Tarjetas de crédito de Itaú dejarán de funcionar en esta fecha: Banco de Bogotá notificó a clientes",
+          "url": "https://www.valoraanalitik.com/tarjetas-de-credito-de-itau-dejaran-de-funcionar-en-esta-fecha-banco-de-bogota-notifico-a-clientes/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-15T15:40:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Salario mínimo en Colombia alcanzaría los $1,9 millones en 2027, según el Banco de Bogotá",
+          "url": "https://www.valoraanalitik.com/salario-minimo-en-colombia-alcanzaria-los-19-millones-en-2027-segun-el-banco-de-bogota/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-14T22:20:00Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Banco Davivienda S.A.",
+      "ticker": "DAVIVIENDA",
+      "ticker_preferencial": null,
+      "sector": "Banca y Finanzas",
+      "n_noticias": 6,
+      "ultima": "2026-11-05T21:56:49Z",
+      "noticias": [
+        {
+          "titulo": "Más de 40 integraciones después, la ‘casita roja’ le abre la puerta a Davibank: habla Javier Suárez, presidente de Davivienda",
+          "url": "https://www.eltiempo.com/economia/sector-financiero/mas-de-40-integraciones-despues-la-casita-roja-le-abre-la-puerta-a-davibank-habla-javier-suarez-presidente-de-davivienda-3598826",
+          "medio": "El Tiempo",
+          "fecha": "2026-11-05T21:56:49Z",
+          "principal": true
+        },
+        {
+          "titulo": "Davivienda anuncia nuevas funcionalidades tras la integración con DAVIbank",
+          "url": "https://www.valoraanalitik.com/davivienda-anuncia-novedades-tras-integracion-davibank/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-11-05T16:20:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "El rifirrafe marcario que enfrenta a Davivienda y a Plata Colombia: la fintech tiene un mes para defender su nombre",
+          "url": "https://www.portafolio.co/economia/davivienda-se-opone-a-plata-colombia-la-fintech-tiene-30-dias-habiles-para-defender-su-marca-505649",
+          "medio": "Portafolio",
+          "fecha": "2026-11-03T23:09:41Z",
+          "principal": true
+        },
+        {
+          "titulo": "Davivienda integra oficialmente a Davibank: así cambia la operación y qué pasará con los clientes",
+          "url": "https://www.eltiempo.com/economia/finanzas-personales/davivienda-integra-oficialmente-a-davibank-asi-cambia-la-operacion-y-que-pasara-con-los-clientes-3597868",
+          "medio": "El Tiempo",
+          "fecha": "2026-11-02T15:23:06Z",
+          "principal": true
+        },
+        {
+          "titulo": "DAVIbank completa su integración con Davivienda: Esto deben tener en cuenta los clientes",
+          "url": "https://www.valoraanalitik.com/davibank-completa-su-integracion-con-davivienda/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-11-01T14:30:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Video | Acciones de Davivienda caen 4,73 % liderando la corrección de la jornada",
+          "url": "https://www.valoraanalitik.com/video-acciones-de-davivienda-caen-473-liderando-la-correccion-de-la-jornada/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-20T12:33:18Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo de Inversiones Suramericana S.A.",
+      "ticker": "GRUPOSURA",
+      "ticker_preferencial": "PFGRUPSURA",
+      "sector": "Servicios Financieros",
+      "n_noticias": 6,
+      "ultima": "2026-11-04T12:24:07Z",
+      "noticias": [
+        {
+          "titulo": "Video | Grupo Sura lidera los avances de la jornada y cierra nuevamente en máximos históricos",
+          "url": "https://www.valoraanalitik.com/grupo-sura-lidera-los-avances-de-la-jornada-y-cierra-nuevamente-en-maximos-historicos/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-11-04T12:24:07Z",
+          "principal": true
+        },
+        {
+          "titulo": "Mejores aseguradoras de autos en Colombia",
+          "url": "https://www.rankia.co/blog/mejores-opiniones-colombia/3115882-mejores-aseguradoras-autos-colombia",
+          "medio": "Rankia Colombia",
+          "fecha": "2026-11-03T21:00:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Sura destina $ 15.000 millones para llevar los seguros a más colombianos, a través de la inteligencia artificial",
+          "url": "https://www.eltiempo.com/economia/sector-financiero/sura-destina-15-000-millones-para-llevar-los-seguros-a-mas-colombianos-a-traves-de-la-inteligencia-artificial-3597246",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-29T18:30:17Z",
+          "principal": true
+        },
+        {
+          "titulo": "Video | Acciones de Grupo Sura llegan a máximos históricos",
+          "url": "https://www.valoraanalitik.com/acciones-de-grupo-sura-llegan-a-maximos-historicos-2/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-28T12:13:31Z",
+          "principal": true
+        },
+        {
+          "titulo": "Grupo Sura ya ejecutó 6 % del programa de recompra de acciones; así ha crecido su valor tras la escisión con Grupo Argos",
+          "url": "https://www.valoraanalitik.com/grupo-sura-ya-ejecuto-6-del-programa-de-recompra-de-acciones-asi-ha-crecido-su-valor-tras-la-escision-con-grupo-argos/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-20T17:40:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Sura Investments mantiene perspectivas para la Bolsa de Colombia tras positivo desempeño en 2026",
+          "url": "https://www.valoraanalitik.com/sura-investments-bolsa-colombia-2026/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-15T23:00:00Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Corporación Financiera Colombiana S.A.",
+      "ticker": "CORFICOLCF",
+      "ticker_preferencial": null,
+      "sector": "Banca y Finanzas",
+      "n_noticias": 5,
+      "ultima": "2026-10-28T00:40:08Z",
+      "noticias": [
+        {
+          "titulo": "Justicia de Estados Unidos archiva caso contra Corficolombiana tras cumplirse acuerdo de 2023",
+          "url": "https://www.eltiempo.com/economia/empresas/justicia-de-estados-unidos-archiva-caso-contra-corficolombiana-tras-cumplirse-acuerdo-de-3596590",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-28T00:40:08Z",
+          "principal": true
+        },
+        {
+          "titulo": "Corficolombiana pide reactivar la inversión en vivienda, infraestructura y energía para impulsar el crecimiento",
+          "url": "https://www.eltiempo.com/economia/sectores/corficolombiana-pide-reactivar-la-inversion-en-vivienda-infraestructura-y-energia-para-impulsar-el-crecimiento-3596735",
+          "medio": "El Tiempo",
+          "fecha": "2026-10-27T21:07:54Z",
+          "principal": true
+        },
+        {
+          "titulo": "Colombia crecería 2,3% en 2026 y 2% en 2027: ¿qué tendría que cambiar para llegar al 6%, según Corficolombiana?",
+          "url": "https://www.portafolio.co/economia/corficolombiana-colombia-creceria-2-3-en-2026-y-2-en-2027-que-tendria-que-cambiar-para-llegar-al-505235",
+          "medio": "Portafolio",
+          "fecha": "2026-10-27T21:04:37Z",
+          "principal": true
+        },
+        {
+          "titulo": "Corficolombiana logra el archivo definitivo del caso Odebrecht en Estados Unidos",
+          "url": "https://www.valoraanalitik.com/corficolombiana-logra-el-archivo-definitivo-del-caso-odebrecht-en-estados-unidos/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-27T01:45:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Corficolombiana pone sobre la mesa que el incremento deseable para el salario mínimo de 2027 sea de 8 %",
+          "url": "https://www.valoraanalitik.com/corficolombiana-pone-sobre-la-mesa-que-el-incremento-deseable-para-el-salario-minimo-de-2027-sea-de-8/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-19T13:00:00Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Almacenes Éxito S.A.",
+      "ticker": "EXITO",
+      "ticker_preferencial": null,
+      "sector": "Comercio Minorista / Retail",
+      "n_noticias": 3,
+      "ultima": "2026-10-28T17:53:32Z",
+      "noticias": [
+        {
+          "titulo": "Recuperar la ilusión de comprar sin gastar de más: la nueva estrategia de Éxito",
+          "url": "https://www.valoraanalitik.com/recuperar-la-ilusion-de-comprar-sin-gastar-de-mas-la-nueva-estrategia-de-exito/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-28T17:53:32Z",
+          "principal": true
+        },
+        {
+          "titulo": "MinAgricultura y Grupo Éxito se aliaron para compra directa de los productos agropecuarios",
+          "url": "https://www.larepublica.co/empresas/alianza-entre-el-ministerio-de-agricultura-y-el-grupo-exito-4505636",
+          "medio": "La República",
+          "fecha": "2026-10-18T17:15:55Z",
+          "principal": true
+        },
+        {
+          "titulo": "MinAgricultura anuncia alianza con Grupo Éxito para reducir intermediarios y mejorar ventas del campo",
+          "url": "https://www.valoraanalitik.com/minagricultura-anuncia-alianza-con-grupo-exito-para-reducir-intermediarios-y-mejorar-ventas-del-campo/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-18T15:30:00Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo Aval Acciones y Valores S.A.",
+      "ticker": "GRUPOAVAL",
+      "ticker_preferencial": "PFAVAL",
+      "sector": "Banca y Finanzas",
+      "n_noticias": 3,
+      "ultima": "2026-10-29T18:12:00Z",
+      "noticias": [
+        {
+          "titulo": "Carlos Andrés Echeverri será el nuevo presidente de Bancoomeva; llega desde Banco de Occidente",
+          "url": "https://www.valoraanalitik.com/carlos-andres-echeverri-bancoomeva/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-29T18:12:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Video | Acciones de Grupo Aval preferencial lideran la corrección del índice MSCI Colcap",
+          "url": "https://www.valoraanalitik.com/acciones-de-grupo-aval-preferencial-lideran-la-correccion-del-indice-msci-colcap/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-29T12:23:42Z",
+          "principal": true
+        },
+        {
+          "titulo": "Grupo Aval, la compañía que más escaló en top 50 de ranking Merco Empresas 2026; Porvenir lideró entre nuevos ingresos",
+          "url": "https://www.valoraanalitik.com/grupo-aval-la-compania-que-mas-escalo-en-top-50-de-ranking-merco-empresas-2026-porvenir-lidero-entre-nuevos-ingresos/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-16T17:37:24Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Grupo Energía Bogotá S.A. E.S.P.",
+      "ticker": "GEB",
+      "ticker_preferencial": null,
+      "sector": "Energía y Servicios",
+      "n_noticias": 3,
+      "ultima": "2026-10-24T00:50:00Z",
+      "noticias": [
+        {
+          "titulo": "Grupo Energía Bogotá y La Caisse cierran operación para crear una de las mayores transmisoras eléctricas de Brasil",
+          "url": "https://www.valoraanalitik.com/grupo-energia-bogota-y-la-caisse-cierran-operacion-para-crear-una-de-las-mayores-transmisoras-electricas-de-brasil/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-24T00:50:00Z",
+          "principal": true
+        },
+        {
+          "titulo": "Grupo Energía Bogotá Raises $400 Billion COP as Investors Bid Five Times the Offer",
+          "url": "https://www.financecolombia.com/grupo-energia-bogota-raises-400-billion-cop-as-investors-bid-five-times-the-offer/",
+          "medio": "Finance Colombia",
+          "fecha": "2026-10-22T22:52:34Z",
+          "principal": true
+        },
+        {
+          "titulo": "Exclusiva | Los dos “detonantes” para que el GEB comience su camino a Wall Street; no descarta emisión de acciones",
+          "url": "https://www.valoraanalitik.com/detonantes-geb-camino-wall-street-acciones/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-15T18:20:00Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Mineros S.A.",
+      "ticker": "MINEROS",
+      "ticker_preferencial": null,
+      "sector": "Minería",
+      "n_noticias": 1,
+      "ultima": "2026-10-23T13:59:00Z",
+      "noticias": [
+        {
+          "titulo": "Mineros busca pagar dividendos extraordinarios por US$58 millones: cita a Asamblea de Accionistas",
+          "url": "https://www.valoraanalitik.com/mineros-busca-pagar-dividendos-extraordinarios-por-us58-millones-cita-a-asamblea-de-accionistas/",
+          "medio": "Valora Analitik",
+          "fecha": "2026-10-23T13:59:00Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Organización Terpel S.A.",
+      "ticker": "TERPEL",
+      "ticker_preferencial": null,
+      "sector": "Distribución de Combustibles",
+      "n_noticias": 1,
+      "ultima": "2026-10-28T05:01:29Z",
+      "noticias": [
+        {
+          "titulo": "Terpel y Colgas buscan llegar a 55 estaciones de servicio con AutoGLP para el otro año",
+          "url": "https://www.larepublica.co/empresas/terpel-y-colgas-buscan-llegar-a-55-estaciones-de-servicio-con-autoglp-4512466",
+          "medio": "La República",
+          "fecha": "2026-10-28T05:01:29Z",
+          "principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Canacol Energy Ltd.",
+      "ticker": "CNE",
+      "ticker_preferencial": null,
+      "sector": "Gas Natural y Energía",
+      "n_noticias": 0,
+      "ultima": null,
+      "noticias": []
+    },
+    {
+      "nombre": "Celsia S.A. E.S.P.",
+      "ticker": "CELSIA",
+      "ticker_preferencial": null,
+      "sector": "Energía y Renovables",
+      "n_noticias": 0,
+      "ultima": null,
+      "noticias": []
+    },
+    {
+      "nombre": "Empresa de Telecomunicaciones de Bogotá S.A. E.S.P.",
+      "ticker": "ETB",
+      "ticker_preferencial": null,
+      "sector": "Telecomunicaciones",
+      "n_noticias": 0,
+      "ultima": null,
+      "noticias": []
+    }
+  ]
+}
